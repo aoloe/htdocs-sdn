@@ -1,0 +1,100 @@
+accueil :
+    navigation : 
+        url : 
+        label : Accueil
+sortons :
+    navigation : Sortons du nucléaire
+    children :
+        nucleaire :
+            navigation : Le nucléaire
+            children :
+                suisse :
+                    navigation : En Suisse
+                monde :
+                    navigation : Dans le monde
+                historique :
+                    navigation : Historique
+                fonctionnement :
+                    navigation : Fonctionnement d'une centrale
+        pourquoi :
+            navigation : Pourquoi devons nous en sortir?
+            children :
+                risques :
+                    navigation : Les risques d'accidents
+                    anchors :
+                        humain : Défaillance humaine
+                        sismique :  risques sismiques
+                        technique : technique
+                        terrorisme : Les risques de terrorisme
+                        accidents : Les accidents nucléaires majeurs
+                        ines : L'échelle de classement INES
+                    comment : define anchors for toc as ## Header 2 ##      {#header2}
+                dechets :
+                    navigation : Déchets nucléaires
+                sans-co2 :
+                    navigation : La fable du nucléaire sans CO2
+                uranium :
+                    navigation :  Les problèmes de l'uranium
+                    anchors :
+                        economie : L'économie minière de l'uranium dans le monde
+                        dangers : Les dangers de l'uranium
+                        inde : Brillantes affaires en terres indiennes
+        comment :
+            navigation :
+                label : Comment pouvons nous en sortir?
+            children :
+                economiser :
+                    navigation : Économiser l'énergie
+                efficacite :
+                    navigation : Efficacité énergétique
+                renouvelable :
+                    navigation : Énergies renouvelables
+                    children :
+                        hydraulique :
+                            navigation : L'énergie hydraulique
+                        solaire :
+                            navigation : L'énergie solaire
+                        eolien:
+                            navigation : L’éolien
+                        biomasse :
+                            navigation : La biomasse
+                        geothermie:
+                            navigation : La géothermie
+actualite :
+    navigation : Actualités
+    children :
+        nouvelles :
+            navigation : Nouvelles
+        journal :
+            navigation : Journal
+        agenda :
+            navigation : Agenda
+            alias : association/agenda
+        archive :
+            navigation : Archive
+presse :
+    navigation : Presse
+    children :
+        communiques:
+            navigation : Communiqués
+        dossiers:
+            navigation : Dossiers
+        lettres :
+            navigation : Lettres de lecteur
+        journal :
+            navigation : Journal
+            alias : association/journal
+association :
+    navigation : Association
+    children :
+        qui :
+            navigation : Qui sommes-nous?
+        buts :
+            navigation : Buts
+        status :
+            navigation : Statuts
+        agenda :
+            navigation : Agenda
+        soutenir :
+            navigation : Soutenir
+page_404 :

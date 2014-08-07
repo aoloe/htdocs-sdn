@@ -1,0 +1,25 @@
+{
+    "name": "aoloe/htdocs-sdn",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:aoloe/php-template.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:aoloe/php-debug.git"
+        }
+    ],
+    "require" : {
+        "mustangostang/spyc": "0.5.*@dev",
+        "michelf/php-markdown": "1.4.1",
+        "aoloe/php-template" : "dev-master",
+        "aoloe/php-debug" : "dev-master"
+    },
+    "authors" : [
+        {
+            "name" : "Ale Rimoldi",
+            "email" : "ale@graphicslab.org"
+        }
+    ]
+}

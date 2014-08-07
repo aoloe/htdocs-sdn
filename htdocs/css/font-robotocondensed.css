@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
+    src: url('../fonts/RobotoCondensed-Light.ttf');
+    font-weight:300;
+}
