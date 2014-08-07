@@ -7,7 +7,20 @@ use function Aoloe\debug as debug;
 use \Michelf\MarkdownExtra;
 
 // debug('_SERVER', $_SERVER);
-$site_local = (substr($_SERVER['HTTP_HOST'], 0, 3) == 'ww.');
+
+/**
+ * if a resources are passed as paremeters return the matching one, otherwise return true if the
+ * web resources are available
+ * TODO: put this in a library
+ */
+function get_web_ressource($web = null, $local = null) {
+    // debug('host', );
+    if (isset($web)) {
+        return  gethostbyname('ideale.ch') === 'ideale.ch' ? $local : $web;
+    } else {
+        return  gethostbyname('ideale.ch') !== 'ideale.ch';
+    }
+}
 
 $path = str_repeat('../', substr_count($_SERVER['REQUEST_URI'], '/', 1));
 // debug('path', $path);
@@ -69,57 +82,32 @@ $content_navigation = $navigation->get_rendered();
 // debug('content_navigation', $content_navigation);
 // define anchors for toc as ## Header 2 ##      {#header2}
 
-$template = new Aoloe\Template();
 
+// debug('page', $page);
 // debug('page_url', $page_url);
-if ($page_url == '/accueil') {
-
-    $page_css[] = 'css/lightSlider.css';
-    $page_js[] = '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js';
-    $page_js[] = 'js/jquery.lightSlider.min.js';
-
-    include_once('library/Facebook.php');
-    $facebook = new Facebook();
-    $template->clear();
-    $template->set_template('template/accueil_news_item.php');
-    $news_facebook = array();
-    foreach ($facebook->get_page_feed(161424603891516) as $item) {
-        // debug('item', $item);
-        $news_facebook[] = array (
-            'title' => $item['title'],
-            'url' => $item['url'],
-            'content' => $item['content'],
-        );
+if (array_key_exists('module', $page)) {
+    $module_file = 'module/'.$page['module'].'.php';
+    if (file_exists($module_file)) {
+        include_once($module_file);
+        if (class_exists($page['module'])) {
+            $module = new $page['module']();
+            $page_css += $module->get_css();
+            $page_js += $module->get_js();
+            $page_fonts += $module->get_fonts();
+            $page_content = $module->get_content();
+        }
     }
-    // debug('news', $news);
-    
-    $template->clear();
-    $template->set('facebook', $news_facebook);
-    $template->set('news', array());
-    $content_news = $template->fetch('template/accueil_news.php');
-
-    $template->clear();
-    $file_content = 'content/accueil.md';
-    if (file_exists($file_content)) {
-        $content = file_get_contents($file_content);
-        $content = MarkdownExtra::defaultTransform($content);
-    }
-    $template->set('content', $content);
-    $template->set('facebook', $content_news);
-    $template->set('news', $content_news);
-    $page_content = $template->fetch('template/accueil.php');
+} elseif ($page_url == '/accueil') {
 } else {
     $page_content = "<p>Pas encore de contenu.</p>";
 }
 
+$template = new Aoloe\Template();
+
 $page_css[] = $path.'css/simplegrid/simplegrid.css';
 
 // $page_fonts[] = $path.'css/font-awesome.css';
-if ($site_local) {
-    $page_fonts[] = 'css/font-robotcondensed.css';
-} else {
-    $page_fonts[] = 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300';
-}
+$page_fonts[] = get_web_ressource('http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300', 'css/font-robotcondensed.css');
 
 $template->clear();
 $template->set('language', 'fr');

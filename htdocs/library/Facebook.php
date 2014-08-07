@@ -1,6 +1,6 @@
 <?php
 /**
- * https://gist.github.com/banago/3864515
+ * heavily inspired by https://gist.github.com/banago/3864515
  */
 class Facebook {
     private function get_cleaned_description($description) {
@@ -11,6 +11,14 @@ class Facebook {
         $result = preg_replace('/"\/l.php\?u=(.*?)"/', '"\1"', $result);
         return $result;
     }
+
+    // TODO: or call this extract_image?
+    private function get_formatted_description($description) {
+        $result = $description;
+        // TODO: put the image at the beginning
+        return $result;
+    }
+
     public function get_page_feed( $page_id, $no = 5 ) {
         $result = array();
         // URL to the Facebook page's RSS feed.
@@ -51,17 +59,9 @@ class Facebook {
                 'author' => $item->author->__toString(),
                 'content' => $this->get_cleaned_description($item->description->__toString()),
             );
-            /*
-            $out .= '<div class="entry">';
-            $out .= '<h3 class="title"><a href="' . $item->link . '">' . $item->title . '</a></h3>';
-            $out .= '<div class="meta">' . $item->pubDate . ' by '. $item->author .'</div>';
-            $out .= '<div class="content">' . $item->description . '</div></div>';
-            */
-            
             if( $i == $no ) break;
             $i++;
         }
-        // echo($out);
         return $result;
     }
 }

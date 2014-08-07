@@ -1,4 +1,5 @@
 <div id="facebook_news">
+<?php if (!empty($facebook)) : ?>
 <ul>
 <?php foreach ($facebook as $item) : ?>
     <li class="news">
@@ -7,7 +8,11 @@
     </li>
 <?php endforeach; ?>
 </ul>
+<?php else : ?>
+<p>No connection to Facebook</p>
+<?php endif; ?>
 </div>
+<?php if (!empty($facebook)) : ?>
 <script type="text/javascript">
   $(document).ready(function() {
     $("#facebook_news > ul").lightSlider({
@@ -18,6 +23,7 @@
     }); 
   });
 </script>
+<?php endif; ?>
 <div class="news">
 <?php foreach ($news as $item) : ?>
     <div class="news_item">

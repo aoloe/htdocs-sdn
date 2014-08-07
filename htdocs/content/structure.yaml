@@ -2,6 +2,7 @@ accueil :
     navigation : 
         url : 
         label : Accueil
+    module : Accueil
 sortons :
     navigation : Sortons du nucléaire
     children :
