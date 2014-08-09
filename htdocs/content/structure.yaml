@@ -2,7 +2,14 @@ accueil :
     navigation : 
         url : 
         label : Accueil
-    module : Accueil
+    module :
+        name : Accueil
+        parameter :
+            show :
+                - facebook
+                - news
+                - magazine
+
 sortons :
     navigation : Sortons du nucléaire
     children :

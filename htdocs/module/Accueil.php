@@ -13,10 +13,11 @@ class Module_abstract {
 
 class Accueil extends Module_abstract {
     public function __construct() {
-        $this->page_css = array('css/lightSlider.css');
+        // $this->page_css = array('css/lightSlider.css');
         $this->page_js = array (
             get_web_ressource('//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', 'js/jquery.min.js'),
             'js/jquery.lightSlider.min.js',
+            'js/jquery.anyslider.min.js',
         );
     }
 
@@ -27,6 +28,7 @@ class Accueil extends Module_abstract {
         $cache = new Cache();
         $cache->set_file('facebook_news.json');
         include_once('library/Facebook.php');
+        $cache->set_timeout(0);
         $news_facebook = $cache->get();
         // debug('news_facebook', $news_facebook);
         if (is_null($news_facebook)) {
@@ -41,12 +43,14 @@ class Accueil extends Module_abstract {
                     // debug('item', $item);
                     $news_facebook[] = array (
                         'title' => $item['title'],
+                        'date' => $item['date'],
                         'url' => $item['url'],
                         'content' => $item['content'],
                     );
                 }
-                // $cache->put($news_facebook);
+                $cache->put($news_facebook);
             }
+            // debug('news_facebook', $news_facebook);
             // debug('news', $news);
         }
         

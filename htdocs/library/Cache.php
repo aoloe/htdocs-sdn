@@ -11,7 +11,7 @@ class Cache {
     private $data = null;
     private $timeout = 86400; // 60*60*24 = 1 day
     public function set_file($file) {$this->file = $this->path.$file;}
-    public function set_timeout($time) {$this->timeout = $timeout;}
+    public function set_timeout($time) {$this->timeout = $time;}
 
     public function is_current() {
         if (is_null($this->data)) {

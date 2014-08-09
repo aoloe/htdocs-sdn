@@ -15,6 +15,7 @@ _Septembre 2012_
 Le Conseil Fédéral met en consultation sa "Stratégie énergétique 2050".
 
 Elle prévoit en grandes lignes de :
+
 - réduire la consommation d'énergie
 - promouvoir l'utilisation efficace de l'énergie
 - augmenter la production d'énergies renouvelables

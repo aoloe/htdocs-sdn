@@ -1,7 +1,12 @@
 <?php
 /**
+ * get the feed from a facebook page
+ *
  * heavily inspired by https://gist.github.com/banago/3864515
  */
+
+use function Aoloe\debug as debug;
+
 class Facebook {
     private function get_cleaned_description($description) {
         $result = $description;
@@ -9,7 +14,20 @@ class Facebook {
         $result = preg_replace('/ onmouseover="[^"]*"/', '', $result);
         // $result = preg_replace('/"l.php?u=([^"]+)"/', '\1', $result);
         $result = preg_replace('/"\/l.php\?u=(.*?)"/', '"\1"', $result);
+        // $result = preg_replace('/\&amp;h=(.*)\&amp;s=1/', '', $result);
+        $result = preg_replace('/\&amp;h=[^&]+&amp;s=\d/', '', $result);
+        $result = preg_replace_callback(
+            "/http%3A%2F%2F.+\"/",
+            function($matches) {
+                return urldecode($matches[0]);
+            },
+            $result
+        );
         return $result;
+    }
+
+    private function get_cleaned_entities($string) {
+        return str_replace('%andamp;', '&amp;', html_entity_decode(str_replace('&amp;', '%andamp;', $string)));
     }
 
     // TODO: or call this extract_image?
@@ -17,6 +35,14 @@ class Facebook {
         $result = $description;
         // TODO: put the image at the beginning
         return $result;
+    }
+
+    private function is_valid_html($string) {
+        libxml_use_internal_errors(true);
+        libxml_clear_errors();
+        $xml = simplexml_load_string($string);
+        // debug('libxml_get_errors', libxml_get_errors());
+        return count(libxml_get_errors())==0;
     }
 
     public function get_page_feed( $page_id, $no = 5 ) {
@@ -47,20 +73,37 @@ class Facebook {
      
         $raw_xml = curl_exec($curl); // execute the curl command
         curl_close($curl); // close the connection
+        // debug('raw_xml', $raw_xml);
         
         $xml = simplexml_load_string( $raw_xml );
       
         $i = 1;
         foreach( $xml->channel->item as $item ){
-            $result[] = array(
-                'title' => $item->title->__toString(),
+            $item = array(
+                'title' => trim(str_replace("\n", '<br /> ', $this->get_cleaned_entities($item->title->__toString()))),
                 'url' => $item->link->__toString(),
                 'date' => $item->pubDate->__toString(),
-                'author' => $item->author->__toString(),
-                'content' => $this->get_cleaned_description($item->description->__toString()),
+                'author' => $this->get_cleaned_entities($item->author->__toString()),
+                'content' => trim($this->get_cleaned_entities($this->get_cleaned_description($item->description->__toString()))),
             );
-            if( $i == $no ) break;
-            $i++;
+            if (($break = strpos($item['title'], '<br /> <br />')) !== false) {
+                // debug('break', $break);
+                $item['title'] = substr($item['title'], 0, $break);
+                $item['content'] = substr($item['content'], $break + 14);
+            } elseif (substr($item['title'], -3) == '...') {
+                $item['title'] = '';
+            } else {
+                $item['content'] = substr($item['content'], strlen($item['title']) + 11);
+            }
+            $item['content'] = preg_replace('/(.+?)(<a [^>]+?'.'><img[^>]+?'.'><\/a>)/', '\2<br />\1', $item['content']);
+            // debug('item', $item);
+
+            // if ($this->is_valid_html('<?xml version="1.0" encoding="utf-8"?'.'><div>'.$item['content'].'</div>')) {
+                $result[] = $item;
+                if( $i == $no ) break;
+                $i++;
+            // }
+            
         }
         return $result;
     }

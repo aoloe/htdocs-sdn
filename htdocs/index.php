@@ -97,7 +97,6 @@ if (array_key_exists('module', $page)) {
             $page_content = $module->get_content();
         }
     }
-} elseif ($page_url == '/accueil') {
 } else {
     $page_content = "<p>Pas encore de contenu.</p>";
 }
