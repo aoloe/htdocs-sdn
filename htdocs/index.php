@@ -56,6 +56,17 @@ function get_current_page($url_segment, $site_structure) {
     return $result;
 }
 
+function get_current_module($page) {
+    $result = null;
+    if (array_key_exists('module', $page)) {
+        $result = is_array($page['module']) ? $page['module'] : array('name' => $page['module']);
+        if (!array_key_exists('parameter', $result)) {
+            $result['parameter'] = array();
+        }
+    }
+    return $result;
+}
+
 $url_segment = array_slice(explode('/', $request_url), 1);
 // debug('url_segment', $url_segment);
 $page = get_current_page($url_segment, $site_structure);
@@ -85,12 +96,20 @@ $content_navigation = $navigation->get_rendered();
 
 // debug('page', $page);
 // debug('page_url', $page_url);
-if (array_key_exists('module', $page)) {
-    $module_file = 'module/'.$page['module'].'.php';
+$page_module = get_current_module($page);
+if (isset($page_module)) {
+    $module_file = 'module/'.$page_module['name'].'.php';
     if (file_exists($module_file)) {
         include_once($module_file);
-        if (class_exists($page['module'])) {
-            $module = new $page['module']();
+        if (class_exists($page_module['name'])) {
+            $module = new $page_module['name']();
+            foreach ($page_module['parameter'] as $key => $value) {
+                if (method_exists(get_class($module), 'set_'.$key)) {
+                    // debug('key', $key);
+                    // debug('value', $value);
+                    $module->{'set_'.$key}($value);
+                }
+            }
             $page_css += $module->get_css();
             $page_js += $module->get_js();
             $page_fonts += $module->get_fonts();
@@ -111,6 +130,7 @@ $page_fonts[] = get_web_ressource('http://fonts.googleapis.com/css?family=Roboto
 $template->clear();
 $template->set('language', 'fr');
 $template->set('title_site', 'Sortir du Nucléaire');
+$template->set('favicon', 'images/favicon.png');
 $template->set('path', $path);
 $template->set('fonts', $page_fonts);
 $template->set('js', $page_js);

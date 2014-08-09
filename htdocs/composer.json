@@ -3,18 +3,23 @@
     "repositories": [
         {
             "type": "vcs",
+            "url":  "git@github.com:aoloe/php-debug.git"
+        },
+        {
+            "type": "vcs",
             "url":  "git@github.com:aoloe/php-template.git"
         },
         {
             "type": "vcs",
-            "url":  "git@github.com:aoloe/php-debug.git"
+            "url":  "git@github.com:aoloe/php-cache.git"
         }
     ],
     "require" : {
         "mustangostang/spyc": "0.5.*@dev",
         "michelf/php-markdown": "1.4.1",
+        "aoloe/php-debug" : "dev-master",
         "aoloe/php-template" : "dev-master",
-        "aoloe/php-debug" : "dev-master"
+        "aoloe/php-cache" : "dev-master"
     },
     "authors" : [
         {

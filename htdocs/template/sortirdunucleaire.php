@@ -7,7 +7,9 @@
 
 <title><?= isset($title) ? $title.' - ' : '' ?><?= isset($title_site) ? $title_site : ''?></title>
 
+<?php if (isset($favicon)) : ?>
 <link rel="shortcut icon" href="<?= $favicon ?>" />
+<?php endif; ?>
 <?php if (isset($fonts)) : foreach ($fonts as $value) : ?>
 <link rel="stylesheet" href="<?= $value ?>" type="text/css" />
 <?php endforeach; endif; ?>

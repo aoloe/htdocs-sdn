@@ -21,41 +21,34 @@ class Accueil extends Module_abstract {
         );
     }
 
+    private $show = array();
+    public function set_show($show) {$this->show = $show;}
+
     public function get_content() {
         $result = "";
         $template = new Aoloe\Template();
-        include_once('library/Cache.php');
-        $cache = new Cache();
-        $cache->set_file('facebook_news.json');
         include_once('library/Facebook.php');
-        $cache->set_timeout(0);
-        $news_facebook = $cache->get();
-        // debug('news_facebook', $news_facebook);
-        if (is_null($news_facebook)) {
-            // TODO: move the cache to Facebook and if no network, set timeout to null
-            $news_facebook = array();
-            $facebook = new Facebook();
-            $template->clear();
-            $template->set_template('template/accueil_news_item.php');
-            // debug('get_web_ressource', get_web_ressource());
-            if (get_web_ressource()) {
-                foreach ($facebook->get_page_feed(161424603891516) as $item) {
-                    // debug('item', $item);
-                    $news_facebook[] = array (
-                        'title' => $item['title'],
-                        'date' => $item['date'],
-                        'url' => $item['url'],
-                        'content' => $item['content'],
-                    );
-                }
-                $cache->put($news_facebook);
+        $content_facebook = null;
+        $facebook = new Facebook();
+        // debug('get_web_ressource', get_web_ressource());
+        // debug('show', $this->show);
+        foreach ($this->show as $item) {
+            // debug('item', $item);
+            switch ($item) {
+                case 'facebook' :
+                    if (get_web_ressource()) {
+                        $facebook_feed = $facebook->get_page_feed(161424603891516);
+                        $template->clear();
+                        $template->set('feed', $facebook_feed);
+                        $content_facebook = $template->fetch('template/accueil_sidebar_facebook.php');
+                    }
             }
-            // debug('news_facebook', $news_facebook);
-            // debug('news', $news);
         }
+        // debug('news_facebook', $news_facebook);
+        // debug('news', $news);
         
         $template->clear();
-        $template->set('facebook', $news_facebook);
+        $template->set('facebook', $content_facebook);
         $template->set('news', array());
         $content_news = $template->fetch('template/accueil_news.php');
 

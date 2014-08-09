@@ -9,7 +9,6 @@ accueil :
                 - facebook
                 - news
                 - magazine
-
 sortons :
     navigation : Sortons du nucléaire
     children :

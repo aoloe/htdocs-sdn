@@ -1,8 +1,12 @@
 <?php
 /**
  * get the feed from a facebook page
+ * - cache the result for one hour
+ * - cleanup the links
+ * - cleanup the title and remove it from the content
+ * - move the image to the beginning of the post
  *
- * heavily inspired by https://gist.github.com/banago/3864515
+ * inspired by https://gist.github.com/banago/3864515
  */
 
 use function Aoloe\debug as debug;
@@ -45,11 +49,8 @@ class Facebook {
         return count(libxml_get_errors())==0;
     }
 
-    public function get_page_feed( $page_id, $no = 5 ) {
-        $result = array();
-        // URL to the Facebook page's RSS feed.
-        $rss_url = 'http://www.facebook.com/feeds/page.php?id=' . $page_id . '&format=rss20';
-        
+    public function get_feed($url) {
+        $result = null;
         $curl = curl_init();
      
         // You need to query the feed as a browser.
@@ -62,7 +63,7 @@ class Facebook {
         $header[] = "Accept-Language: en-us,en;q=0.5";
         $header[] = "Pragma: "; // browsers keep this blank.
      
-        curl_setopt($curl, CURLOPT_URL, $rss_url);
+        curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_USERAGENT, 'Mozilla');
         curl_setopt($curl, CURLOPT_HTTPHEADER, $header);
         curl_setopt($curl, CURLOPT_REFERER, '');
@@ -76,34 +77,52 @@ class Facebook {
         // debug('raw_xml', $raw_xml);
         
         $xml = simplexml_load_string( $raw_xml );
-      
-        $i = 1;
-        foreach( $xml->channel->item as $item ){
-            $item = array(
-                'title' => trim(str_replace("\n", '<br /> ', $this->get_cleaned_entities($item->title->__toString()))),
-                'url' => $item->link->__toString(),
-                'date' => $item->pubDate->__toString(),
-                'author' => $this->get_cleaned_entities($item->author->__toString()),
-                'content' => trim($this->get_cleaned_entities($this->get_cleaned_description($item->description->__toString()))),
-            );
-            if (($break = strpos($item['title'], '<br /> <br />')) !== false) {
-                // debug('break', $break);
-                $item['title'] = substr($item['title'], 0, $break);
-                $item['content'] = substr($item['content'], $break + 14);
-            } elseif (substr($item['title'], -3) == '...') {
-                $item['title'] = '';
-            } else {
-                $item['content'] = substr($item['content'], strlen($item['title']) + 11);
-            }
-            $item['content'] = preg_replace('/(.+?)(<a [^>]+?'.'><img[^>]+?'.'><\/a>)/', '\2<br />\1', $item['content']);
-            // debug('item', $item);
+        return $result;
+    }
 
-            // if ($this->is_valid_html('<?xml version="1.0" encoding="utf-8"?'.'><div>'.$item['content'].'</div>')) {
-                $result[] = $item;
-                if( $i == $no ) break;
-                $i++;
-            // }
-            
+    public function get_page_feed( $page_id, $no = 5 ) {
+        $result = array();
+
+        $cache = new Aoloe\Cache();
+        $cache->set_file('facebook_news.json');
+        $cache->set_timeout(36000); // 60*60 = 1 hour
+        $result = $cache->get();
+
+        // debug('news_facebook', $news_facebook);
+        if (is_null($result)) {
+            // URL to the Facebook page's RSS feed.
+            $xml = $this->get_feed('http://www.facebook.com/feeds/page.php?id=' . $page_id . '&format=rss20');
+
+            $i = 1;
+            foreach( $xml->channel->item as $item ){
+                $item = array(
+                    'title' => trim(str_replace("\n", '<br /> ', $this->get_cleaned_entities($item->title->__toString()))),
+                    'url' => $item->link->__toString(),
+                    'date' => $item->pubDate->__toString(),
+                    'author' => $this->get_cleaned_entities($item->author->__toString()),
+                    'content' => trim($this->get_cleaned_entities($this->get_cleaned_description($item->description->__toString()))),
+                );
+                if (($break = strpos($item['title'], '<br /> <br />')) !== false) {
+                    // debug('break', $break);
+                    $item['title'] = substr($item['title'], 0, $break);
+                    $item['content'] = substr($item['content'], $break + 14);
+                } elseif (substr($item['title'], -3) == '...') {
+                    $item['title'] = '';
+                } else {
+                    $item['content'] = substr($item['content'], strlen($item['title']) + 11);
+                }
+
+                $item['content'] = preg_replace('/(.+?)(<a [^>]+?'.'><img[^>]+?'.'><\/a>)/', '\2<br />\1', $item['content']);
+                // debug('item', $item);
+
+                // if ($this->is_valid_html('<?xml version="1.0" encoding="utf-8"?'.'><div>'.$item['content'].'</div>')) {
+                    $result[] = $item;
+                    if( $i == $no ) break;
+                    $i++;
+                // }
+                
+                $cache->put($result);
+            }
         }
         return $result;
     }
