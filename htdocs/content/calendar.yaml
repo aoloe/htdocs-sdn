@@ -1,0 +1,20 @@
+- start : 20140810
+  end : 20140811
+  title : test of the website
+  url : actualite/nouvelles/20140811_test
+  content : |
+    this is the content of the page
+    [with a link](test/blah)
+
+    and an ![image](url.png)
+- start : 20140808
+  title : test of the old website
+  content : |
+    this is the content of the page
+    [with a link](test/blah)
+
+    and an ![image](url.png)
+- start : 20140809
+  end : 20140810
+  title : test of the website
+  url : actualite/nouvelles/20140811_test
