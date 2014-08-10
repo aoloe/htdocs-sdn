@@ -318,6 +318,12 @@ div.facebook_feed_item {
     border-bottom:none;
 }
 
+/* calendar page */
+
+div.calendar_item {
+    padding-bottom:10px;
+}
+
 </style>
 <div id="header">
 <p id="header_title"><a href="/">Sortir du Nucléaire</a></p>

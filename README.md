@@ -19,13 +19,16 @@ Website de l'association Suisse Sortir du nucléaire
 # Reference
 
 - rename the lightSlider's image and modify `lightSlider.css` according to it.
+- upload manager:
+  - https://github.com/daverogers/jQueryFileTree/
+  - http://toopay.github.io/bootstrap-markdown/ (with custom buttons...)
 
 # Todo
 
+- catch wrong urls (404)
+- check what to do with neuchatel (and the other "small sites")
 - add a module for the most recent update
 - find out how to show items of a module (news entries)
-- find out how to pass the path to root to each module, library and template that needs it
-- find out how to collect css, js, and fonts links
 - create a 303 redirect for each old id=
 - add the tests for the Markdown local url replacements
       test

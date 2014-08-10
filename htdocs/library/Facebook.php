@@ -9,7 +9,7 @@
  * inspired by https://gist.github.com/banago/3864515
  */
 
-use function Aoloe\debug as debug;
+// use function Aoloe\debug as debug;
 
 class Facebook {
     private function get_cleaned_description($description) {

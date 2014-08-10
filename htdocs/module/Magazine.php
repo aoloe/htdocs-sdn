@@ -1,6 +1,6 @@
 <?php
 
-use function Aoloe\debug as debug;
+// use function Aoloe\debug as debug;
 
 class Magazine extends Module_abstract {
     private $issue_file = 'content/magazine.yaml';

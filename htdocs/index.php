@@ -1,8 +1,11 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
 require('vendor/autoload.php');
 
 new Aoloe\Debug();
-use function Aoloe\debug as debug;
+// use function Aoloe\debug as debug;
 
 // debug('_SERVER', $_SERVER);
 
@@ -87,7 +90,7 @@ if (array_key_exists('alias', $page)) {
 }
 if (isset($page_module)) {
     include_once('library/Module_abstract.php');
-    $page_content = "<p>Module ".$page_module['name']." is not valid</p>\n";
+    $page_content = "<p>Module ".$page_module['name']." is not valid.</p>\n";
     $module_file = 'module/'.$page_module['name'].'.php';
     if (file_exists($module_file)) {
         include_once($module_file);

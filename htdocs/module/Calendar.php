@@ -7,6 +7,7 @@
  * content/calendar.yaml format (* optional fields):
  *  - start : 20140810
  *    end* : 20140811
+ *    date* : Samedi 11 octobre
  *    title : test of the website
  *    url* : actualite/nouvelles/20140811_test
  *    content* : |
@@ -33,6 +34,8 @@ class Calendar extends Module_abstract {
         include_once('library/Markdown.php');
         $markdown = new Aoloe\Markdown();
 
+        $template = new Aoloe\Template();
+
         $calendar_future = array();
         $calendar_past = array();
         $now = date('Ymd');
@@ -47,8 +50,9 @@ class Calendar extends Module_abstract {
             $calendar_item = array (
                 'start' => date("d.m.Y", strtotime($item['start'])),
                 'end' => array_key_exists('end', $item) ? date("d.m.Y", strtotime($item['end'])) : '',
+                'date' => array_key_exists('date', $item) ? $item['date'] : '',
                 'title' => $item['title'],
-                'url' => array_key_exists('url', $item) ? $item['url'] : null,
+                'url' => array_key_exists('url', $item) ? $this->site->get_path_relative($item['url']) : null,
                 'content' => $calendar_content,
             );
             $unpublish = time() - strtotime(array_key_exists('end', $item) ? $item['end'] : $item['start']);
@@ -64,12 +68,25 @@ class Calendar extends Module_abstract {
         usort($calendar_past, function($a, $b) {$a['start'] >= $b['start'];});
         // debug('calendar_future', $calendar_future);
         // debug('calendar_past', $calendar_past);
-
-        $template = new Aoloe\Template();
+        
         $template->clear();
         $template->set('path', $this->site->get_path_relative());
-        $template->set('calendar_future', $calendar_future);
-        $template->set('calendar_past', $calendar_past);
+        $template->set_template('template/calendar_item.php');
+        $content_future = array();
+        foreach ($calendar_future as $item) {
+            $template->set('item', $item);
+            $content_future[] = $template->fetch();
+        }
+        $content_past = array();
+        foreach ($calendar_past as $item) {
+            $template->set('item', $item);
+            $content_past[] = $template->fetch();
+        }
+
+        $template->clear();
+        $template->set('path', $this->site->get_path_relative());
+        $template->set('calendar_future', $content_future);
+        $template->set('calendar_past', $content_past);
         $result = $template->fetch('template/calendar.php');
         return $result;
     }

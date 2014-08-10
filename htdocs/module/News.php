@@ -1,6 +1,6 @@
 <?php
 
-use function Aoloe\debug as debug;
+// use function Aoloe\debug as debug;
 
 class News extends Module_abstract {
     private $news_path = 'content/news/';

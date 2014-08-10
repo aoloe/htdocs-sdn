@@ -1,5 +1,5 @@
 <?php
-use function Aoloe\debug as debug;
+// use function Aoloe\debug as debug;
 
 class Accueil extends Module_abstract {
     public function __construct() {
