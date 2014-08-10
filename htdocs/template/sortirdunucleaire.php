@@ -9,25 +9,41 @@
 
 <?php if (isset($favicon)) : ?>
 <link rel="shortcut icon" href="<?= $favicon ?>" />
-<?php endif; ?>
+<?php endif;
+?>
 <?php if (isset($fonts)) : foreach ($fonts as $value) : ?>
 <link rel="stylesheet" href="<?= $value ?>" type="text/css" />
-<?php endforeach; endif; ?>
+<?php endforeach;
+endif;
+?>
 
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 <?php if (isset($css)) : foreach ($css as $value) : ?>
 <link rel="stylesheet" href="<?= is_array($value) ? $value['href'] : $value ?>" type="text/css" media="<?= is_array($value) && array_key_exists('media', $value) ? $value['media'] : 'all' ?>" />
-<?php endforeach; endif; ?>
+<?php endforeach;
+endif;
+?>
 
 <?php if (isset($js)) : foreach ($js as $value) : ?>
 <script type="text/javascript" src="<?= $value ?>"></script>
-<?php endforeach; endif; ?>
+<?php endforeach;
+endif;
+?>
 
 
 </head>
 <body>
 <style>
+
+h1,
+h1 a,
+h1 a:visited
+{
+    font-weight:normal;
+    color:#fbb93d;
+    text-decoration:none;
+}
 
 h2,
 h2 a,
@@ -35,6 +51,15 @@ h2 a:visited
 {
     font-weight:normal;
     color:#fbb93d;
+    text-decoration:none;
+}
+
+h3,
+h3 a,
+h3 a:visited
+{
+    color:black;
+    font-weight:normal;
     text-decoration:none;
 }
 
@@ -66,9 +91,21 @@ li:before {
     text-align:center;
     color:#999;
 }
+#header a,
+#header a:visited
+{
+    text-decoration:none;
+    color:#999;
+}
 /*
-#header_line {font-size:20px;border-top: 1px solid black; text-align:center;}
-#header_line img { position: relative; top: -30px; padding: 10px; background: white; margin-top:0px; padding-top:0px;}
+#header_line {font-size:20px;border-top: 1px solid black;
+text-align:center;}
+#header_line img { position: relative;
+top: -30px;
+padding: 10px;
+background: white;
+margin-top:0px;
+padding-top:0px;}
 */
 
 #header_line {
@@ -83,7 +120,8 @@ li:before {
     margin-bottom: 25px;
 
     /*
-    height: .6em; 
+    height: .6em;
+
     margin-bottom: 1.4em;
     */
     padding-top:0px;
@@ -98,7 +136,8 @@ li:before {
 /* additional padding */
 #header_line:before,
 #header_line:after{
-    content: '\0000a0 \0000a0'; 
+    content: '\0000a0 \0000a0';
+
 }
 
 #header_line img {
@@ -179,7 +218,8 @@ li:before {
 }
 
 .content {
-    /* background-color:pink; */
+    /* background-color:pink;
+*/
 }
 
 .grid-pad {
@@ -187,28 +227,43 @@ li:before {
     padding-left: 0px;
 }
 
-.news {
+.sidebar {
 }
 
-.news_slider {
+.sidebar h2 {
+    font-size:1.5em;
+    border-bottom:1px solid black;
+}
+
+.sidebar_facebook {
     position:relative;
     padding-bottom:20px;
 }
-
-.news h2 {
-    font-size:1em;
+.sidebar_facebook h2 {
+    margin-bottom:0px;
 }
 
-#facebook_news h2,
-#facebook_news h2 a,
-#facebook_news h2 a:visited
+.sidebar_facebook h2 img {
+    position:absolute;
+    right:0px;
+    top:-4px;
+}
+
+#facebook_feed {
+    margin-top:0px;
+}
+
+#facebook_feed h3,
+#facebook_feed h3 a,
+#facebook_feed h3 a:visited
 {
     color:#3b579d;
+    font-size:1em;
 }
 
 /* anyslider */
 
-#slider {
+#facebook_feed {
     -ms-touch-action: none;
     overflow: auto;
     position: relative;
@@ -224,7 +279,8 @@ li:before {
     */
     max-width:100px;
     position: absolute;
-    /* width: 100px; */
+    /* width: 100px;
+*/
     z-index: 1;
 }
 
@@ -243,10 +299,26 @@ a.as-active, .as-nav a:hover {
     background-position: 0 -10px;
 }
 
+/* /anyslider */
+
+div.facebook_feed_item {
+    overflow:hidden;
+    height:300px;
+    overflow-y:auto;
+    border-bottom:1px solid black;
+}
+
+/* news page */
+
+.news_sidebar h2 {
+    font-size:1.2em;
+    border-bottom:none;
+}
+
 </style>
 <div id="header">
-<p id="header_title">Sortir du Nucléaire</p>
-<p id="header_line"><img src="<?= $path ?>/images/sortir_du_nucleaire.png"></p>
+<p id="header_title"><a href="/">Sortir du Nucléaire</a></p>
+<p id="header_line"><a href="/"><img src="<?= $path ?>/images/sortir_du_nucleaire.png"></a></p>
 </div>
 
 <div id ="navigation">

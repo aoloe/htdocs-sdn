@@ -5,10 +5,11 @@ accueil :
     module :
         name : Accueil
         parameter :
-            show :
+            sidebar :
                 - facebook
                 - news
                 - magazine
+                - last_changes
 sortons :
     navigation : Sortons du nucléaire
     children :
@@ -69,11 +70,15 @@ sortons :
                             navigation : La géothermie
 actualite :
     navigation : Actualités
+    alias : actualite/nouvelles
     children :
         nouvelles :
             navigation : Nouvelles
+            module :
+                name : News
         journal :
             navigation : Journal
+            module : Magazine
         agenda :
             navigation : Agenda
             alias : association/agenda
@@ -104,4 +109,8 @@ association :
             navigation : Agenda
         soutenir :
             navigation : Soutenir
+contact :
+    navigation : Contact
+liens :
+    navigation : Liens
 page_404 :

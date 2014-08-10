@@ -5,8 +5,10 @@
         </div>
     </div>
     <div class="col-4-12">
+        <?php foreach ($sidebar as $item) : ?>
         <div class="content">
-            <p><?= $news ?></p>
+            <p><?= $item ?></p>
         </div>
+        <?php endforeach ?>
     </div>
 </div>

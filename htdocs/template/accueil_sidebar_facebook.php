@@ -1,14 +1,14 @@
-<div id="facebook_news" class="news news_slider">
+<div class="sidebar sidebar_facebook">
 <!--
 <h2><a href="https://www.facebook.com/pages/Sortir-du-Nucléaire-Suisse-Romande/161424603891516">Actuel sur Facebook</a></h2>
 -->
-<h2 style="padding-bottom:0px; margin-bottom:0px;"><a href="https://www.facebook.com/pages/Sortir-du-Nucléaire-Suisse-Romande/161424603891516"><img src="images/facebook_f.png"></a></h2>
+<h2><a href="https://www.facebook.com/pages/Sortir-du-Nucléaire-Suisse-Romande/161424603891516">Facebook<img src="images/facebook_f.png"></a></h2>
 <?php if (!empty($feed)) : ?>
-<div id="slider" style="margin-top:0px;">
+<div  id="facebook_feed">
 <?php foreach ($feed as $item) : ?>
-    <div style="overflow:hidden;  border-top:1px solid black; border-bottom:1px solid black; height:300px; overflow-y:auto;">
+    <div class="facebook_feed_item">
         <?php if (!empty($item['title'])) : ?>
-        <h2><a href="<?= $item['url'] ?>"><?= $item['title'] ?></a></h2>
+        <h3><a href="<?= $item['url'] ?>"><?= $item['title'] ?></a></h3>
         <?php endif; ?>
         <p><?= $item['content'] ?></p>
         <p><a href="<?= $item['url'] ?>">Lire sur Facebook &raquo;</a></p>
@@ -21,7 +21,7 @@
 </div>
 <?php if (!empty($feed)) : ?>
 <script>
-$("#slider").AnySlider({
+$("#facebook_feed").AnySlider({
     bullets: true,
     showControls: false
 });

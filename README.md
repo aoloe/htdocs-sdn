@@ -4,7 +4,7 @@ Website de l'association Suisse Sortir du nucléaire
 
 # Notes
 
-- cross reference anchors in markdown:k
+- cross reference anchors in markdownk:
   - <http://stackoverflow.com/questions/5319754/cross-reference-named-anchor-in-markdown>
   - <https://michelf.ca/projects/php-markdown/extra/>
 - facebook feed:
@@ -22,5 +22,30 @@ Website de l'association Suisse Sortir du nucléaire
 
 # Todo
 
+- add a module for the most recent update
+- find out how to show items of a module (news entries)
+- find out how to pass the path to root to each module, library and template that needs it
+- find out how to collect css, js, and fonts links
 - create a 303 redirect for each old id=
-- cache the facebook results for 1 hour (using a jquery file?)
+- add the tests for the Markdown local url replacements
+      test
+
+      <ici> et <http://labas.com>
+
+      [test ici](ici) [test ici 2](ici_2)
+
+      ![test ici](ici)
+
+      [test la](http://labas.com)
+
+      [tests la](https://labas.com)
+
+      [test@test.com](mailto:test@test.com)
+
+      ![tests la](https://labas.com)
+ 
+
+## Content
+
+- add the way to get the magazine on the magazine's page sidebar.
+- when getting into a section always show the first subsection (i could create a module showing a sidebar with the list of subsections, too)

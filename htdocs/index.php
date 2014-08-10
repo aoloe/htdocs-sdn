@@ -4,30 +4,14 @@ require('vendor/autoload.php');
 new Aoloe\Debug();
 use function Aoloe\debug as debug;
 
-use \Michelf\MarkdownExtra;
-
 // debug('_SERVER', $_SERVER);
-
-/**
- * if a resources are passed as paremeters return the matching one, otherwise return true if the
- * web resources are available
- * TODO: put this in a library
- */
-function get_web_ressource($web = null, $local = null) {
-    // debug('host', );
-    if (isset($web)) {
-        return  gethostbyname('ideale.ch') === 'ideale.ch' ? $local : $web;
-    } else {
-        return  gethostbyname('ideale.ch') !== 'ideale.ch';
-    }
-}
-
-$path = str_repeat('../', substr_count($_SERVER['REQUEST_URI'], '/', 1));
-// debug('path', $path);
 
 $site_structure = file_get_contents('content/structure.yaml');
 $site_structure = Spyc::YAMLLoadString($site_structure);
 // debug('site_structure', $site_structure);
+
+include_once('library/Site.php');
+$site = new Site();
 
 if (array_key_exists('page', $_REQUEST)) {
     $page = $_REQUEST['page'];
@@ -40,6 +24,7 @@ if ($request_url == '/') {
     $request_url = '/accueil';
 }
 
+// TODO: eventually move to Site
 function get_current_page($url_segment, $site_structure) {
     $result = null;
     $url = reset($url_segment);
@@ -79,10 +64,6 @@ if (isset($page)) {
 
 // debug('page_url', $page_url);
 
-$page_css = array();
-$page_fonts = array();
-$page_js = array();
-
 include('library/Navigation.php');
 $navigation = new Navigation();
 $navigation->set_site_structure($site_structure);
@@ -96,13 +77,17 @@ $content_navigation = $navigation->get_rendered();
 
 // debug('page', $page);
 // debug('page_url', $page_url);
+// TODO: put a Module.php on github that would also contain Module_abstract ?
 $page_module = get_current_module($page);
 if (isset($page_module)) {
+    include_once('library/Module_abstract.php');
+    $page_content = "<p>Module ".$page_module['name']." is not valid</p>\n";
     $module_file = 'module/'.$page_module['name'].'.php';
     if (file_exists($module_file)) {
         include_once($module_file);
         if (class_exists($page_module['name'])) {
             $module = new $page_module['name']();
+            $module->set_site($site);
             foreach ($page_module['parameter'] as $key => $value) {
                 if (method_exists(get_class($module), 'set_'.$key)) {
                     // debug('key', $key);
@@ -110,9 +95,6 @@ if (isset($page_module)) {
                     $module->{'set_'.$key}($value);
                 }
             }
-            $page_css += $module->get_css();
-            $page_js += $module->get_js();
-            $page_fonts += $module->get_fonts();
             $page_content = $module->get_content();
         }
     }
@@ -122,19 +104,18 @@ if (isset($page_module)) {
 
 $template = new Aoloe\Template();
 
-$page_css[] = $path.'css/simplegrid/simplegrid.css';
+$site->add_css('css/simplegrid/simplegrid.css');
 
-// $page_fonts[] = $path.'css/font-awesome.css';
-$page_fonts[] = get_web_ressource('http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300', 'css/font-robotcondensed.css');
+$site->add_font('css/font-robotcondensed.css', 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300');
 
 $template->clear();
 $template->set('language', 'fr');
 $template->set('title_site', 'Sortir du Nucléaire');
 $template->set('favicon', 'images/favicon.png');
-$template->set('path', $path);
-$template->set('fonts', $page_fonts);
-$template->set('js', $page_js);
-$template->set('css', $page_css);
+$template->set('path', $site->get_path_relative());
+$template->set('fonts', $site->get_font());
+$template->set('js', $site->get_js());
+$template->set('css', $site->get_css());
 $template->set('navigation', $content_navigation);
 $template->set('content', $page_content);
 echo $template->fetch('template/sortirdunucleaire.php');

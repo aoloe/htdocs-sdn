@@ -76,7 +76,7 @@ class Facebook {
         curl_close($curl); // close the connection
         // debug('raw_xml', $raw_xml);
         
-        $xml = simplexml_load_string( $raw_xml );
+        $result = simplexml_load_string( $raw_xml );
         return $result;
     }
 
@@ -91,37 +91,41 @@ class Facebook {
         // debug('news_facebook', $news_facebook);
         if (is_null($result)) {
             // URL to the Facebook page's RSS feed.
+            // debug('page_id', $page_id);
             $xml = $this->get_feed('http://www.facebook.com/feeds/page.php?id=' . $page_id . '&format=rss20');
+            // debug('xml', $xml);
 
             $i = 1;
-            foreach( $xml->channel->item as $item ){
-                $item = array(
-                    'title' => trim(str_replace("\n", '<br /> ', $this->get_cleaned_entities($item->title->__toString()))),
-                    'url' => $item->link->__toString(),
-                    'date' => $item->pubDate->__toString(),
-                    'author' => $this->get_cleaned_entities($item->author->__toString()),
-                    'content' => trim($this->get_cleaned_entities($this->get_cleaned_description($item->description->__toString()))),
-                );
-                if (($break = strpos($item['title'], '<br /> <br />')) !== false) {
-                    // debug('break', $break);
-                    $item['title'] = substr($item['title'], 0, $break);
-                    $item['content'] = substr($item['content'], $break + 14);
-                } elseif (substr($item['title'], -3) == '...') {
-                    $item['title'] = '';
-                } else {
-                    $item['content'] = substr($item['content'], strlen($item['title']) + 11);
+            if (isset($xml)) {
+                foreach( $xml->channel->item as $item ) {
+                    $item = array(
+                        'title' => trim(str_replace("\n", '<br /> ', $this->get_cleaned_entities($item->title->__toString()))),
+                        'url' => $item->link->__toString(),
+                        'date' => $item->pubDate->__toString(),
+                        'author' => $this->get_cleaned_entities($item->author->__toString()),
+                        'content' => trim($this->get_cleaned_entities($this->get_cleaned_description($item->description->__toString()))),
+                    );
+                    if (($break = strpos($item['title'], '<br /> <br />')) !== false) {
+                        // debug('break', $break);
+                        $item['title'] = substr($item['title'], 0, $break);
+                        $item['content'] = substr($item['content'], $break + 14);
+                    } elseif (substr($item['title'], -3) == '...') {
+                        $item['title'] = '';
+                    } else {
+                        $item['content'] = substr($item['content'], strlen($item['title']) + 11);
+                    }
+
+                    $item['content'] = preg_replace('/(.+?)(<a [^>]+?'.'><img[^>]+?'.'><\/a>)/', '\2<br />\1', $item['content']);
+                    // debug('item', $item);
+
+                    // if ($this->is_valid_html('<?xml version="1.0" encoding="utf-8"?'.'><div>'.$item['content'].'</div>')) {
+                        $result[] = $item;
+                        if( $i == $no ) break;
+                        $i++;
+                    // }
+                    
+                    $cache->put($result);
                 }
-
-                $item['content'] = preg_replace('/(.+?)(<a [^>]+?'.'><img[^>]+?'.'><\/a>)/', '\2<br />\1', $item['content']);
-                // debug('item', $item);
-
-                // if ($this->is_valid_html('<?xml version="1.0" encoding="utf-8"?'.'><div>'.$item['content'].'</div>')) {
-                    $result[] = $item;
-                    if( $i == $no ) break;
-                    $i++;
-                // }
-                
-                $cache->put($result);
             }
         }
         return $result;
