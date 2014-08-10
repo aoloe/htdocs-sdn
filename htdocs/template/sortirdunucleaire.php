@@ -174,8 +174,6 @@ padding-top:0px;}
 
 #navigation ul li {
     display:inline;
-    padding-left:5px;
-    padding-right:5px;
 }
 
 #navigation li:before {
@@ -184,10 +182,8 @@ padding-top:0px;}
 
 #navigation ul li a {
     text-decoration:none;
-}
-
-#navigation ul li.active {
-    background-color:black;
+    padding-left:5px;
+    padding-right:5px;
 }
 
 #navigation ul li:hover {
@@ -200,13 +196,20 @@ padding-top:0px;}
     color:black;
 }
 
-#navigation ul li.active
+#navigation ul li.active a,
+#navigation ul li.active a:visited
 {
+    background-color:black;
     color:white;
 }
 
 #navigation ul li:hover a,
 #navigation ul li:hover a:visited
+{
+    color:white;
+}
+
+#navigation ul li.active
 {
     color:white;
 }

@@ -45,13 +45,9 @@ class Navigation {
         $result .= "<ul>\n";
         $children = array();
         foreach ($navigation as $item) {
-            if ($item['active']) {
-                $result .= "<li class=\"active\">".$item['label']."</li>\n";
-            } else {
-                $result .= "<li>";
-                $result .= '<a href="/'.$item['url'].'">'.$item['label'].'</a>';
-                $result .= "</li>\n";
-            }
+            $result .= '<li'.($item['active'] ? ' class="active"' : '').'>';
+            $result .= '<a href="/'.$item['url'].'">'.$item['label'].'</a>';
+            $result .= "</li>\n";
             if (!empty($item['children'])) {
                 $children = $item['children'];
             }

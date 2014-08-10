@@ -107,6 +107,7 @@ association :
             navigation : Statuts
         agenda :
             navigation : Agenda
+            module : Calendar
         soutenir :
             navigation : Soutenir
 contact :

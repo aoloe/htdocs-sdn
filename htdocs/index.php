@@ -13,9 +13,12 @@ $site_structure = Spyc::YAMLLoadString($site_structure);
 include_once('library/Site.php');
 $site = new Site();
 
+/*
+// for now, we are ignoring the work done by .htaccess
 if (array_key_exists('page', $_REQUEST)) {
     $page = $_REQUEST['page'];
 }
+*/
 
 $request_url = $_SERVER['REQUEST_URI'];
 // debug('request_url', $request_url);
@@ -77,8 +80,11 @@ $content_navigation = $navigation->get_rendered();
 
 // debug('page', $page);
 // debug('page_url', $page_url);
-// TODO: put a Module.php on github that would also contain Module_abstract ?
-$page_module = get_current_module($page);
+if (array_key_exists('alias', $page)) {
+    $page_module = get_current_module($page = get_current_page(explode('/', $page['alias']), $site_structure));
+} else {
+    $page_module = get_current_module($page);
+}
 if (isset($page_module)) {
     include_once('library/Module_abstract.php');
     $page_content = "<p>Module ".$page_module['name']." is not valid</p>\n";
