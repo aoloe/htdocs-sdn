@@ -9,6 +9,9 @@
  * - if no file name is defined
  * - if the file has not been found
  * otherwise, parse() will return null
+ * 
+ * TODO: make a patch for MarkdownExtra that implements three callbacks for urls, imgs and a as done here
+ * (<https://github.com/michelf/php-markdown/commit/a8c56ecd5e9e7c7d37d00c814c864c3bc8b32694>)
  */
 
 namespace Aoloe;
