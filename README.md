@@ -1,5 +1,71 @@
 # Sortir du nucléaire
 
+# Concept
+
+Le site de sortie du nucléaire 
+
+- informe sur le nucléaire
+- présente l'association "Sortir du nucléaire"
+- publie des annonces d'activités (conférences, AG, ...)
+- aide à suivre l'actualité sur le nucléaire
+
+## La page d'accueil
+
+La page d'accueil:
+
+- donne envie de consulter les informations sur le nucléaire;
+- rend clair que derriere le site il y a l'association "Sortir du nucléaire";
+- informe sur les activités de l'association;
+- présente quelque nouvelles d'actualité.
+
+### La sidebar
+
+Dans la sidebar nous avons les éléments suivants:
+
+- Les _nouvelles_: affiche le titre de la dernière nouvelle (dans la section actualite/nouvelles) ou, si il existe, une "accroche" (teaser) préparée exprès pour la/les nouvelles courrantes.
+- Un slider avec les cinque derniers posts sur la _page Facebook_
+- Un lien vers la dernière _mise à jour_ (n'est pas générée automatiquement; sert à mettre en évidence les changements dans la partie informative du site)
+- Lien vers la dernière édition du _journal_
+
+
+## La navigation
+
+La navigation doit mettre en valeur les thèmes principaux du site.
+
+Il y a une navigation principale par desssous le bandeau avec le logo.
+
+Dans certains cas, nous pouvons avoir une navigation dans la barre de droite.
+
+
+### "Top" Navigation
+
+À gauche:
+
+- lien vers la page d'accueil
+- prochain évenments dans l'agenda ou, si aucun, lien vers la dernière édition du journal
+
+À droite:
+
+- lien vers le formulaire de contact
+
+###  Navigation principale
+
+
+- déplacer "contact" sous "association" (le contenu de contact
+  concernant uniquement l'asso)
+- déplacer "liens" dans chaque section pour laquelle nous avons des
+  liens (nous pourrons ajouter sur chaque page de lien un lien vers les
+  autres pages de lien, si nécessaire...)
+- déplacer "presse" sous actualité
+- et après avoir fait de la place à la racine de la navigation,
+  déplacer les sous-menus de "sortons du nucléaire" à la racine (et
+  enlever "sortons du nucléaire).
+  j'ai aussi abrégé les titres dans la navigation, on reprendra les
+  titres complets sur la page même.
+- enfin, je me pose la question si "accueil" est encore nécessaire. je
+  vais essayer de suivre la solution proposée par http://lematin.ch :
+  une ligne de texte par dessus le bandeau principal...)
+
 Website de l'association Suisse Sortir du nucléaire
 
 # Notes

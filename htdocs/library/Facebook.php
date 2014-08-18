@@ -65,6 +65,7 @@ class Facebook {
      
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_USERAGENT, 'Mozilla');
+        // curl_setopt($curl, CURLOPT_USERAGENT, 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36');
         curl_setopt($curl, CURLOPT_HTTPHEADER, $header);
         curl_setopt($curl, CURLOPT_REFERER, '');
         curl_setopt($curl, CURLOPT_ENCODING, 'gzip,deflate');
@@ -92,7 +93,9 @@ class Facebook {
         if (is_null($result)) {
             // URL to the Facebook page's RSS feed.
             // debug('page_id', $page_id);
-            $xml = $this->get_feed('http://www.facebook.com/feeds/page.php?id=' . $page_id . '&format=rss20');
+            $url = 'https://www.facebook.com/feeds/page.php?id=' . $page_id . '&format=rss20';
+            // debug('url', $url);
+            $xml = $this->get_feed($url);
             // debug('xml', $xml);
 
             $i = 1;

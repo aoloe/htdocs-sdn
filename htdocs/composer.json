@@ -11,6 +11,10 @@
         },
         {
             "type": "vcs",
+            "url":  "git@github.com:aoloe/php-cookie.git"
+        },
+        {
+            "type": "vcs",
             "url":  "git@github.com:aoloe/php-cache.git"
         }
     ],
@@ -19,6 +23,7 @@
         "michelf/php-markdown": "1.4.1",
         "aoloe/php-debug" : "dev-master",
         "aoloe/php-template" : "dev-master",
+        "aoloe/php-cookie" : "dev-master",
         "aoloe/php-cache" : "dev-master"
     },
     "authors" : [

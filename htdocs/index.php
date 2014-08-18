@@ -8,8 +8,25 @@ new Aoloe\Debug();
 // use function Aoloe\debug as debug;
 
 // debug('_SERVER', $_SERVER);
+// debug('_REQUEST', $_REQUEST);
 
-$site_structure = file_get_contents('content/structure.yaml');
+$structure_test = false;
+$cookie = new Aoloe\Cookie();
+if (array_key_exists('nav', $_REQUEST)) {
+    if ($_REQUEST['nav'] == 'test') {
+        $structure_test = true;
+        $cookie->set('navigation', 'test');
+    } else {
+        $cookie->delete('navigation');
+        $structure_test = false;
+    }
+} else {
+    $structure_test = $cookie->is('navigation');
+}
+
+
+// debug('structure_test', $structure_test);
+$site_structure = ($structure_test ?  file_get_contents('content/re-structure.yaml') : file_get_contents('content/structure.yaml'));
 $site_structure = Spyc::YAMLLoadString($site_structure);
 // debug('site_structure', $site_structure);
 
@@ -24,6 +41,7 @@ if (array_key_exists('page', $_REQUEST)) {
 */
 
 $request_url = $_SERVER['REQUEST_URI'];
+$request_url = parse_url($request_url, PHP_URL_PATH);
 // debug('request_url', $request_url);
 
 if ($request_url == '/') {
@@ -115,7 +133,16 @@ $template = new Aoloe\Template();
 
 $site->add_css('css/simplegrid/simplegrid.css');
 
-$site->add_font('css/font-robotcondensed.css', 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300');
+$site->add_font('css/font-robotocondensed.css', 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300');
+
+$header_navigation = '';
+
+$content_navigation_header = '';
+if ($structure_test) {
+    include_once('library/Navigation_header.php');
+    $navigation_header = new Navigation_header();
+    $content_navigation_header = $navigation_header->get_rendered();
+}
 
 $template->clear();
 $template->set('language', 'fr');
@@ -125,6 +152,7 @@ $template->set('path', $site->get_path_relative());
 $template->set('fonts', $site->get_font());
 $template->set('js', $site->get_js());
 $template->set('css', $site->get_css());
+$template->set('header_navigation', $content_navigation_header);
 $template->set('navigation', $content_navigation);
 $template->set('content', $page_content);
 echo $template->fetch('template/sortirdunucleaire.php');

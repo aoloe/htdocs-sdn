@@ -108,6 +108,53 @@ margin-top:0px;
 padding-top:0px;}
 */
 
+#header_navigation {
+    margin-top:10px;
+    height:20px;
+    position:relative;
+}
+#header_navigation ul {
+    padding:0px;
+    margin:0px;
+    list-style: none;
+    text-indent: 0;
+}
+
+#header_navigation ul li {
+    display:inline;
+}
+
+#header_navigation li:before {
+    content: "";
+}
+
+#header_navigation ul li a {
+    text-decoration:none;
+}
+
+ul.navigation_header_left {
+    position:absolute;
+    left:0px;
+}
+
+ul.navigation_header_left li {
+    padding-right:10px;
+}
+
+ul.navigation_header_right {
+    position:absolute;
+    right:0px;
+}
+ul.navigation_header_right li {
+    padding-left:10px;
+}
+
+#header_navigation ul li a,
+#header_navigation ul li a:visited
+{
+    color:black;
+}
+
 #header_line {
     font: 1.2em sans-serif;
     text-align: center;
@@ -326,6 +373,7 @@ div.calendar_item {
 
 </style>
 <div id="header">
+<?= $header_navigation ?>
 <p id="header_title"><a href="/">Sortir du Nucléaire</a></p>
 <p id="header_line"><a href="/"><img src="<?= $path ?>/images/sortir_du_nucleaire.png"></a></p>
 </div>
