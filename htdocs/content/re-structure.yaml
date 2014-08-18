@@ -1,0 +1,114 @@
+accueil :
+    module :
+        name : Accueil
+        parameter :
+            sidebar :
+                - facebook
+                - news
+                - magazine
+                - last_changes
+nucleaire :
+    navigation : Le nucléaire
+    children :
+        suisse :
+            navigation : En Suisse
+        monde :
+            navigation : Dans le monde
+        historique :
+            navigation : Historique
+        fonctionnement :
+            navigation : Fonctionnement d'une centrale
+        liens :
+            navigation : Liens
+pourquoi :
+    navigation : Pourquoi en sortir?
+    children :
+        risques :
+            navigation : Les risques d'accidents
+            anchors :
+                humain : Défaillance humaine
+                sismique :  risques sismiques
+                technique : technique
+                terrorisme : Les risques de terrorisme
+                accidents : Les accidents nucléaires majeurs
+                ines : L'échelle de classement INES
+            comment : define anchors for toc as ## Header 2 ##      {#header2}
+        dechets :
+            navigation : Déchets nucléaires
+        sans-co2 :
+            navigation : La fable du nucléaire sans CO2
+        uranium :
+            navigation :  Les problèmes de l'uranium
+            anchors :
+                economie : L'économie minière de l'uranium dans le monde
+                dangers : Les dangers de l'uranium
+                inde : Brillantes affaires en terres indiennes
+        liens :
+            navigation : Liens
+comment :
+    navigation :
+        label : Comment en sortir?
+    children :
+        economiser :
+            navigation : Économiser l'énergie
+        efficacite :
+            navigation : Efficacité énergétique
+        renouvelable :
+            navigation : Énergies renouvelables
+            children :
+                hydraulique :
+                    navigation : L'énergie hydraulique
+                solaire :
+                    navigation : L'énergie solaire
+                eolien:
+                    navigation : L’éolien
+                biomasse :
+                    navigation : La biomasse
+                geothermie:
+                    navigation : La géothermie
+        liens :
+            navigation : Liens
+actualite :
+    navigation : Actualités
+    alias : actualite/nouvelles
+    children :
+        nouvelles :
+            navigation : Nouvelles
+            module :
+                name : News
+        journal :
+            navigation : Journal
+            module : Magazine
+        agenda :
+            navigation : Agenda
+            alias : association/agenda
+        communiques:
+            navigation : Communiqués de presse
+        dossiers:
+            navigation : Dossiers de presse
+        lettres :
+            navigation : Lettres de lecteur
+        archive :
+            navigation : Archive
+association :
+    navigation : Association
+    children :
+        qui :
+            navigation : Qui sommes-nous?
+        buts :
+            navigation : Buts
+        statuts :
+            navigation : Statuts
+        agenda :
+            navigation : Agenda
+            module : Calendar
+        journal :
+            navigation : Journal
+            alias : nouvelles/journal
+        soutenir :
+            navigation : Soutenir
+        liens :
+            navigation : Liens
+        contact :
+            navigation : Contact
+page_404 :
