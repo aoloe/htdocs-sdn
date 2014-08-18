@@ -1,0 +1,42 @@
+{
+    "name": "aoloe/htdocs-sdn",
+    "target" : {
+        "sdn_test" : {
+            "server": {
+                "type": "ncftpput",
+                "id": "sdn",
+                "base_path" : "test/"
+            }
+        }
+    },
+    "vendor" : [
+        {
+            "path" : "vendor/",
+            "type" : "composer",
+            "package" {
+                "package": {
+                    "composer" : [
+                    ],
+                    "aoloe/php-cache" : [
+                        "src/Cache.php"
+                    ],
+                    "aoloe/php-cookie" : [
+                        "src/Cookie.php"
+                    ],
+                    "aoloe/php-debug" : [
+                        "src/Debug.php"
+                    ],
+                    "aoloe/php-template" : [
+                        "src/Template.php"
+                    ],
+                    "mustangostang/spyc" : [
+                        "Spyc.php"
+                    ],
+                    "michelf/php-markdown" : [
+                        "Michelf/"
+                    ]
+                }
+            }
+        }
+    ]
+}
