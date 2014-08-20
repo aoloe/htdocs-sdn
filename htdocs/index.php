@@ -5,13 +5,14 @@ ini_set('display_errors', '1');
 require('vendor/autoload.php');
 
 new Aoloe\Debug();
-// use function Aoloe\debug as debug;
+use function Aoloe\debug as debug;
 
 // debug('_SERVER', $_SERVER);
 // debug('_REQUEST', $_REQUEST);
 
 $structure_test = false;
 $cookie = new Aoloe\Cookie();
+// TODO: should we have this as a module that is always run?
 if (array_key_exists('nav', $_REQUEST)) {
     if ($_REQUEST['nav'] == 'test') {
         $structure_test = true;
@@ -40,119 +41,66 @@ if (array_key_exists('page', $_REQUEST)) {
 }
 */
 
-$request_url = $_SERVER['REQUEST_URI'];
-$request_url = parse_url($request_url, PHP_URL_PATH);
-// debug('request_url', $request_url);
+include_once('library/Route.php');
+$route = new Route();
 
-if ($request_url == '/') {
-    $request_url = '/accueil';
+$route->set_structure($site_structure);
+
+$route->read_url_request();
+
+if ($route->is_url_request('/')) {
+    $route->set_url_request('/accueil');
 }
 
-// TODO: eventually move to Site
-function get_current_page($url_segment, $site_structure) {
-    $result = null;
-    $url = reset($url_segment);
-    // debug('url', $url);
-    if (array_key_exists($url, $site_structure)) {
-        if (count($url_segment) > 1) {
-            if (array_key_exists('children', $site_structure[$url])) {
-                $result = get_current_page(array_slice($url_segment, 1), $site_structure[$url]['children']);
-            }
-        } else {
-            $result = $site_structure[$url];
-        }
-    }
-    return $result;
-}
+$route->read_current_page();
 
-function get_current_module($page) {
-    $result = null;
-    if (array_key_exists('module', $page)) {
-        $result = is_array($page['module']) ? $page['module'] : array('name' => $page['module']);
-        if (!array_key_exists('parameter', $result)) {
-            $result['parameter'] = array();
-        }
-    }
-    return $result;
-}
+$page_module = $route->get_current_module();
 
-$url_segment = array_slice(explode('/', $request_url), 1);
-// debug('url_segment', $url_segment);
-$page = get_current_page($url_segment, $site_structure);
-// debug('page', $page);
-if (isset($page)) {
-    $page_url = $request_url;
-} else {
-    $page_url = 'page_404';
-}
+// debug('page_module', $page_module);
 
-// debug('page_url', $page_url);
+include_once('library/Module.php');
+$module = new Module();
+$module->set_module($page_module['name']);
+$module->set_parameter($page_module['parameter']);
+$module->set_site($site);
+$content_page = $module->get_rendered();
 
 include('library/Navigation.php');
 $navigation = new Navigation();
 $navigation->set_site_structure($site_structure);
-$navigation->set_url_segment($url_segment);
+$navigation->set_url_segment($route->get_url_segment());
 // debug('navigation', $navigation);
 
 $content_navigation = $navigation->get_rendered();
 // debug('content_navigation', $content_navigation);
 // define anchors for toc as ## Header 2 ##      {#header2}
 
+if (isset($content_page)) {
+    $template = new Aoloe\Template();
 
-// debug('page', $page);
-// debug('page_url', $page_url);
-if (array_key_exists('alias', $page)) {
-    $page_module = get_current_module($page = get_current_page(explode('/', $page['alias']), $site_structure));
-} else {
-    $page_module = get_current_module($page);
-}
-if (isset($page_module)) {
-    include_once('library/Module_abstract.php');
-    $page_content = "<p>Module ".$page_module['name']." is not valid.</p>\n";
-    $module_file = 'module/'.$page_module['name'].'.php';
-    if (file_exists($module_file)) {
-        include_once($module_file);
-        if (class_exists($page_module['name'])) {
-            $module = new $page_module['name']();
-            $module->set_site($site);
-            foreach ($page_module['parameter'] as $key => $value) {
-                if (method_exists(get_class($module), 'set_'.$key)) {
-                    // debug('key', $key);
-                    // debug('value', $value);
-                    $module->{'set_'.$key}($value);
-                }
-            }
-            $page_content = $module->get_content();
-        }
+    $site->add_css('css/simplegrid/simplegrid.css');
+
+    $site->add_font('css/font-robotocondensed.css', 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300');
+
+    $header_navigation = '';
+
+    $content_navigation_header = '';
+    if ($structure_test) {
+        include_once('library/Navigation_header.php');
+        $navigation_header = new Navigation_header();
+        $content_navigation_header = $navigation_header->get_rendered();
     }
-} else {
-    $page_content = "<p>Pas encore de contenu.</p>";
+
+    $template->clear();
+    $template->set('language', 'fr');
+    $template->set('title_site', 'Sortir du Nucléaire');
+    $template->set('favicon', 'images/favicon.png');
+    $template->set('path', $site->get_path_relative());
+    $template->set('fonts', $site->get_font());
+    $template->set('js', $site->get_js());
+    $template->set('css', $site->get_css());
+    $template->set('header_navigation', $content_navigation_header);
+    $template->set('navigation', $content_navigation);
+    $template->set('content', $content_page);
+    echo $template->fetch('template/sortirdunucleaire.php');
 }
-
-$template = new Aoloe\Template();
-
-$site->add_css('css/simplegrid/simplegrid.css');
-
-$site->add_font('css/font-robotocondensed.css', 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300');
-
-$header_navigation = '';
-
-$content_navigation_header = '';
-if ($structure_test) {
-    include_once('library/Navigation_header.php');
-    $navigation_header = new Navigation_header();
-    $content_navigation_header = $navigation_header->get_rendered();
-}
-
-$template->clear();
-$template->set('language', 'fr');
-$template->set('title_site', 'Sortir du Nucléaire');
-$template->set('favicon', 'images/favicon.png');
-$template->set('path', $site->get_path_relative());
-$template->set('fonts', $site->get_font());
-$template->set('js', $site->get_js());
-$template->set('css', $site->get_css());
-$template->set('header_navigation', $content_navigation_header);
-$template->set('navigation', $content_navigation);
-$template->set('content', $page_content);
-echo $template->fetch('template/sortirdunucleaire.php');

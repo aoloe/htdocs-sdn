@@ -74,6 +74,7 @@ actualite :
     children :
         nouvelles :
             navigation : Nouvelles
+            query : url # query : get # for getting the ?...
             module :
                 name : News
         journal :
