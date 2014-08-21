@@ -9,11 +9,16 @@
  * inspired by https://gist.github.com/banago/3864515
  */
 
-// use function Aoloe\debug as debug;
+use function Aoloe\debug as debug;
 
 class Facebook {
     private function get_cleaned_description($description) {
         $result = $description;
+        // debug('description', $description);
+        $result = preg_replace('/<a href="".+?><\/a>/', '', $result);
+        if (empty(str_replace(array('<br/>', '<br />'), '', $result))) {
+            $result = '';
+        }
         $result = preg_replace('/ onclick="[^"]*"/', '', $result);
         $result = preg_replace('/ onmouseover="[^"]*"/', '', $result);
         // $result = preg_replace('/"l.php?u=([^"]+)"/', '\1', $result);
@@ -27,6 +32,7 @@ class Facebook {
             },
             $result
         );
+        // debug('result', $result);
         return $result;
     }
 
@@ -87,6 +93,7 @@ class Facebook {
         $cache = new Aoloe\Cache();
         $cache->set_file('facebook_news.json');
         $cache->set_timeout(36000); // 60*60 = 1 hour
+        $cache->set_timeout(0); // 60*60 = 1 hour
         $result = $cache->get();
 
         // debug('news_facebook', $news_facebook);
@@ -108,13 +115,16 @@ class Facebook {
                         'author' => $this->get_cleaned_entities($item->author->__toString()),
                         'content' => trim($this->get_cleaned_entities($this->get_cleaned_description($item->description->__toString()))),
                     );
+                    // debug('item', $item);
                     if (($break = strpos($item['title'], '<br /> <br />')) !== false) {
                         // debug('break', $break);
                         $item['title'] = substr($item['title'], 0, $break);
                         $item['content'] = substr($item['content'], $break + 14);
                     } elseif (substr($item['title'], -3) == '...') {
                         $item['title'] = '';
-                    } else {
+                    } elseif ($item['title'] != '') {
+                        // debug('content', $item['content']);
+                        // debug('title', $item['title']);
                         $item['content'] = substr($item['content'], strlen($item['title']) + 11);
                     }
 
@@ -122,9 +132,11 @@ class Facebook {
                     // debug('item', $item);
 
                     // if ($this->is_valid_html('<?xml version="1.0" encoding="utf-8"?'.'><div>'.$item['content'].'</div>')) {
-                        $result[] = $item;
-                        if( $i == $no ) break;
-                        $i++;
+                        if ($item['content'] != '') {
+                            $result[] = $item;
+                            if( $i == $no ) break;
+                            $i++;
+                        }
                     // }
                     
                     $cache->put($result);
