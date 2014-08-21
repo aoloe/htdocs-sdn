@@ -35,7 +35,6 @@ class Facebook {
         // debug('result', $result);
         return $result;
     }
-
     private function get_cleaned_entities($string) {
         return str_replace('%andamp;', '&amp;', html_entity_decode(str_replace('&amp;', '%andamp;', $string)));
     }
@@ -125,7 +124,10 @@ class Facebook {
                     } elseif ($item['title'] != '') {
                         // debug('content', $item['content']);
                         // debug('title', $item['title']);
-                        $item['content'] = substr($item['content'], strlen($item['title']) + 11);
+                        $content = substr($item['content'], strlen($item['title']) + 11);
+                        if (strpos($content, '<') === false) {
+                            $item['content'] = $content;
+                        }
                     }
 
                     $item['content'] = preg_replace('/(.+?)(<a [^>]+?'.'><img[^>]+?'.'><\/a>)/', '\2<br />\1', $item['content']);
