@@ -21,81 +21,53 @@ class Route {
     private $structure = null;
     public function set_structure($structure) {$this->structure = $structure;}
 
-    private $module_default = 'Page';
-    public function set_module_default($module) {$this->module_default = $module_404;}
-    private $module_404 = 'Error_404';
-    public function set_module_404($module) {$this->module_404 = $module_404;}
-    private $module_301 = 'Error_301';
-    public function set_module_301($module) {$this->module_301 = $module_301;}
-    private $redirect_301 = null; // array of urls to be redirected if not found and target
-    public function set_redirect_301($redirect) {$this->redirect_301 = $redirect_301;}
-
     private $page = null;
     private $page_query = null;
+    public function get_page() {return $this->page;}
+    public function get_query() {return $this->page_query;}
+
     public function read_current_page() {
         list($this->page, $this->page_query) = $this->get_current_page($this->url_segment, $this->structure);
+        // if no page found, set the url as the parameter
+        if (is_null($this->page)) {
+            $this->page_query = $this->url_request;
+        }
         // debug('page', $this->page);
         // debug('page_query', $this->page_query);
     }
-    private function get_current_page($url_segment, $structure) {
+
+    private function get_current_page($url_segment = null, $structure = null) {
+        if (!isset($url_segment)) {
+            $url_segment = $this->url_segment;
+            $structure = $this->structure;
+        }
         $page = null;
         $page_query = null;
         $url = reset($url_segment);
         // debug('url', $url);
+        $child_is_active = false;
         if (array_key_exists($url, $structure)) {
             $page = array();
             // debug('url_segment', $url_segment);
             if (count($url_segment) > 1) {
+                // TODO: only do the query=url if no children are matching!
                 if (array_key_exists('query', $structure[$url]) && ($structure[$url]['query'] == 'url')) {
                     $page = $structure[$url];
                     $page_query = implode('/', array_slice($url_segment, 1));
                 } elseif (array_key_exists('children', $structure[$url])) {
                     list($page, $page_query) = $this->get_current_page(array_slice($url_segment, 1), $structure[$url]['children']);
+                    $child_is_active = isset($page);
                 }
             } else {
                 $page = $structure[$url];
             }
+            if (!$child_is_active && isset($page) && array_key_exists('alias', $page)) {
+                // should it set $this->page instead of $page?
+                list($page, $alias_query) = $this->get_current_page(explode('/', $page['alias']), $this->structure);
+                // debug('page_query', $page_query);
+                // debug('page', $page);
+            }
         }
         return array($page, $page_query);
-    }
-
-    function get_current_module($page = null) {
-        $result = null;
-        if (is_null($page)) {
-            $page = $this->page;
-        }
-        // debug('page', $page);
-        if (isset($page)) {
-            if (array_key_exists('alias', $page)) {
-                // should it set $this->page instead of $page?
-                list($page, $page_query) = $this->get_current_page(explode('/', $page['alias']), $this->structure);
-                // debug('page', $page);
-                $result = $this->get_current_module($page);
-            } elseif (array_key_exists('module', $page)) {
-                $result = is_array($page['module']) ? $page['module'] : array('name' => $page['module']);
-            } else {
-                $result = array('name' => $this->module_default);
-            }
-        }
-        if (is_null($result)) {
-            $result = $this->get_error_module();
-        }
-        if (!array_key_exists('parameter', $result)) {
-            $result['parameter'] = array();
-        }
-        return $result;
-    }
-
-    function get_error_module() {
-        $result = null;
-        if (isset($this->url_redirect)) {
-            if (array_key_exists($url_request, $this->url_redirect)) {
-                $result = array('name' => $this->module_301, 'parameter' => $this->url_redirect[$url_request]);
-            }
-        }
-        if (is_null($result)) {
-            $result = array('name' => $this->module_404);
-        }
-        return $result;
     }
 }

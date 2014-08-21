@@ -54,14 +54,15 @@ if ($route->is_url_request('/')) {
 
 $route->read_current_page();
 
-$page_module = $route->get_current_module();
+$page = $route->get_page();
+$page_query = $route->get_query();
 
-// debug('page_module', $page_module);
+// debug('page', $page);
 
 include_once('library/Module.php');
 $module = new Module();
-$module->set_module($page_module['name']);
-$module->set_parameter($page_module['parameter']);
+$module->set_page($page);
+$module->set_parameter($page_query);
 $module->set_site($site);
 $content_page = $module->get_rendered();
 
