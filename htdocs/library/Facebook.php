@@ -9,14 +9,14 @@
  * inspired by https://gist.github.com/banago/3864515
  */
 
-use function Aoloe\debug as debug;
+// use function Aoloe\debug as debug;
 
 class Facebook {
     private function get_cleaned_description($description) {
         $result = $description;
         // debug('description', $description);
         $result = preg_replace('/<a href="".+?><\/a>/', '', $result);
-        if (empty(str_replace(array('<br/>', '<br />'), '', $result))) {
+        if (str_replace(array('<br/>', '<br />'), '', $result) == '') {
             $result = '';
         }
         $result = preg_replace('/ onclick="[^"]*"/', '', $result);
