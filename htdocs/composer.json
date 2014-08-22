@@ -16,6 +16,18 @@
         {
             "type": "vcs",
             "url":  "git@github.com:aoloe/php-cache.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:aoloe/php-route.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:aoloe/php-module.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:aoloe/php-markdown.git"
         }
     ],
     "require" : {
@@ -24,7 +36,10 @@
         "aoloe/php-debug" : "dev-master",
         "aoloe/php-template" : "dev-master",
         "aoloe/php-cookie" : "dev-master",
-        "aoloe/php-cache" : "dev-master"
+        "aoloe/php-cache" : "dev-master",
+        "aoloe/php-route" : "dev-master",
+        "aoloe/php-module" : "dev-master",
+        "aoloe/php-markdown" : "dev-master"
     },
     "authors" : [
         {
