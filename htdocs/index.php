@@ -31,8 +31,7 @@ $site_structure = ($structure_test ?  file_get_contents('content/re-structure.ya
 $site_structure = Spyc::YAMLLoadString($site_structure);
 // debug('site_structure', $site_structure);
 
-include_once('library/Site.php');
-$site = new Site();
+$site = new Aoloe\Site();
 
 /*
 // for now, we are ignoring the work done by .htaccess
@@ -41,8 +40,7 @@ if (array_key_exists('page', $_REQUEST)) {
 }
 */
 
-include_once('library/Route.php');
-$route = new Route();
+$route = new Aoloe\Route();
 
 $route->set_structure($site_structure);
 
@@ -59,8 +57,7 @@ $page_query = $route->get_query();
 
 // debug('page', $page);
 
-include_once('library/Module.php');
-$module = new Module();
+$module = new Aoloe\Module();
 $module->set_page($page);
 $module->set_parameter($page_query);
 $module->set_site($site);

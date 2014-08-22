@@ -17,9 +17,9 @@
  *      and an ![image](url.png)
  */
 
-use function Aoloe\debug as debug;
+// use function Aoloe\debug as debug;
 
-class Calendar extends Module_abstract {
+class Calendar extends Aoloe\Module_abstract {
     private $calendar_file = 'content/calendar.yaml';
     private $calendar = null;
     private $unpublish_age = 63072000; // 60*60*24*365*2 = 2 years
@@ -31,7 +31,6 @@ class Calendar extends Module_abstract {
         // debug('calendar', $this->calendar);
     }
     public function get_content() {
-        include_once('library/Markdown.php');
         $markdown = new Aoloe\Markdown();
 
         $template = new Aoloe\Template();

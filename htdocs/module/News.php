@@ -2,7 +2,7 @@
 
 // use function Aoloe\debug as debug;
 
-class News extends Module_abstract {
+class News extends Aoloe\Module_abstract {
     private $news_path = 'content/news/';
 
     private function get_news_list() {
@@ -17,7 +17,6 @@ class News extends Module_abstract {
     }
     
     public function get_content() {
-        include_once('library/Markdown.php');
         $markdown = new Aoloe\Markdown();
 
         $content_news = array();
@@ -60,7 +59,6 @@ class News extends Module_abstract {
      */
     public function get_teaser() {
         $result = "";
-        include_once('library/Markdown.php');
         $markdown = new Aoloe\Markdown();
         if (file_exists('content/news_teaser/teaser.md')) {
             $news_teaser = file_get_contents('content/news_teaser/teaser.md');

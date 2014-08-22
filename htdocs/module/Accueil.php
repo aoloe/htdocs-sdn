@@ -1,7 +1,7 @@
 <?php
 // use function Aoloe\debug as debug;
 
-class Accueil extends Module_abstract {
+class Accueil extends Aoloe\Module_abstract {
     public function __construct() {
         // $this->page_css = array('css/lightSlider.css');
     }
@@ -12,7 +12,6 @@ class Accueil extends Module_abstract {
     public function get_content() {
         $result = "";
         $template = new Aoloe\Template();
-        include_once('library/Markdown.php');
         $markdown = new Aoloe\Markdown();
         $content_sidebar = array();
         // debug('sidebar', $this->sidebar);

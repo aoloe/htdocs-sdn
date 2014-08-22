@@ -28,6 +28,10 @@
         {
             "type": "vcs",
             "url":  "git@github.com:aoloe/php-markdown.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:aoloe/php-site.git"
         }
     ],
     "require" : {
@@ -39,7 +43,8 @@
         "aoloe/php-cache" : "dev-master",
         "aoloe/php-route" : "dev-master",
         "aoloe/php-module" : "dev-master",
-        "aoloe/php-markdown" : "dev-master"
+        "aoloe/php-markdown" : "dev-master",
+        "aoloe/php-site" : "dev-master"
     },
     "authors" : [
         {
