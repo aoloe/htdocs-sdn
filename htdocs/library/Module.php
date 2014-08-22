@@ -103,3 +103,11 @@ class Module {
         return array($module_name, $parameter);
     }
 }
+
+<?php
+
+class Module_abstract {
+    protected $site = null;
+    public function set_site($site) {$this->site = $site;}
+}
+
