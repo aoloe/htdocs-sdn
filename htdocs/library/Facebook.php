@@ -92,7 +92,7 @@ class Facebook {
         $cache = new Aoloe\Cache();
         $cache->set_file('facebook_news.json');
         $cache->set_timeout(36000); // 60*60 = 1 hour
-        $cache->set_timeout(0); // 60*60 = 1 hour
+        // $cache->set_timeout(0); // no cache
         $result = $cache->get();
 
         // debug('news_facebook', $news_facebook);
