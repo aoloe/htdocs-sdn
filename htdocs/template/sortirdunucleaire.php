@@ -388,4 +388,3 @@ div.calendar_item {
 
 </body>
 </html>
-

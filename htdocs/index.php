@@ -5,7 +5,7 @@ ini_set('display_errors', '1');
 require('vendor/autoload.php');
 
 new Aoloe\Debug();
-use function Aoloe\debug as debug;
+// use function Aoloe\debug as debug;
 
 // debug('_SERVER', $_SERVER);
 // debug('_REQUEST', $_REQUEST);
@@ -46,16 +46,16 @@ $route->set_structure($site_structure);
 
 $route->read_url_request();
 
-if ($route->is_url_request('/')) {
-    $route->set_url_request('/accueil');
+// Aoloe\debug('get_url_structure()', $route->get_url_structure(''));
+if ($route->get_url_structure() == '') {
+    $page = $route->get_page_from_structure('accueil');
+} else {
+    $page = $route->get_page_from_structure();
 }
-
-$route->read_current_page();
-
-$page = $route->get_page();
 $page_query = $route->get_query();
 
-// debug('page', $page);
+// Aoloe\debug('get_url_structure()', $route->get_url_structure(''));
+// Aoloe\debug('page', $page);
 
 $module = new Aoloe\Module();
 $module->set_page($page);
@@ -66,13 +66,14 @@ $content_page = $module->get_rendered();
 include('library/Navigation.php');
 $navigation = new Navigation();
 $navigation->set_site_structure($site_structure);
-$navigation->set_url_segment($route->get_url_segment());
-// debug('navigation', $navigation);
+$navigation->set_url_structure($route->get_url_structure());
+// Aoloe\debug('navigation', $navigation);
 
 $content_navigation = $navigation->get_rendered();
-// debug('content_navigation', $content_navigation);
+// Aoloe\debug('content_navigation', $content_navigation);
 // define anchors for toc as ## Header 2 ##      {#header2}
 
+// TODO: i think that the if can be removed...
 if (isset($content_page)) {
     $template = new Aoloe\Template();
 
@@ -86,6 +87,7 @@ if (isset($content_page)) {
     if ($structure_test) {
         include_once('library/Navigation_header.php');
         $navigation_header = new Navigation_header();
+        $navigation_header->set_site($site);
         $content_navigation_header = $navigation_header->get_rendered();
     }
 

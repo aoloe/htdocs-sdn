@@ -70,6 +70,14 @@ Website de l'association Suisse Sortir du nucléaire
 
 # Notes
 
+Converting the journal's pdfs into pngs:
+
+    convert sdn_journal_73.pdf[0] -resize 150x sdn_journal_73_150.png
+
+or even 
+
+    for i in *.pdf; do convert ${i}[0] -resize 150x ${i%.pdf}_150.png; done
+
 - cross reference anchors in markdownk:
   - <http://stackoverflow.com/questions/5319754/cross-reference-named-anchor-in-markdown>
   - <https://michelf.ca/projects/php-markdown/extra/>

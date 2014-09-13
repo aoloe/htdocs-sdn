@@ -1,9 +1,9 @@
 <?php
 class Navigation {
     private $site_structure = null;
-    private $url_segment = null;
+    private $url_structure = null;
     public function set_site_structure($structure) {$this->site_structure = $structure; }
-    public function set_url_segment($url) {$this->url_segment = $url; }
+    public function set_url_structure($url) {$this->url_structure = $url; }
 
     private function get($structure = null, $url_segment = null, $url_base = array()) {
         $navigation = array();
@@ -11,7 +11,7 @@ class Navigation {
             $structure = $this->site_structure;
         }
         if (is_null($url_segment)) {
-            $url_segment = $this->url_segment;
+            $url_segment = explode('/', $this->url_structure);
         }
         foreach ($structure as $key => $value) {
             // debug('key', $key);
