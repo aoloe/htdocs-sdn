@@ -2,6 +2,7 @@ accueil :
     module :
         name : Accueil
         parameter :
+            opening : intro.md
             sidebar :
                 - facebook
                 - news

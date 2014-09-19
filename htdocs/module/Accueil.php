@@ -6,6 +6,8 @@ class Accueil extends Aoloe\Module_abstract {
         // $this->page_css = array('css/lightSlider.css');
     }
 
+    private $opening = null;
+    public function set_opening($opening) {$this->opening = $opening;}
     private $sidebar = array();
     public function set_sidebar($sidebar) {$this->sidebar = $sidebar;}
 
@@ -14,6 +16,12 @@ class Accueil extends Aoloe\Module_abstract {
         $template = new Aoloe\Template();
         $markdown = new Aoloe\Markdown();
         $content_sidebar = array();
+        $content = "<h1>Bienvenue!</h1>";
+        // Aoloe\debug('opening', $this->opening);
+        if (isset($this->opening)) {
+            $markdown->clear();
+            $content = $markdown->parse('content/opening/'.$this->opening);
+        }
         // debug('sidebar', $this->sidebar);
         foreach ($this->sidebar as $item) {
             // debug('item', $item);
@@ -69,10 +77,12 @@ class Accueil extends Aoloe\Module_abstract {
         // debug('news_facebook', $news_facebook);
         // debug('news', $news);
 
-        $template->clear();
+        /*
         $markdown->clear();
-        $markdown->set_text("");
         $content = $markdown->parse('content/accueil.md');
+        */
+
+        $template->clear();
         $template->set('content', $content);
         $template->set('sidebar', $content_sidebar);
         $result = $template->fetch('template/accueil.php');
