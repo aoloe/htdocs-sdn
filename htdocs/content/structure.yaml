@@ -20,6 +20,9 @@ sortons :
             children :
                 suisse :
                     navigation : En Suisse
+                    module :
+                        filter : Csv
+
                 monde :
                     navigation : Dans le monde
                 historique :
