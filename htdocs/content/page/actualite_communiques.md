@@ -4,4 +4,4 @@ Une activité importante de notre association consiste à informer le publique �
 
 Voici une liste de nos communiqués de presse récents, à votre disposition :
 
-{{`%csv%pages/actualite_communiques,page_actualite_communiques%`}}
+{{`%csv%page/actualite_communiques,page_actualite_communiques%`}}

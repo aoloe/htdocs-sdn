@@ -1,6 +1,6 @@
 ## Le comite de l'association "Sortir du Nucleaire"
 
-{{`%csv%pages/association_qui,page_association_qui%`}}
+{{`%csv%page/association_qui,page_association_qui%`}}
 
 
 Vous pouvez envoyer un message aux membres du comite en cliquant sur leur nom.

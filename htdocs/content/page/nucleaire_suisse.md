@@ -4,7 +4,7 @@ Dans notre pays, cinq centrales nucleaires participent a la production de
 notre electricite. Leur donnees techniques et statistiques sont les suivantes
 :
 
-{{`%csv%pages/nucleaire_suisse,page_nucleaire_suisse_tableau%`}}
+{{`%csv%page/nucleaire_suisse,page_nucleaire_suisse_tableau%`}}
 
 Il faut considerer la production nucleaire d'electricite par rapport a tous
 les agents energetiques:

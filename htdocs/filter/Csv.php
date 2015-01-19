@@ -37,6 +37,7 @@ class Csv extends Filter_abstract {
         // Aoloe\debug('parameter', $this->parameter);
         $filename_csv = null;
         foreach (array('content/'.$parameter[0].'.csv', 'content/'.$this->language.'/'.$parameter[0].'.csv') as $item) {
+            // Aoloe\debug('item', $item);
             if (file_exists($item)) {
                 $filename_csv = $item;
             }

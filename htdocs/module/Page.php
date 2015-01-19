@@ -16,7 +16,7 @@ class Page extends Aoloe\Module_abstract {
         // Aoloe\debug('file_name', $file_name);
         if (file_exists($file_name)) {
             $markdown = new Aoloe\Markdown();
-            $markdown->set_url_img_prefix($this->site->get_path_relative('content/page/'));
+            $markdown->set_url_img_prefix($this->site->get_path_relative($this->pages_path));
             $markdown->set_url_a_prefix($this->site->get_path_relative());
 
             if (isset($this->filter)) {
@@ -24,10 +24,12 @@ class Page extends Aoloe\Module_abstract {
                     include_once('library/Filter.php');
                     $page_content = file_get_contents($file_name);
                     foreach ($this->filter as $item) {
+                        // Aoloe\debug('page_content', $page_content);
                         $filter = new Filter();
                         $filter->set_language($this->language);
                         $filter->set_filter($item);
                         $page_content = $filter->parse($page_content);
+                        // Aoloe\debug('page_content', $page_content);
                     }
                     // TODO: it does not seem to be parsing the markdown in html tags
                     // Aoloe\debug('page_content', $page_content);
