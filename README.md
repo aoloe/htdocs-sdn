@@ -99,8 +99,19 @@ or even
 
 # Todo
 
+- find a way to create anchors for titles (and use it in `pourquoi/risques`
+- (optionally) insert non breaking spaces for:
+  - ` :`, ` ?`, ` !`
+  - `« `, ` »`
+- filx the link for `pouquoi/risques#forsmark` to wikipedia (the old link did not work)
+- improve the way tables are shown (now i have to add a faked header with a dot in it
+- fill the `links` pages with the long links page
+- add the old items in actualite/archive
+- finish and activate the contact form
 - catch wrong urls (404)
 - check what to do with neuchatel (and the other "small sites")
+- add the content of the news
+- find out why `association` does not show the content of `association/qui`
 - add a module for the most recent update
 - find out how to show items of a module (news entries)
 - create a 303 redirect for each old id=

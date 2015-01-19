@@ -10,8 +10,9 @@ new Aoloe\Debug();
 // debug('_SERVER', $_SERVER);
 // debug('_REQUEST', $_REQUEST);
 
-$structure_test = false;
+$structure_test = true;
 $cookie = new Aoloe\Cookie();
+/*
 // TODO: should we have this as a module that is always run?
 if (array_key_exists('nav', $_REQUEST)) {
     if ($_REQUEST['nav'] == 'test') {
@@ -24,10 +25,11 @@ if (array_key_exists('nav', $_REQUEST)) {
 } else {
     $structure_test = $cookie->is('navigation');
 }
-
+*/
 
 // debug('structure_test', $structure_test);
-$site_structure = ($structure_test ?  file_get_contents('content/re-structure.yaml') : file_get_contents('content/structure.yaml'));
+// $site_structure = ($structure_test ?  file_get_contents('content/re-structure.yaml') : file_get_contents('content/structure.yaml'));
+$site_structure = file_get_contents('content/structure.yaml');
 $site_structure = Spyc::YAMLLoadString($site_structure);
 // debug('site_structure', $site_structure);
 
@@ -61,6 +63,7 @@ $module = new Aoloe\Module();
 $module->set_page($page);
 $module->set_parameter($page_query);
 $module->set_site($site);
+$module->set_url_structure($route->get_url_structure());
 $content_page = $module->get_rendered();
 
 include('library/Navigation.php');

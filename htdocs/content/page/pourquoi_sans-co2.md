@@ -1,0 +1,3 @@
+# La fable du nucléaire sans CO2
+
+Contrairement aux idees fausses colportees par l'industrie nucleaire, la filiere nucleaire prise dans son ensemble rejette des volumes de CO2 non negligeables, lies surtout a l'exploitation miniere de l'uranium. En plus, cette emission de CO2 va augmenter a l'avenir avec l'exploitation de mines de moins en moins riches en uranium, ce qui implique une quantite de roches a manipuler de plus en plus enormes avec de l'energie mise en oeuvre correspondante. Pour couvrir les besoins en electricite des mines d'uranium on y installe des centrales electriques a charbon, et pour couvrir les besoins des enormes machines de chantier il faut apporter des quantites de diesel correspondantes, qui vont aussi produire le CO2 inherent.

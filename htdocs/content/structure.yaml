@@ -13,6 +13,8 @@ nucleaire :
     children :
         suisse :
             navigation : En Suisse
+            module :
+                filter : Csv
         monde :
             navigation : Dans le monde
         historique :
@@ -86,6 +88,8 @@ actualite :
             alias : association/agenda
         communiques:
             navigation : Communiqués de presse
+            module :
+                filter : Csv
         dossiers:
             navigation : Dossiers de presse
         lettres :
@@ -94,9 +98,12 @@ actualite :
             navigation : Archive
 association :
     navigation : Association
+    alias : association/qui
     children :
         qui :
             navigation : Qui sommes-nous?
+            module :
+                filter : Csv
         buts :
             navigation : Buts
         statuts :
@@ -106,7 +113,7 @@ association :
             module : Calendar
         journal :
             navigation : Journal
-            alias : nouvelles/journal
+            alias : actualite/journal
         soutenir :
             navigation : Soutenir
         liens :

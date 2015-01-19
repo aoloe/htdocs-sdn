@@ -371,6 +371,20 @@ div.calendar_item {
     padding-bottom:10px;
 }
 
+p.cadre {
+    border: 1px solid black;
+}
+
+/* sortir du nucleaire */
+
+table.sdn_table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table.sdn_table td {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
 </style>
 <div id="header">
 <?= $header_navigation ?>
