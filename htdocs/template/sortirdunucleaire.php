@@ -132,6 +132,14 @@ padding-top:0px;}
     text-decoration:none;
 }
 
+#navigation ul:first-of-type li a {
+    font-size:110%;
+}
+
+#navigation ul li ul li {
+    background-color:lightgreen;
+}
+
 ul.navigation_header_left {
     position:absolute;
     left:0px;

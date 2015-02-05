@@ -1,111 +1,113 @@
 # Les risques d'accidents
 
-L'historique de l'industrie nucleaire montre qu'il y a des multiples facteurs qui amenent frequemment a des incidents qui souvent debouchent sur des accidents.
+L'historique de l'industrie nucléaire montre qu'il y a des multiples facteurs qui amènent fréquemment à des incidents qui souvent débouchent sur des accidents.
 
-Heureusement pour l'humanite, la plupart de ces accidents n'ont pas resulte dans des catastrophes majeures, mais ça donne la fausse impression d'une technologie bien maitrisee.
+Heureusement pour l'humanité, la plupart de ces accidents n'ont pas résulté dans des catastrophes majeures, mais ça donne la fausse impression d'une technologie bien maîtrisée.
 
 On peut distinguer les causes potentielles suivantes :
 
-## Defaillance humaine
+## Défaillance humaine
 
-L'exemple classique est l'accident de Tchernobyl : un essai technique mal organise a mene a la perte de controle et la consequence etait la catastrophe connue, avec des milliers de morts, des contres entieres empoisonnees a jamais, des maladies atroces des survivants et des descendants.
+L'exemple classique est l'accident de Tchernobyl : un essai technique mal organisé a mené à la perte de contrôle et la conséquence était la catastrophe connue, avec des milliers de morts, des contrés entières empoisonnées à jamais, des maladies atroces des survivants et des descendants.
 
-Pour en savoir plus: [l'accident de Tchernobyl](/pourquoi/risques#tchernobyl)
+Pour en savoir plus: [l'accident de Tchernobyl](pourquoi/risques#tchernobyl)
 
-## Defaillance technique
+## >Defaillance technique
 
-Le cas le plus recent de defaillance technique concerne l'accident de Forsmark en Suede (2006), qui a montre que meme une multiplication des systemes de securite n'empeche pas  toujours une defaillance technique potentiellement catastrophique.
+Défaillance technique
+Le cas le plus récent de défaillance technique concerne l'accident de Forsmark en Suède (2006), qui a montré que même une multiplication des systèmes de sécurité n’empêche pas  toujours une défaillance technique potentiellement catastrophique.
 
 Pour en savoir plus: [l'accident de Forsmark](pourquoi/risques#forsmark)
 
 ## Les risques sismiques
 
-La plus grande centrale nucleaire du monde, la centrale de  Kashiwazaki-Kariwa au Japon, a souffert de degats importants lors d'un seisme en 2007. Malgre le fait que les Japonais sont des experts en securite parasismique, la centrale a du etre fermee. A ce jour, elle n'a toujours pas ete remise en operation.
+La plus grande centrale nucléaire du monde, la centrale de  Kashiwazaki-Kariwa  au Japon, a souffert de dégâts importants lors d'un séisme en 2007. Malgré le fait que les Japonais sont des experts en sécurité parasismique, la centrale a dû être fermée. A ce jour, elle n’a toujours pas été remise en opération.
 
 Pour en savoir plus: [l'accident de Kashiwasaki](pourquoi/risques#kashiwasaki)
 
 ## Les risques de terrorisme
 
-Les centrales nucleaires ne resisteraient pas a une attaque terroriste comme celle des Twin Towers du 11 septembre 2001. La seule defense contre une telle attaque par des avions plein de kerosene qu'on a trouve jusqu'ici est de cacher la centrale par un rideau de nuages artificielles! Les terroristes sont pries de bien vouloir s'annoncer bien a l'avance afin que ce rideau puisse etre produit dans les delais.
+Les centrales nucléaires ne résisteraient pas à une attaque terroriste comme celle des Twin Towers du 11 septembre 2001. La seule défense contre une telle attaque par des avions plein de kérosène qu'on a trouvé jusqu'ici est de cacher la centrale par un rideau de nuages artificielles! Les terroristes sont priés de bien vouloir s'annoncer bien à l'avance afin que ce rideau puisse être produit dans les délais.
 
-Bien heureusement, ce type d'accidents ne s'est pas encore produit ! Mais rappelons que le rapport « Secret defense » de la France affirme que le nouveau reacteur français EPR ne resisterait pas a une attaque par avion !
+Bien heureusement, ce type d'accidents ne s'est pas encore produit ! Mais rappelons que le rapport « Secret défense » de la France affirme que le nouveau réacteur français EPR ne résisterait pas à une attaque par avion !
 
-## Les accidents nucleaires majeurs
+## Les accidents nucléaires majeurs
 
-Notons que cette liste n'est pas a jour, parce qu'il ne se passe pas une semaine sans un tel incident, dont chacun pourrait etre la cause d'un accident majeur.
+Notons que cette liste n'est pas à jour, parce qu'il ne se passe pas une semaine sans un tel incident, dont chacun pourrait être la cause d'un accident majeur.
 
-### 12.10.1957 Windscale (Grande-Bretagne)
+### <a name="windscale"></a>12.10.1957 Windscale (Grande-Bretagne)
 
-Incendie a la centrale nucleaire de Windscale. L'accident se classe au **niveau 5** sur l'echelle internationale des evenements nucleaires (_INES_).  À la suite d'un incident provoque lors d'une operation d'entretien du graphite, des produits de fission, essentiellement de l'_iode 131_, sont rejetes a l'exterieur. Aucune mesure d'evacuation n'a ete prise, mais les autorites competentes prennent les mesures suivantes pour maitriser le danger : interdiction de la consommation de certains produits et controle et **arret des livraisons de lait pendant deux mois sur **une zone de 500 km2. Sur les 238 personnes examinees, 126 sont legerement contaminees au niveau de la _thyroide_.
+Incendie à la centrale nucléaire de Windscale. L'accident se classe au __niveau 5__ sur l'échelle internationale des événements nucléaires (INES). À la suite d'un incident provoqué lors d'une opération d'entretien du graphite, des produits de fission, essentiellement de l'iode 131, sont rejetés à l'extérieur. Aucune mesure d'évacuation n'a été prise, mais les autorités compétentes prennent les mesures suivantes pour maîtriser le danger : interdiction de la consommation de certains produits et contrôle et __arrêt des livraisons de lait pendant deux mois__ sur une zone de 500 km2. Sur les 238 personnes examinées, 126 sont légèrement contaminées au niveau de la thyroïde.
 
-En 1983, un documentaire de la television britannique revelait que dans le village de Seascale, situe non loin de Sellafield, **le taux d'enfants atteints de cancer etait dix fois plus eleve que la moyenne nationale**.
+En 1983, un documentaire de la télévision britannique révélait que dans le village de Seascale, situé non loin de Sellafield, __le taux d'enfants atteints de cancer était dix fois plus élevé que la moyenne nationale__.
 
-Selon le journal _Le Monde_ du 2 janvier 1988, l'ancien premier ministre conservateur britannique, Harold Macmillan, avait ordonne d'etouffer un rapport detaille sur les causes d'un grave incendie qui s'etait produit a l'interieur de l'usine de retraitement des dechets nucleaires de Windscale.
+Selon le journal Le Monde du 2 janvier 1988, l'ancien premier ministre conservateur britannique, Harold Macmillan, avait ordonné d'étouffer un rapport détaillé sur les causes d'un grave incendie qui s'était produit à l'intérieur de l'usine de retraitement des déchets nucléaires de Windscale.
 
-### 17 octobre 1969 Centrale nucleaire de Saint-Laurent-des-Eaux (France)
+### 17 octobre 1969 Centrale nucléaire de Saint-Laurent-des-Eaux (France)
 
-Centrale nucleaire de Saint-Laurent-des-Eaux , Loir-et-Cher, en France. Un accident entraine la fusion de cinq elements combustibles dans le reacteur A1.  Lors du dechargement, les operateurs ont ordonne de charger un canal d'Uranium et de graphite. Le reacteur est reste un an a l'arret pour un cout de 20 millions de francs (un peu plus de trois millions d'euros). L'evenement est qualifie d'incident par EDF; selon l'echelle INES actuelle, il s'agit d'un accident qui se situe au **niveau 4.**
+Centrale nucléaire de Saint-Laurent-des-Eaux , Loir-et-Cher, en France. Un accident entraîne la fusion de cinq éléments combustibles dans le réacteur A1. Lors du déchargement, les opérateurs ont ordonné de charger un canal d'Uranium et de graphite. Le réacteur est resté un an à l'arrêt pour un coût de 20 millions de francs (un peu plus de trois millions d'euros). L'événement est qualifié d'incident par EDF; selon l'échelle INES actuelle, il s'agit d'un accident qui se situe au __niveau 4__.
 
-### 21 janvier 1969 Lucens (Suisse)
+### <a name="lucens"></a>21 janvier 1969 Lucens (Suisse)
 
-L'eclatement d'un tube de force provoque une impulsion de courant et le reacteur (un petit appareil experimental construit dans une caverne rocheuse) explose. Il est totalement detruit. La majeure partie des substances radioactives est contenue dans la caverne.
+L'éclatement d'un tube de force provoque une impulsion de courant et le réacteur (un petit appareil expérimental construit dans une caverne rocheuse) explose. Il est totalement détruit. La majeure partie des substances radioactives est contenue dans la caverne.
 
-### 28 mars 1979 Three Mile Island (USA)
+### <a name="threemileisland"></a>28 mars 1979 Three Mile Island (USA)
 
-Suite a une panne des pompes d'alimentation en eau du circuit secondaire de l'un des reacteurs, un enchainement de defaillances mecaniques, d'erreurs humaines et de defauts de conception, entraine la [fusion du coeur](http://fr.wikipedia.org/wiki/Fusion_du_coeur). L'enceinte de confinement etant restee integre, le relachement de produits radioactifs dans l'environnement est reste faible. L'accident de [Three Mile Island](http://fr.wikipedia.org/wiki/Three_Mile_Island) est classe au niveau 5 sur l'echelle internationale des evenements nucleaires ([INES](http://fr.wikipedia.org/wiki/INES)).
+Suite à une panne des pompes d'alimentation en eau du circuit secondaire de l'un des réacteurs, un enchaînement de défaillances mécaniques, d'erreurs humaines et de défauts de conception, entraîne la [fusion du coeur](http://fr.wikipedia.org/wiki/Fusion_du_coeur). L'enceinte de confinement étant restée intègre, le relâchement de produits radioactifs dans l'environnement est resté faible. L'accident de [Three Mile Island](http://fr.wikipedia.org/wiki/Three_Mile_Island) est classé au niveau 5 sur l'échelle internationale des événements nucléaires ([INES](http://fr.wikipedia.org/wiki/INES)).
 
-### 26 avril 1986, Tchernobyl (Ukraine)
+### <a name="tchernobyl"></a>26 avril 1986, Tchernobyl (Ukraine)
 
-Accident de **niveau 7** selon l'echelle INES. L'accident est survenu dans la centrale nucleaire Lenine situee sur les rives du Dniepr a environ 15 km de Tchernobyl et 110 km de Kiev, pres de la frontiere avec la Bielorussie. Suite a une serie d'erreurs humaines et en raison de defauts de conception, le reacteur n°4 subit une fusion du coeur puis une explosion provoquant la liberation de grandes quantites de radio-isotopes dans l'atmosphere. Les autorites evacuent environ 250 000 personnes de Bielorussie, de Russie et d'Ukraine. Plusieurs centaines de milliers d'ouvriers (600 000 environ), les « liquidateurs » sont venus d'Ukraine, de Bielorussie, de Lettonie et de Russie pour proceder a des nettoyages.
+Accident de __niveau 7__ selon l'échelle INES. L'accident est survenu dans la centrale nucléaire Lénine située sur les rives du Dniepr à environ 15 km de Tchernobyl et 110 km de Kiev, près de la frontière avec la Biélorussie. Suite à une série d'erreurs humaines et en raison de défauts de conception, le réacteur n°4 subit une fusion du coeur puis une explosion provoquant la libération de grandes quantités de radio-isotopes dans l'atmosphère. Les autorités évacuent environ 250 000 personnes de Biélorussie, de Russie et d'Ukraine. Plusieurs centaines de milliers d'ouvriers (600 000 environ), les « liquidateurs » sont venus d'Ukraine, de Biélorussie, de Lettonie et de Russie pour procéder à des nettoyages.
 
 ### 19 octobre 1989 Vandellos (Espagne)
 
-Un incendie se declare dans la salle des turbines, provoquant indirectement une inondation et endommageant differents systemes, notamment la refrigeration du reacteur. Cet incident est classe au **niveau 3** de l'echelle INES. Le gouvernement espagnol a decide la fermeture definitive du reacteur en novembre 1992 apres qu'une fuite d'effluents liquides radioactifs eut pollue le canal voisin. En fevrier 1996, 15 personnes sont contaminees par inhalation d'americium 241 alors qu'elles vident les piscines de combustible de la centrale.
+Un incendie se déclare dans la salle des turbines, provoquant indirectement une inondation et endommageant différents systèmes, notamment la réfrigération du réacteur. Cet incident est classé au __niveau 3__ de l'échelle INES. Le gouvernement espagnol a décidé la fermeture définitive du réacteur en novembre 1992 après qu'une fuite d'effluents liquides radioactifs eut pollué le canal voisin. En février 1996, 15 personnes sont contaminées par inhalation d'américium 241 alors qu'elles vident les piscines de combustible de la centrale.
 
 ### 18 avril 2005, Sellafield (Angleterre)
 
-83 000 litres de combustible liquefie fortement radioactif, contenant environ 20 tonnes d'uranium et de l'acide nitrique concentre se sont echappes d'une fissure dans un tuyau et se sont repandus dans une cuve en acier inoxydable contenant 200 kg de plutonium dans l'enceinte de l'usine de retraitement Thorp situee a Sellafield. L'enquete a montre que la fuite est restee inconnue pendant neuf mois.
+83 000 litres de combustible liquéfié fortement radioactif, contenant environ 20 tonnes d'uranium et de l'acide nitrique concentré se sont échappés d'une fissure dans un tuyau et se sont répandus dans une cuve en acier inoxydable contenant 200 kg de plutonium dans l'enceinte de l'usine de retraitement Thorp située à Sellafield. L'enquête a montré que la fuite est restée inconnue pendant neuf mois.
 
-### 25 juillet 2006, Forsmark (Suede)
+### <a name="forsmark"></a>25 juillet 2006, Forsmark (Suede)
 
-Incident classe de **niveau 2** sur l'echelle INES : defaillance d'un systeme de secours de la tranche 1 de la centrale de Forsmark ; par precaution, deux reacteurs de la centrale d'Oskarshamn sont fermes[]. **« C'est le hasard qui a evite qu'une fusion du coeur ne se produise »**, affirme, dans le quotidien allemand TAZ du 3 aout, Lars-Olov Hoglund, qui a dirige la construction de la centrale. « C'est l'evenement le plus dangereux depuis Three Mile Island et Tchernobyl », declare-t-il le 2 aout au quotidien suedois Svenska Dagbladet.  Ole Reistad, directeur de l'institut norvegien de protection contre les rayonnements ionisants, declare au TAZ que l'on est **« passe pres de la catastrophe »** et pres de la defaillance de la derniere barriere de securite ; « une telle chose n'aurait jamais du se produire ». Suite a cet incident, le ministere allemand de l'Environnement va verifier « le plus rapidement possible » si cet incident survenu sur un reacteur nucleaire en Suede pourrait egalement se produire dans les centrales allemandes.
+Incident classé de __niveau 2__ sur l'échelle INES : défaillance d'un système de secours de la tranche 1 de la centrale de Forsmark ; par précaution, deux réacteurs de la centrale d'Oskarshamn sont fermés[]. __« C'est le hasard qui a évité qu'une fusion du coeur ne se produise »__, affirme, dans le quotidien allemand TAZ du 3 août, Lars-Olov Höglund, qui a dirigé la construction de la centrale. « C'est l'évènement le plus dangereux depuis Three Mile Island et Tchernobyl », déclare-t-il le 2 août au quotidien suédois Svenska Dagbladet. Ole Reistad, directeur de l'institut norvégien de protection contre les rayonnements ionisants, déclare au TAZ que l'on est __« passé près de la catastrophe »__ et près de la défaillance de la dernière barrière de sécurité ; « une telle chose n'aurait jamais dû se produire ». Suite à cet incident, le ministère allemand de l'Environnement va vérifier « le plus rapidement possible » si cet incident survenu sur un réacteur nucléaire en Suède pourrait également se produire dans les centrales allemandes.
 
 source : [http://fr.wikipedia.org/wiki/Liste_des_accidents_nucléaires](http://fr.wikipedia.org/wiki/Liste_des_accidents_nucléaires)
 
-### 16 juillet 2007, Kashiwazaki-Kariwa (Japon)
+### <a name="kashiwasaki"></a>16 juillet 2007, Kashiwazaki-Kariwa (Japon)
 
-La centrale de Kashiwazaki-Kariwa a subi un tremblement de terre d'intensite 6,8 dont l'epicentre etait eloigne d'environ 10 kilometres. Le seisme a cause un incendie maitrise deux heures apres le depart du feu, ainsi que des rejets d'eau contenant des elements radioactifs dans la mer. Des futs contenant des dechets de faible activite ont egalement ete renverses dans la zone de stockage, repandant pour certains leur contenu sur le sol. Des traces de radioactivite ont aussi ete detectees au niveau du systeme de ventilation du reacteur 7 ce qui tend a prouver que de faibles quantites de ces elements ont ete rejetees dans l'atmosphere. Suite au seisme, les reacteurs de la centrale ont ete arretes le 18 juillet 2007. Le cout total du seisme pour la centrale est evalue a plus de 600 milliards de yens (plus de 3,6 milliards d'euros) sur l'annee comptable qui prend fin en mars 2008, entrainant un deficit de 95 milliards de yens (570 millions d'euros) pour cette meme annee.
+La centrale de Kashiwazaki-Kariwa a subi un tremblement de terre d'intensité 6,8 dont l'épicentre était éloigné d'environ 10 kilomètres. Le séisme a causé un incendie maitrisé deux heures après le départ du feu, ainsi que des rejets d'eau contenant des éléments radioactifs dans la mer. Des fûts contenant des déchets de faible activité ont également été renversés dans la zone de stockage, répandant pour certains leur contenu sur le sol. Des traces de radioactivité ont aussi été détectées au niveau du système de ventilation du réacteur 7 ce qui tend à prouver que de faibles quantités de ces éléments ont été rejetées dans l'atmosphère. Suite au séisme, les réacteurs de la centrale ont été arrêtés le 18 juillet 2007. Le coût total du séisme pour la centrale est évalué à plus de 600 milliards de yens (plus de 3,6 milliards d'euros) sur l'année comptable qui prend fin en mars 2008, entrainant un déficit de 95 milliards de yens (570 millions d'euros) pour cette même année.
 
-### 23 juillet 2008, site nucleaire du Tricastin (France)
+### <a name="tricastin"></a>23 juillet 2008, site nucleaire du Tricastin (France)
 
-Lors d'une operation de maintenance realisee sur le reacteur 4, des substances radioactives se sont echappees contaminant tres legerement une centaine de salaries sur le site. En 2007, 842 alertes de niveau zero (817 en 2006) et 86 de niveau 1 ont ete signalees en France. Sur l'[echelle INES](http://fr.wikipedia.org/wiki/échelle_INES), ce niveau 1 correspond a une «anomalie», du type de celles survenues en juillet 2008 a [Romans-sur- Isere](http://fr.wikipedia.org/wiki/Romans-sur-Isère) (Drome) et le 7 juillet au Tricastin (Drome). Aucun incident de niveau 2 n'a ete repertorie en 2007 (un seul l'avait ete en 2006).
+Lors d'une opération de maintenance réalisée sur le réacteur 4, des substances radioactives se sont échappées contaminant très légèrement une centaine de salariés sur le site. En 2007, 842 alertes de niveau zéro (817 en 2006) et 86 de niveau 1 ont été signalées en France. Sur l'[échelle INES](http://fr.wikipedia.org/wiki/échelle_INES), ce niveau 1 correspond à une «anomalie», du type de celles survenues en juillet 2008 à [Romans-sur- Isere](http://fr.wikipedia.org/wiki/Romans-sur-Isère) (Drôme) et le 7 juillet au Tricastin (Drôme). Aucun incident de niveau 2 n'a été répertorié en 2007 (un seul l'avait été en 2006).
 
-### 2 decembre 2009, Cruas, EDF (France)
+### 2 décembre 2009, Cruas, EDF (France)
 
-Un incident niveau 2 sur l'[echelle INES](http://fr.wikipedia.org/wiki/échelle_INES) a eu lieu a la centrale nucleaire de [Cruas-Meysse](http://fr.wikipedia.org/wiki/Centrale_nucléaire_de_Cruas-Meysse). Plan d'urgence qui a entraine l'arret du reacteur n° 4.
+Un incident niveau 2 sur l'[échelle INES](http://fr.wikipedia.org/wiki/échelle_INES) a eu lieu à la centrale nucléaire de [Cruas-Meysse](http://fr.wikipedia.org/wiki/Centrale_nucléaire_de_Cruas-Meysse). Plan d'urgence qui a entrainé l'arrêt du réacteur n° 4.
 
-### 11 mars 2011, Accidents nucleaires de Fukushima (Japon)
+### <a name="fukushima"></a>11 mars 2011, Accidents nucléaires de Fukushima (Japon)
 
-Suite a un seisme d'une magnitude de 9.0 les reacteurs de Fukushima se sont arretes automatiquement. Mais le tsunami de 14 m declenche par le seisme inondait le site de Fukushima au bord de mer et provoquait la perte totale des alimentations electriques et du refroidissement indispensable des reacteurs nucleaires.  
-Des explosions d'hydrogene causees par la surchauffe des reacteurs detruisaient la superstructure des batiments rendant encore plus difficile le refroidissement par des moyens de secours, en consequence le coeur du reacteur N°1 est entre en fusion ainsi que les coeurs des reacteurs N°2 et 3, quoique partiellement.  
-80'000 personnes ont ete evacuees.  
-Cet accident a ete place au niveau 7 sur [l'echelle INES](http://fr.wikipedia.org/wiki/échelle_INES) (le niveau le plus eleve) comme seulement l'accident de Tchernobyl l'avait ete jusqu'a present.
+Suite à un séisme d'une magnitude de 9.0 les réacteurs de Fukushima se sont arrêtés automatiquement. Mais le tsunami de 14 m déclenché par le séisme inondait le site de Fukushima au bord de mer et provoquait la perte totale des alimentations électriques et du refroidissement indispensable des réacteurs nucléaires.  
+Des explosions d'hydrogène causées par la surchauffe des réacteurs détruisaient la superstructure des bâtiments rendant encore plus difficile le refroidissement par des moyens de secours, en conséquence le cœur du réacteur N°1 est entré en fusion ainsi que les cœurs des réacteurs N°2 et 3, quoique partiellement.  
+80'000 personnes ont été évacuées.  
+Cet accident a été placé au niveau 7 sur l'échelle [l'echelle INES](http://fr.wikipedia.org/wiki/échelle_INES) (le niveau le plus élevé) comme seulement l'accident de Tchernobyl l'avait été jusqu'à présent.
 
-→ [La situation 3 ans apres](actualite/fukushima-3-ans-apres)
+→ [La situation 3 ans après](actualite/fukushima-3-ans-apres)
 
 ### 18 mars 2011, Doel (Belgique)
 
-Un probleme de debit a ete constate au niveau d'une pompe a eau de l'unite 4 de la centrale nucleaire de [Doel](http://fr.wikipedia.org/wiki/Centrale_nucléaire_de_Doel). Les corrections necessaires ont immediatement ete effectuees. L'incident a ete classe au niveau 2 de l'echelle INES.
+Un problème de débit a été constaté au niveau d'une pompe à eau de l'unité 4 de la centrale nucléaire de [Doel](http://fr.wikipedia.org/wiki/Centrale_nucléaire_de_Doel). Les corrections nécessaires ont immédiatement été effectuées. L'incident a été classé au niveau 2 de l'échelle INES.
+
 
 ### 4 juin 2011, Anshas (Egypte)
 
-À la suite de l'explosion d'une pompe de reacteur dans la petite centrale de Anshas (Nord du Caire), alors mise en service sans autorisation, une fuite de 10 m3 d'eau radioactive s'est produite. L'incident est classe niveau 3 de l'echelle INES.
+À la suite de l'explosion d'une pompe de réacteur dans la petite centrale de Anshas (Nord du Caire), alors mise en service sans autorisation, une fuite de 10 m3 d'eau radioactive s'est produite. L'incident est classé niveau 3 de l'échelle INES.
 
-## INES, l'echelle internationale de classement des incidents et accidents nucleaires
+## INES, l'échelle internationale de classement des incidents et accidents nucléaires
 
 ![](images/pourquoi_risques_accidents_ines.png)
 
-L'echelle INES (de l'anglais International Nuclear Event Scale) sert a mesurer la gravite d'un evenement nucleaire civil
+L'échelle INES (de l'anglais International Nuclear Event Scale) sert à mesurer la gravité d'un événement nucléaire civil
 
 &nbsp; | | &nbsp;
 ---|---|---  
@@ -119,4 +121,4 @@ INES 3: | [Fukushima](pourquoi/risques#fukushima) | 2013
 INES 2: | [Forsmark](pourquoi/risques#forsmark) | 2006
 INES 1: | [Tricastin](pourquoi/risques#tricastin) | 2008
 
-Cliquez sur les liens pour trouver les details
+Cliquez sur les liens pour trouver les détails

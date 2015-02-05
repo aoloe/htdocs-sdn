@@ -99,7 +99,7 @@ or even
 
 # Todo
 
-- find a way to create anchors for titles (and use it in `pourquoi/risques`
+- when clicking on "actualité", "nouvelles" is shown: it should also be highlighted in the navigation
 - (optionally) insert non breaking spaces for:
   - ` :`, ` ?`, ` !`
   - `« `, ` »`

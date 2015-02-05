@@ -1,53 +1,48 @@
-## Le comite de l'association "Sortir du Nucleaire"
+## Le comité de l'association "Sortir du Nucleaire"
 
 {{`%csv%page/association_qui,page_association_qui%`}}
 
+Vous pouvez envoyer un message aux membres du comité en cliquant sur leur nom.
 
-Vous pouvez envoyer un message aux membres du comite en cliquant sur leur nom.
-
-## Les coordinations antinucleaires dans les cantons
+## Les coordinations antinucléaires dans les cantons
 
 ### Fribourg
 
-Comite antinucleaire Fribourg  
+Comité antinucléaire Fribourg  
 <http://fr-fr.facebook.com/antinuclear.fr>
 
-### Geneve
+### Genève
 
 ContrAtom  
 [www.contratom.ch](http://www.contratom.ch/)
 
 ### Jura
 
-Alliance jurassienne Non au nucleaire AJUNN  
+Alliance jurassienne Non au nucléaire AJUNN  
 [www.ajunn.ch](http://www.ajunn.ch/)
 
 ### Neuchatel
 
-Alliance neuchateloise Non au nucleaire ANNAN  
+Alliance neuchateloise Non au nucléaire ANNAN  
 [alliance.nnn@bluewin.ch](mailto:alliance.nnn@bluewin.ch)
 
 ### Valais
 
-Alliance valaisanne Sortir du nucleaire  
-[alliance.valaisanne@sortirdunucleaire.ch](mailto:alliance.valaisanne@sortirdu
-nucleaire.ch)
+Alliance valaisanne Sortir du nucléaire  
+[alliance.valaisanne@sortirdunucléaire.ch](mailto:alliance.valaisanne@sortirdu
+nucléaire.ch)
 
 ### Vaud
 
-Coordination energie Vaud  
+Coordination énergie Vaud  
 [www.coordinationenergie.ch](http://www.coordinationenergie.ch/)
 
 ## Alliance Suisse "Non au Nucleaire"
 
-"Sortir du Nucleaire" est une des 37 organisations membres de l'Alliance «Non
-au nucleaire», qui regroupe les plus importants elements du mouvement anti-
-nucleaire en Suisse, compose d'organisations de protection de l'environnement,
-de differents partis et autres groupements d'interets.  
-[www.non-au-nucleaire.ch](http://www.non-au-nucleaire.ch)
+"Sortir du Nucléaire" est une des 37 organisations membres de l’Alliance «Non au nucléaire», qui regroupe les plus importants éléments du mouvement anti-nucléaire en Suisse, composé d’organisations de protection de l’environnement, de différents partis et autres groupements d’intérêts.  
+[www.non-au-nucléaire.ch](http://www.non-au-nucléaire.ch)
 
-## Reseau Sortir du Nucleaire (France)
+## Réseau Sortir du Nucléaire (France)
 
-Nous sommes aussi membre de cette federation française qui regroupe 923
-associations anti-nucleaires  
+Nous sommes aussi membre de cette fédération française qui regroupe 923 associations anti-nucléaires  
 [www.sortirdunucleaire.org](http://www.sortirdunucleaire.org)
