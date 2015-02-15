@@ -16,7 +16,7 @@ class Navigation {
         foreach ($structure as $key => $value) {
             // debug('key', $key);
             // debug('value', $value);
-            if (is_array($value) && array_key_exists('navigation', $value)) {
+            if (is_array($value) && array_key_exists('navigation', $value) && (is_string($value['navigation']) || array_key_exists('label', $value['navigation']))) {
                 $label = is_array($value['navigation']) ? $value['navigation']['label'] : $value['navigation'];
                 $url = is_array($value['navigation']) && array_key_exists('url', $value['navigation']) ? $value['navigation']['url'] : $key;
                 $item = array (
