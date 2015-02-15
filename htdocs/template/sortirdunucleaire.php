@@ -63,6 +63,12 @@ h3 a:visited
     text-decoration:none;
 }
 
+#content p {
+    line-height:150%;
+}
+#content li {
+    line-height:150%;
+}
 
 ul {
     /* TODO: improve the spacing between dash and text */
