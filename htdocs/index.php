@@ -4,7 +4,7 @@ ini_set('display_errors', '1');
 
 require('vendor/autoload.php');
 
-new Aoloe\Debug();
+// new Aoloe\Debug();
 // use function Aoloe\debug as debug;
 
 // debug('_SERVER', $_SERVER);
@@ -44,32 +44,34 @@ if (array_key_exists('page', $_REQUEST)) {
 
 $route = new Aoloe\Route();
 
+// debug('site_structure', $site_structure);
 $route->set_structure($site_structure);
 
 $route->read_url_request();
+$route->read_current_page();
 
-// Aoloe\debug('get_url_structure()', $route->get_url_structure(''));
-if ($route->get_url_structure() == '') {
-    $page = $route->get_page_from_structure('accueil');
-} else {
-    $page = $route->get_page_from_structure();
-}
-$page_query = $route->get_query();
+$page = $route->get_page();
+// debug('url', $route->get_url());
+// debug('page', $route->get_page());
 
-// Aoloe\debug('get_url_structure()', $route->get_url_structure(''));
+$page = $route->get_page();
 // Aoloe\debug('page', $page);
+
+$page_query = $route->get_page_query();
+// Aoloe\debug('page_query', $page_query);
+
 
 $module = new Aoloe\Module();
 $module->set_page($page);
 $module->set_parameter($page_query);
 $module->set_site($site);
-$module->set_url_structure($route->get_url_structure());
+$module->set_url_structure($route->get_page_url());
 $content_page = $module->get_rendered();
 
 include('library/Navigation.php');
 $navigation = new Navigation();
 $navigation->set_site_structure($site_structure);
-$navigation->set_url_structure($route->get_url_structure());
+$navigation->set_url_structure($route->get_page_url());
 // Aoloe\debug('navigation', $navigation);
 
 $content_navigation = $navigation->get_rendered();
