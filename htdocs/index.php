@@ -4,7 +4,7 @@ ini_set('display_errors', '1');
 
 require('vendor/autoload.php');
 
-// new Aoloe\Debug();
+new Aoloe\Debug();
 // use function Aoloe\debug as debug;
 
 // debug('_SERVER', $_SERVER);
@@ -50,16 +50,17 @@ $route->set_structure($site_structure);
 $route->read_url_request();
 $route->read_current_page();
 
+if ($route->is_not_found()) {
+    header("HTTP/1.0 404 Not Found");
+    $route->read_current_page('page_404');
+}
 $page = $route->get_page();
+// Aoloe\debug('page', $page);
 // debug('url', $route->get_url());
 // debug('page', $route->get_page());
 
-$page = $route->get_page();
-// Aoloe\debug('page', $page);
-
 $page_query = $route->get_page_query();
 // Aoloe\debug('page_query', $page_query);
-
 
 $module = new Aoloe\Module();
 $module->set_page($page);
