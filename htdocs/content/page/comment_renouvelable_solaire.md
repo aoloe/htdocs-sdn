@@ -23,6 +23,7 @@ Il y a deux applications différentes:
 ## Les installations raccordées au réseau
 
 L'électricité à courant continu produite par les modules photovoltaïques est convertie par un onduleur en courant alternatif 230V/50 Hz compatible avec le réseau du distributeur électrique.
+
 L'électricité ainsi produite est entièrement injectée dans le réseau du distributeur, en passant par un compteur de production qui permet d'établir la quantité de courant fourni au réseau.
 
 ![](images/comment_renouvelable_solaire_01.png)
