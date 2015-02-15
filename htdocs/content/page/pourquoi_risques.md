@@ -71,7 +71,7 @@ Un incendie se déclare dans la salle des turbines, provoquant indirectement une
 
 Incident classé de __niveau 2__ sur l'échelle INES : défaillance d'un système de secours de la tranche 1 de la centrale de Forsmark ; par précaution, deux réacteurs de la centrale d'Oskarshamn sont fermés[]. __« C'est le hasard qui a évité qu'une fusion du coeur ne se produise »__, affirme, dans le quotidien allemand TAZ du 3 août, Lars-Olov Höglund, qui a dirigé la construction de la centrale. « C'est l'évènement le plus dangereux depuis Three Mile Island et Tchernobyl », déclare-t-il le 2 août au quotidien suédois Svenska Dagbladet. Ole Reistad, directeur de l'institut norvégien de protection contre les rayonnements ionisants, déclare au TAZ que l'on est __« passé près de la catastrophe »__ et près de la défaillance de la dernière barrière de sécurité ; « une telle chose n'aurait jamais dû se produire ». Suite à cet incident, le ministère allemand de l'Environnement va vérifier « le plus rapidement possible » si cet incident survenu sur un réacteur nucléaire en Suède pourrait également se produire dans les centrales allemandes.
 
-source : [http://fr.wikipedia.org/wiki/Liste_des_accidents_nucléaires](http://fr.wikipedia.org/wiki/Liste_des_accidents_nucléaires)
+source : [Liste d'accidents nucléaires](http://fr.wikipedia.org/wiki/Liste_d%27accidents_nucl%C3%A9aires)
 
 ### <a name="kashiwasaki"></a>16 juillet 2007, Kashiwazaki-Kariwa (Japon)
 
