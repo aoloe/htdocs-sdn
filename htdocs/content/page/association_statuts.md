@@ -1,7 +1,5 @@
 # Statuts de l'association de Sortir du nucléaire
 
-[Télécharger les statuts](/content/download/sdn_-_statuts.pdf)
-
 ##Nom et siège de l’association
 
 ###Article 1
