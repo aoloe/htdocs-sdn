@@ -11,7 +11,7 @@ class Page extends Aoloe\Module_abstract {
         // Aoloe\debug('site', $this->site);
         // Aoloe\debug('page_url', $this->page_url);
         // Aoloe\debug('url_structure', $this->url_structure);
-        // TODO: make sure that page_url cannot deliver a path that is outside of page_path
+        // TODO: make sure that page_url cannot deliver a path that is outside of pages_path
         $file_name = $this->pages_path.str_replace('/', '_', $this->page_url).'.md';
         // Aoloe\debug('file_name', $file_name);
         if (file_exists($file_name)) {
