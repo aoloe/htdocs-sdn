@@ -1,4 +1,6 @@
 accueil :
+    navigation :
+        url :
     module :
         name : Accueil
         parameter :
@@ -39,7 +41,7 @@ pourquoi :
         dechets :
             navigation : Déchets nucléaires
         sans-co2 :
-            navigation : La fable du nucléaire sans CO2
+            navigation : La fable du nucléaire sans CO<sub>2</sub>
         uranium :
             navigation :  Les problèmes de l'uranium
             anchors :
