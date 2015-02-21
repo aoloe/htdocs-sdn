@@ -1,7 +1,7 @@
 # Lettres de lecteur
 
 Les lettres de lecteur sont un moyen efficace pour faire connaitre nos
-opinions au grand public. Laissez-vous inspirer par ces quelques exemples :
+opinions au grand public. Laissez-vous inspirer par ces quelques exemples de nos membres:
 
 [Vous voulez maintenir le nucléaire ?  Préparez les bougies !](actualite/lettres#letemps20141218)  
 Le Temps du 18.12.2014
@@ -18,10 +18,10 @@ Le Temps 7.3.2012
 [Changer nos chauffages !](actualite/lettres#letemps20100208)  
 Le Temps 8.2.2010
 
-[Nucleaire, ils ne sont plus credibles!](actualite/lettres#24heures101102)  
-Le Temps du 8 octobre 2010
+[Nucléaire, ils ne sont plus crédibles!](actualite/lettres#24heures101102)  
+Le Temps du 2 novembre 2010
 
-[Nucleaire, le vrai danger](actualite/lettres#letemps101008)  
+[Nucléaire, le vrai danger](actualite/lettres#letemps101008)  
 Le Temps du 8 octobre 2010
 
 <a name="letemps20141218"></a>
@@ -103,7 +103,7 @@ Le Temps 8.2.2010
 
 M. Josef A. Dürr, directeur de l’Association des entreprises électriques suisses (AES) nous pose la question suivante (Le Temps du 18 janvier):
 
-« Combien de vaches faut-il pour chauffer une ville comme Genève avec du bio-gaz ? » Évidemment, il ne viendrai jamais à l’idée même de l’écolo le plus mordu de proposer une telle solution aberrante. 
+« Combien de vaches faut-il pour chauffer une ville comme Genève avec du bio-gaz ? » Évidemment, il ne viendra jamais à l’idée même de l’écolo le plus mordu de proposer une telle solution aberrante. 
 
 Alors, posons donc une question un peu plus intelligente : « Combien de centrales nucléaires en faut-il pour alimenter les chauffages électriques en hiver? »  Tenez-vous bien : il en faut trois centrales nucléaires !
 
@@ -115,55 +115,23 @@ Et qu’en est-il des énergies renouvelables ? Avec des publicités de pages e
 Pourquoi donc cet acharnement de maintenir le gaspillage et de s’opposer aux énergies renouvelables, modernes et décentralisées ?
 
 <a name="24heures101102"></a>
-## Nucleaire, ils ne sont plus credibles !
+## Nucléaire, ils ne sont plus crédibles !
 
-Et encore une centaine de nos parlementaires suisses, lies la plupart aux
-grandes societes electriques et EconomieSuisse, font pression (Conseil federal
-compris) pour faire construire de nouvelles centrales nucleaires en Suisse.
-Ils devraient pourtant savoir que le nucleaire est une source d'energie
-depassee et sale, et ce meme sans parler de ses dechets nucleaires produits
-journellement. Malgre tout, Swisselectric, comprenant les societes electriques
-suisses Axpo, Alpiq, FMB et autres, lorgnent le puissant groupe français Areva
-(sinon Kepco de la Coree du Sud ou autres) pour faire construire ces nouvelles
-centrales nucleaires projetees.
-
-Pourtant le consortium Areva par exemple est connu aussi pour ses vastes mines
-d'extraction d'uranium au Niger pres d'Arlit, contaminant en permanence les
-mineurs et leurs familles soumis a la poussiere et a l'eau radioactive autour
-de ces sites. Pire encore, le combustible nucleaire (barre d'uranium) livre
-par Areva a l'Axpo pour alimenter des centrales nucleaires suisses sous
-contrats de longue duree, provient des centres de retraitement d'uranium de
-Majak en Russie, lieux les plus contamines du monde par la radioactivite,
-comme le public suisse le sait aujourd'hui.
-
-Et nos milieux nucleocrates suisses osent encore presenter l'energie nucleaire
-comme energie propre et sans CO2 produite!  
-Parlementaires/politiciens et electriciens concernes vous n'etes plus
-credibles.  
-**Reveillez vous, la fin de l'energie nucleaire en Suisse est proche.**
-
-Kurt Fischer  
-Buchillon  
 24heures du 2 novembre 2010
 
+Et encore une centaine de nos parlementaires suisses, liés la plupart aux grandes sociétés électriques et EconomieSuisse, font pression (Conseil fédéral compris) pour faire construire de nouvelles centrales nucléaires en Suisse. Ils devraient pourtant savoir que le nucléaire est une source d'énergie dépassée et sale, et ce même sans parler de ses déchets nucléaires produits journellement. Malgré tout, Swisselectric, comprenant les sociétés électriques suisses Axpo, Alpiq, FMB et autres, lorgnent le puissant groupe français Areva (sinon Kepco de la Corée du Sud ou autres) pour faire construire ces nouvelles centrales nucléaires projetées.
+
+Pourtant le consortium Areva par exemple est connu aussi pour ses vastes mines d'extraction d'uranium au Niger près d'Arlit, contaminant en permanence les mineurs et leurs familles soumis à la poussière et à l'eau radioactive autour de ces sites. Pire encore, le combustible nucléaire (barre d'uranium) livré par Areva à l'Axpo pour alimenter des centrales nucléaires suisses sous contrats de longue durée, provient des centres de retraitement d'uranium de Majak en Russie, lieux les plus contaminés du monde par la radioactivité, comme le public suisse le sait aujourd'hui.
+
+Et nos milieux nucléocrates suisses osent encore présenter l'énergie nucléaire comme énergie propre et sans CO2 produite!
+
+Parlementaires/politiciens et électriciens concernés vous n'êtes plus crédibles.
+
+__Réveillez vous, la fin de l'énergie nucléaire en Suisse est proche.__
+
 <a name="letemps101008"></a>
-## Nucleaire, le vrai danger
+## Nucléaire, le vrai danger
 
-En page une et trois de votre edition du 21 septembre, vous annoncez une
-reprise du debat sur le nucleaire en consacrant une page a un incident ayant
-implique un employe. L'exploitation de centrales nucleaires s'en trouve
-relegue a une activite ni plus ni moins dangereuse qu'un atelier de mecanique
-ou un chantier de construction, puisque des accidents du travail concernent
-aussi ces branches d'activite. Pour informer le debat, il aurait ete utile de
-rappeler que les 5 centrales en Suisse continuent de generer des dechets
-radioactifs sans que nous connaissions de solution d'elimination et qu'une
-catastrophe dans une centrale nucleaire represente le plus grave risque
-encouru par la population d'aujourd'hui et les generations a venir. Par
-ailleurs, pourquoi avoir utilise le futur et pas le conditionnel dans votre
-phrase "...quand Beznau III aura remplace Beznau I et II" ? Personne ne
-connait le resultat du referendum federal dont toute construction de centrale
-depend. Le debat n'a pas encore commence.
-
-Philippe de Rougemont  
-Les Thioleyres  
 Le Temps du 8 octobre 2010
+
+En page une et trois de votre édition du 21 septembre, vous annoncez une reprise du débat sur le nucléaire en consacrant une page a un incident ayant implique un employé. L'exploitation de centrales nucléaires s'en trouve relégué a une activité ni plus ni moins dangereuse qu'un atelier de mécanique ou un chantier de construction, puisque des accidents du travail concernent aussi ces branches d'activité. Pour informer le débat, il aurait été utile de rappeler que les 5 centrales en Suisse continuent de générer des déchets 
