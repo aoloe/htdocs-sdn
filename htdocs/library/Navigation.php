@@ -1,9 +1,12 @@
 <?php
+// use function Aoloe\debug as debug;
 class Navigation {
     private $site_structure = null;
     private $url_structure = null;
+    private $url_aliased = null;
     public function set_site_structure($structure) {$this->site_structure = $structure; }
     public function set_url_structure($url) {$this->url_structure = $url; }
+    public function set_url_aliased($url) {$this->url_aliased = $url; }
 
     private function get($structure = null, $url_segment = null, $url_base = array()) {
         $navigation = array();
@@ -12,6 +15,17 @@ class Navigation {
         }
         if (is_null($url_segment)) {
             $url_segment = explode('/', $this->url_structure);
+            /*
+            if (is_array($value) && array_key_exists('navigation', $value) && (is_string($value['navigation']) || array_key_exists('show_alias', $value['navigation']) && $value['navigation']['show_alias'])) {
+                if (isset($this->url_aliased)) {
+                    $url_segment = explode('/', $this->url_aliased);
+                } else {
+                    // TODO: show an error? or url_structure?
+                }
+            } else {
+                $url_segment = explode('/', $this->url_structure);
+            }
+            */
         }
         foreach ($structure as $key => $value) {
             // debug('key', $key);
@@ -25,11 +39,14 @@ class Navigation {
                     'active' => false,
                     'children' => array(),
                 );
-                if (in_array($key, $url_segment)) {
+                // debug('key', $key);
+                // debug('url_segment', $url_segment);
+                if (reset($url_segment) == $key) {
                     $item['active'] = true;
                     if (array_key_exists('children', $value)) {
-                        $item['children'] = $this->get($value['children'], $url_segment, array_merge($url_base, array($url)));
+                        $item['children'] = $this->get($value['children'], array_slice($url_segment, 1), array_merge($url_base, array($url)));
                     }
+                    // debug('active', $item['active']);
                 }
                 $navigation[] = $item;
             }

@@ -74,8 +74,11 @@ comment :
         liens :
             navigation : Liens
 actualite :
-    navigation : Actualités
-    alias : actualite/nouvelles
+    navigation :
+        label : Actualités
+    alias :
+        url : actualite/nouvelles
+        follow : true
     children :
         nouvelles :
             navigation : Nouvelles
@@ -100,7 +103,10 @@ actualite :
             navigation : Archive
 association :
     navigation : Association
-    alias : association/qui
+        label : Association
+    alias :
+        url : association/qui
+        follow : true
     children :
         qui :
             navigation : Qui sommes-nous?
@@ -115,6 +121,7 @@ association :
             module : Calendar
         journal :
             navigation : Journal
+                label : Journal
             alias : actualite/journal
         soutenir :
             navigation : Soutenir
@@ -122,4 +129,5 @@ association :
             navigation : Liens
         contact :
             navigation : Contact
+            module : Contact
 page_404 :
