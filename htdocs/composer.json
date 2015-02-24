@@ -32,19 +32,25 @@
         {
             "type": "vcs",
             "url":  "git@github.com:aoloe/php-site.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:aoloe/php-contact-form.git"
         }
     ],
     "require" : {
-        "mustangostang/spyc": "0.5.*@dev",
         "michelf/php-markdown": "1.4.1",
-        "aoloe/php-debug" : "dev-master",
-        "aoloe/php-template" : "dev-master",
-        "aoloe/php-cookie" : "dev-master",
+        "mustangostang/spyc": "0.5.*@dev",
+        "phpmailer/phpmailer": "5.2.8",
         "aoloe/php-cache" : "dev-master",
-        "aoloe/php-route" : "dev-master",
-        "aoloe/php-module" : "dev-master",
+        "aoloe/php-cookie" : "dev-master",
+        "aoloe/php-contact-form" : "dev-master",
+        "aoloe/php-debug" : "dev-master",
         "aoloe/php-markdown" : "dev-master",
-        "aoloe/php-site" : "dev-master"
+        "aoloe/php-module" : "dev-master",
+        "aoloe/php-route" : "dev-master",
+        "aoloe/php-site" : "dev-master",
+        "aoloe/php-template" : "dev-master"
     },
     "authors" : [
         {

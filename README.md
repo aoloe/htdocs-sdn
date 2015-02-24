@@ -68,6 +68,11 @@ Dans certains cas, nous pouvons avoir une navigation dans la barre de droite.
 
 Website de l'association Suisse Sortir du nucléaire
 
+# Contact form
+
+- sur green/nexlink `mail()` ne semble pas marcher
+- avec PHPMailer, j'arrives à envoyer des mails vers des address `@sortirdunucleaire.ch`, avec n'importe quel from.
+
 # Notes
 
 Converting the journal's pdfs into pngs:
@@ -99,6 +104,7 @@ or even
 
 # Todo
 
+- define who should get the contact form mails. (info@sortirdunucleaire)
 - make the page less wide
 - (optionally) insert non breaking spaces for:
   - ` :`, ` ?`, ` !`
@@ -106,7 +112,7 @@ or even
 - improve the way tables are shown (now i have to add a faked header with a dot in it
 - fill the `links` pages with the long links page
 - add the old items in actualite/archive
-- finish and activate the contact form
+- define the to address in the contact form from the structure.
 - check what to do with neuchatel (and the other "small sites")
 - add the content of the news
 - add a module for the most recent update

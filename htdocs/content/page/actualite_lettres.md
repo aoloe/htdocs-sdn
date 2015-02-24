@@ -9,20 +9,20 @@ Le Temps du 18.12.2014
 [Comment comprendre l'évaluation des risques nucléaires par nos autorités de surveillance?](actualite/lettres#letemps201306)  
 Le Temps juin 2013
 
-[Utiliser le soleil de midi](actualite/lettres#letemps20110218)  
-Le Temps du 18 février 2011
-
 [Le nucléaire, les faits têtus](actualite/lettres#letemps20120307)  
 Le Temps 7.3.2012
 
-[Changer nos chauffages !](actualite/lettres#letemps20100208)  
-Le Temps 8.2.2010
+[Utiliser le soleil de midi](actualite/lettres#letemps20110218)  
+Le Temps du 18 février 2011
 
 [Nucléaire, ils ne sont plus crédibles!](actualite/lettres#24heures101102)  
 Le Temps du 2 novembre 2010
 
 [Nucléaire, le vrai danger](actualite/lettres#letemps101008)  
 Le Temps du 8 octobre 2010
+
+[Changer nos chauffages !](actualite/lettres#letemps20100208)  
+Le Temps 8.2.2010
 
 <a name="letemps20141218"></a>
 ## Vous voulez maintenir le nucléaire ?  Préparez les bougies !
@@ -96,24 +96,6 @@ Il omet de mentionner  que lorsque la consommation est maximale autour de midi, 
 
 Par ailleurs, se pose la question de l’utilisation efficace de la production électrique existante. Il y a encore dans notre pays un nombre important de chauffages électriques constituant une aberration écologique et économique datant du temps où les électriciens ont poussé  à la consommation afin de se débarrasser de la capacité excédentaire des centrales nucléaires. Pendant une journée de grand froid en hiver, ces chauffages électriques consomment l'équivalent de la production de trois à quatre centrales nucléaires. Ne serait-il pas plus logique de remplacer ces chauffages d'un autre âge par des chauffages modernes, plutôt que de vouloir construire à tout prix des nouvelles centrales nucléaires?  
 
-<a name="letemps20100208"></a>
-## Changer nos chauffages !
-
-Le Temps 8.2.2010
-
-M. Josef A. Dürr, directeur de l’Association des entreprises électriques suisses (AES) nous pose la question suivante (Le Temps du 18 janvier):
-
-« Combien de vaches faut-il pour chauffer une ville comme Genève avec du bio-gaz ? » Évidemment, il ne viendra jamais à l’idée même de l’écolo le plus mordu de proposer une telle solution aberrante. 
-
-Alors, posons donc une question un peu plus intelligente : « Combien de centrales nucléaires en faut-il pour alimenter les chauffages électriques en hiver? »  Tenez-vous bien : il en faut trois centrales nucléaires !
-
-Mais quel est le problème des chauffages électriques? Si nous produisons de l’électricité avec une centrale thermique, soit nucléaire soit au gaz, nous perdons deux tiers de l’énergie mise en œuvre ( perte que nous voyons partir en forme de panache de vapeur s’échappant des tours de refroidissement ). En plus il y a encore des pertes pour amener cette électricité dans nos foyers pour nous chauffer.  Quel gaspillage énorme, qui date du temps quand nos électriciens ont dû trouver des consommateurs pour leur électricité nucléaire produite en abondance. A cette fin ils accordaient des tarifs très alléchants pour toute maison chauffée électriquement.
-
-Ne serait-il donc pas le moment de remplacer ces chauffages ? Ainsi on pourrait déjà récupérer l’équivalent de trois centrales nucléaires en hiver!  Mais nos électriciens préfèrent continuer de chanter les louanges du chauffage électrique – et de proposer de construire des nouvelles centrales nucléaires.  
-Et qu’en est-il des énergies renouvelables ? Avec des publicités de pages entières nos électriciens se vantent de promouvoir les énergies renouvelables – et voyez en haut comment ils essayent de dénigrer cette énergie du futur.
-
-Pourquoi donc cet acharnement de maintenir le gaspillage et de s’opposer aux énergies renouvelables, modernes et décentralisées ?
-
 <a name="24heures101102"></a>
 ## Nucléaire, ils ne sont plus crédibles !
 
@@ -134,4 +116,22 @@ __Réveillez vous, la fin de l'énergie nucléaire en Suisse est proche.__
 
 Le Temps du 8 octobre 2010
 
-En page une et trois de votre édition du 21 septembre, vous annoncez une reprise du débat sur le nucléaire en consacrant une page a un incident ayant implique un employé. L'exploitation de centrales nucléaires s'en trouve relégué a une activité ni plus ni moins dangereuse qu'un atelier de mécanique ou un chantier de construction, puisque des accidents du travail concernent aussi ces branches d'activité. Pour informer le débat, il aurait été utile de rappeler que les 5 centrales en Suisse continuent de générer des déchets 
+En page une et trois de votre édition du 21 septembre, vous annoncez une reprise du débat sur le nucléaire en consacrant une page a un incident ayant implique un employé. L'exploitation de centrales nucléaires s'en trouve relégué a une activité ni plus ni moins dangereuse qu'un atelier de mécanique ou un chantier de construction, puisque des accidents du travail concernent aussi ces branches d'activité. Pour informer le débat, il aurait été utile de rappeler que les 5 centrales en Suisse continuent de générer des déchets radioactifs sans que nous connaissions de solution d'élimination et qu'une catastrophe dans une centrale nucléaire représente le plus grave risque encouru par la population d'aujourd'hui et les générations à venir. Par ailleurs, pourquoi avoir utilisé le futur et pas le conditionnel dans votre phrase "...quand Beznau III aura remplacé Beznau I et II" ? Personne ne connaît le résultat du référendum fédéral dont toute construction de centrale dépend. Le débat n'a pas encore commencé.
+
+<a name="letemps20100208"></a>
+## Changer nos chauffages !
+
+Le Temps 8.2.2010
+
+M. Josef A. Dürr, directeur de l’Association des entreprises électriques suisses (AES) nous pose la question suivante (Le Temps du 18 janvier):
+
+« Combien de vaches faut-il pour chauffer une ville comme Genève avec du bio-gaz ? » Évidemment, il ne viendra jamais à l’idée même de l’écolo le plus mordu de proposer une telle solution aberrante. 
+
+Alors, posons donc une question un peu plus intelligente : « Combien de centrales nucléaires en faut-il pour alimenter les chauffages électriques en hiver? »  Tenez-vous bien : il en faut trois centrales nucléaires !
+
+Mais quel est le problème des chauffages électriques? Si nous produisons de l’électricité avec une centrale thermique, soit nucléaire soit au gaz, nous perdons deux tiers de l’énergie mise en œuvre ( perte que nous voyons partir en forme de panache de vapeur s’échappant des tours de refroidissement ). En plus il y a encore des pertes pour amener cette électricité dans nos foyers pour nous chauffer.  Quel gaspillage énorme, qui date du temps quand nos électriciens ont dû trouver des consommateurs pour leur électricité nucléaire produite en abondance. A cette fin ils accordaient des tarifs très alléchants pour toute maison chauffée électriquement.
+
+Ne serait-il donc pas le moment de remplacer ces chauffages ? Ainsi on pourrait déjà récupérer l’équivalent de trois centrales nucléaires en hiver!  Mais nos électriciens préfèrent continuer de chanter les louanges du chauffage électrique – et de proposer de construire des nouvelles centrales nucléaires.  
+Et qu’en est-il des énergies renouvelables ? Avec des publicités de pages entières nos électriciens se vantent de promouvoir les énergies renouvelables – et voyez en haut comment ils essayent de dénigrer cette énergie du futur.
+
+Pourquoi donc cet acharnement de maintenir le gaspillage et de s’opposer aux énergies renouvelables, modernes et décentralisées ?
