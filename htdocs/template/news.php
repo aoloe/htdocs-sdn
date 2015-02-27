@@ -6,7 +6,7 @@
                 <?= $item ?>
             <?php endforeach; ?><?php else : ?>
                 <p>Pas encore de nouvelles.</p>
-            <?php endif ?>
+            <?php endif; ?>
         </div>
     </div>
     <div class="col-4-12">

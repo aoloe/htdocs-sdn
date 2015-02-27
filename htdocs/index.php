@@ -56,16 +56,17 @@ if ($route->is_not_found()) {
 }
 $page = $route->get_page();
 $page_query = $route->get_page_query();
-// Aoloe\debug('page', $page);
-// debug('url', $route->get_page_url());
+// debug('page', $page);
+// debug('page_url', $route->get_page_url());
 // debug('url aliased', $route->get_page_aliased_url());
-// Aoloe\debug('page_query', $page_query);
+// debug('page_query', $page_query);
 
 $module = new Aoloe\Module();
 $module->set_page($page);
-$module->set_parameter($page_query);
+$module->set_url_query($route->get_page_query());
 $module->set_site($site);
 $module->set_url_structure($route->get_page_url());
+$module->set_url_request($route->is_page_aliased_url() ? $route->get_page_aliased_url() : $route->get_page_url());
 $content_page = $module->get_rendered();
 
 include('library/Navigation.php');
