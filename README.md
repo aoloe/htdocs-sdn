@@ -110,7 +110,6 @@ or even
   - ` :`, ` ?`, ` !`
   - `« `, ` »`
 - improve the way tables are shown (now i have to add a faked header with a dot in it
-- fill the `links` pages with the long links page
 - add the old items in actualite/archive
 - define the to address in the contact form from the structure.
 - check what to do with neuchatel (and the other "small sites")
