@@ -4,7 +4,7 @@ Alliance suisse « Non au nucléaire » avec 37 organisations membres
 <http://www.non-au-nucleaire.ch>
 
 Informations générales sur le nucléaire  
-<http://www.informationnucléaire.ch>
+<http://www.informationnucleaire.ch>
 
 Fondation Suisse de l’énergie (SES) (en allemand)  
 <http://www.energiestiftung.ch>

@@ -125,8 +125,6 @@ association :
             alias : actualite/journal
         soutenir :
             navigation : Soutenir
-        liens :
-            navigation : Liens
         contact :
             navigation : Contact
             module : Contact

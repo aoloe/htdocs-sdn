@@ -98,12 +98,11 @@ Cet accident a été placé au niveau 7 sur l'échelle [l'echelle INES](http://f
 
 Un problème de débit a été constaté au niveau d'une pompe à eau de l'unité 4 de la centrale nucléaire de [Doel](http://fr.wikipedia.org/wiki/Centrale_nucléaire_de_Doel). Les corrections nécessaires ont immédiatement été effectuées. L'incident a été classé au niveau 2 de l'échelle INES.
 
-
 ### 4 juin 2011, Anshas (Egypte)
 
 À la suite de l'explosion d'une pompe de réacteur dans la petite centrale de Anshas (Nord du Caire), alors mise en service sans autorisation, une fuite de 10 m3 d'eau radioactive s'est produite. L'incident est classé niveau 3 de l'échelle INES.
 
-## INES, l'échelle internationale de classement des incidents et accidents nucléaires
+## <a name="echelle-ines"></a>INES, l'échelle internationale de classement des incidents et accidents nucléaires
 
 ![](images/pourquoi_risques_accidents_ines.png)
 
