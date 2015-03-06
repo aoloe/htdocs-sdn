@@ -286,6 +286,10 @@ ul.navigation_header_right li {
 */
 }
 
+.content img {
+    max-width: 100%;
+}
+
 .grid-pad {
     padding-top: 0px;
     padding-left: 0px;

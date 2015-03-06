@@ -4,7 +4,7 @@ accueil :
     module :
         name : Accueil
         parameter :
-            opening : intro.md
+            opening : intro_20150306.md
             sidebar :
                 - facebook
                 - news
