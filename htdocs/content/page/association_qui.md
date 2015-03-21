@@ -6,33 +6,32 @@ Vous pouvez envoyer un message aux membres du comité en cliquant sur leur nom.
 
 ## Les coordinations antinucléaires dans les cantons
 
-### Fribourg
+### ![](images/cantons/kt-fr.gif) Fribourg
 
 Comité antinucléaire Fribourg  
 <http://fr-fr.facebook.com/antinuclear.fr>
 
-### Genève
+### ![](images/cantons/kt-ge.gif) Genève
 
 ContrAtom  
 [www.contratom.ch](http://www.contratom.ch/)
 
-### Jura
+### ![](images/cantons/kt-ju.gif) Jura
 
 Alliance jurassienne Non au nucléaire AJUNN  
 [www.ajunn.ch](http://www.ajunn.ch/)
 
-### Neuchatel
+### ![](images/cantons/kt-ne.gif) Neuchatel
 
 Alliance neuchateloise Non au nucléaire ANNAN  
 [alliance.nnn@bluewin.ch](mailto:alliance.nnn@bluewin.ch)
 
-### Valais
+### ![](images/cantons/kt-vs.gif) Valais
 
 Alliance valaisanne Sortir du nucléaire  
-[alliance.valaisanne@sortirdunucléaire.ch](mailto:alliance.valaisanne@sortirdu
-nucléaire.ch)
+[alliance.valaisanne@sortirdunucléaire.ch](mailto:alliance.valaisanne@sortirdunucléaire.ch)
 
-### Vaud
+### ![](images/cantons/kt-vd.gif) Vaud
 
 Coordination énergie Vaud  
 [www.coordinationenergie.ch](http://www.coordinationenergie.ch/)

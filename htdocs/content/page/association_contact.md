@@ -4,7 +4,7 @@
 
 **Courriel:** [info@sortirdunucleaire.ch](mailto:info@sortirdunucleaire.ch)
 
-**Telephone**: 076 517 00 20 (heures de bureau)
+**Telephone**: 076 693 62 93 (heures de bureau)
 
 **CCP**: Initiatives Sortir du Nucleaire / 10-19179-8
 
@@ -34,7 +34,7 @@ __Nom__ \* : <input type="text" name="nom" size="30"  >
 __Adresse__ \* : <input type="text" name="adresse" size="30"  >  
 __Code Postal__ \* : <input type="text" name="cp" size="30"  >  
 
-__Ville__ \* : <input type="text" name="ville" size="30"  >  
+__Localité__ \* : <input type="text" name="ville" size="30"  >  
 __Pays__ \* : <input type="text" name="pays" size="30"  >  
 __Email__ \* : <input type="text" name="email" size="30"  >  
 __Téléphone__ : <input type="text" name="tel" size="30"  >
