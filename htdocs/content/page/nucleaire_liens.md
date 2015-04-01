@@ -10,7 +10,7 @@ Fondation Suisse de l’énergie (SES) (en allemand)
 <http://www.energiestiftung.ch>
 
 Service d'information mondial sur l'énergie (WISE, en anglais)  
-<http://www.antenna.nl/wise>
+<http://www.wiseinternational.org>
 
 Info Nucléaire: site d'information sur le nucléaire  
 <http://www.dissident-media.org/infonucleaire/>
