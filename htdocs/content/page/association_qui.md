@@ -23,18 +23,18 @@ Alliance jurassienne Non au nucléaire AJUNN
 
 ### ![](images/cantons/kt-ne.gif) Neuchatel
 
-Alliance neuchateloise Non au nucléaire ANNAN  
-[alliance.nnn@bluewin.ch](mailto:alliance.nnn@bluewin.ch)
+Alliance neuchâteloise Non au nucléaire ANNN  
+_Association en veille entre les périodes de votations_
 
 ### ![](images/cantons/kt-vs.gif) Valais
 
 Alliance valaisanne Sortir du nucléaire  
-[alliance.valaisanne@sortirdunucléaire.ch](mailto:alliance.valaisanne@sortirdunucléaire.ch)
+[Marie-Therese.Sangra@wwf.ch](mailto:Marie-Therese.Sangra@wwf.ch)
 
 ### ![](images/cantons/kt-vd.gif) Vaud
 
 Coordination énergie Vaud  
-[www.coordinationenergie.ch](http://www.coordinationenergie.ch/)
+[roger.nordmann@parl.ch](mailto:roger.nordmann@parl.ch)
 
 ## Alliance Suisse "Non au Nucleaire"
 
