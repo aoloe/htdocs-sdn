@@ -39,7 +39,7 @@ Avec une installation de 27 m<sup>2</sup> on pourrait donc produire (en moyenne 
 Cependant une installation plus petite (en fonction de la surface disponible ou de l'investissement envisagé) peut aussi se justifier.
 
 Pour calculer le potentiel de votre projet visitez le site  
-<http://www.swissolar.ch/fr/solardach-rechner/>
+<http://www.swissolar.ch/fr/pour-maitres-douvrage/outils-de-calcul/calculateur-denergie-solaire/>
 
 ### Le potentiel du photovoltaïque pour la Suisse
 
@@ -64,7 +64,7 @@ Grâce au développement continuel de la technologie photovoltaïque ce facteur 
 Le coût des installations photovoltaïques sont en baisse spectaculaire ces dernières années. Si vous envisagez la réalisation d'une telle installation n'hésitez donc pas à demander des offres à des entreprises expérimentées afin de connaître les prix actuels.
 
 Le site suivant vous permettra de les identifier  
-<http://www.swissolar.ch/fr/waerme-von-der-sonne/les-pros-du-solaire>
+<http://www.swissolar.ch/fr/a-propos-de-swissolar/rechercher-un-membrepros-du-solaire/>
 
 (A titre d'information, une installation de 27m<sup>2</sup> couvrant la consommation totale en électricité d'un ménage moyen (voir ci-dessus) coûtait en 2012 environ CHF 22'000.-)
 
@@ -72,15 +72,18 @@ Le site suivant vous permettra de les identifier
 
 Le prix de revient du kWh produit est aussi en baisse remarquable, on attend que d'ici quelques années il sera au même niveau que le mix de courant que nous consommons aujourd'hui.
 
-### Rétribution a prix coûtant
+### Rétribution a prix coûtant (RPC)
 
 Pour promouvoir les énergies renouvelables, la confédération a instauré la rétribution à prix coûtant du courant injecté (RPC). La RPC compense la différence entre le coût de la production et le prix du marché, garantissant ainsi aux producteurs de courant renouvelable un prix qui correspond à leurs coûts de production.
 
 A cause du grand nombre d'inscriptions de projets photovoltaïque, l'octroi de ces aides fédérales a atteint son plafond et les nouveaux projets sont inscrits sur une liste d'attente.
 
-Pour plus de détails concernant l'RPC, veuillez consulter les sites officiels suivants:  
-<http://www.bfe.admin.ch/themen/00612/02073/index.html?lang=fr>  
-[http://www.bfe.admin.ch/energie/00588/00589/00644/index.html?lang=fr&msg-id=43276](http://www.bfe.admin.ch/energie/00588/00589/00644/index.html?lang=fr&msg-id=43276)
+### Rétribution Unique (RU)
+
+Afin de remédier à ce problème, une rétribution unique (RU) peut être choisie pour certains projets photovoltaïques.
+Le lien suivant vous donne toutes les informations nécessaires concernant la RPC respectivement la RU:  
+<http://www.swissgrid.ch/swissgrid/fr/home/experts/topics/renewable_energies/remuneration_re.html>
+
 
 ### Déductions fiscales
 
@@ -123,14 +126,14 @@ Avec une telle installation, les besoins en eau chaude sanitaire annuels de cett
 (Il serait possible d’augmenter la part de couverture par le solaire en augmentant la surface des capteurs ainsi que le volume de l’accumulateur, mais ce gain additionnel ne justifierait pas l’augmentation des coûts de l’installation.)
 
 Pour calculer le potentiel de votre projet visitez le site  
-<http://www.wwf.ch/fr/agir/gestes/habitat2/calculateur_solaire/>
+<http://www.swissolar.ch/fr/pour-maitres-douvrage/outils-de-calcul/calculateur-denergie-solaire/>
 
 ### Combien coûte une installation solaire thermique pour l'eau sanitaire?
 
 Pour obtenir des prix actualisés, veuillez contacter un installateur spécialisé.
 
-Le site suivant vous aidera :  
-<http://www.swissolar.ch/fr/waerme-von-der-sonne/les-pros-du-solaire>  
+Le site suivant vous aidera à en trouvera un:  
+<http://www.swissolar.ch/fr/a-propos-de-swissolar/rechercher-un-membrepros-du-solaire/>  
 (A titre d'information, une installation de 4 m2 comme décrit ci-dessus coûtait en 2012 environ CHF 15'000.-)
 
 ### Déductions fiscales
@@ -143,11 +146,12 @@ La plupart des cantons font la promotion de telles installations en les subventi
 
 Dans le canton de Vaud par exemple, cette subvention s'élève actuellement à CHF 1'800.- pour une installation de 4 m<sup>2</sup> à 10 m<sup>2</sup>.
 
-Pour des informations actualisées, veuillez consulter le site  
-<http://www.swissolar.ch/fileadmin/files/swissolar/f%C3%B6rderung/Infodossier_Foerderung_Solarthermie.pdf>
+Liste des mesures promotionnelles des cantons et communes pour le solaire thermique pour 2014:  
+[Solarwärme 2014: Förderung durch Kantone und Gemeinden; Baubewilligungen](/content/download/page/comment_liens/infodossier_foerderung_solarwaerme.pdf)  
+(cantons romands dès page 18)
 
 Pour des informations valables pour le canton de Vaud, consultez  
-<http://www.vd.ch/fr/autorites/departements/dse/environnement-et-energie>
+<http://www.vd.ch/themes/environnement/energie/subventions/domaines/>
 
 ## Appoint du chauffage
 

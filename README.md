@@ -104,6 +104,7 @@ or even
 
 # Todo
 
+- find a way to correctly show the favicon on each page
 - define who should get the contact form mails. (info@sortirdunucleaire)
 - make the page less wide
 - (optionally) insert non breaking spaces for:

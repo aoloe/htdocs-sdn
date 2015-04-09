@@ -1,26 +1,28 @@
-Vous aimeriez être informé régulièrement de
+Sur le site de Sortir du Nucléaire vous trouvez __des faits et chiffres__ concernant le nucléaire et les énergies renouvelables.
 
-- l'actualité dans le domaine de l'énergie et
-- des activités de notre association?
+Vous n'avez pas trouvé réponse ou vous avez trouvé une erreur?
 
-Vous avez le choix en vous abonnant à ces lettres d’information et à une plateforme sociale:
+Merci de nous le signaler à 
+<info@sortirdunucleaire.ch>
 
-## Journal trimestriel de l’association romande Sortir du nucléaire
+<hr>
 
-Livré par la poste, abonnement à prix libre de 5.- à 500 Fr. / an. Ici:  
-[http://www.sortirdunucleaire.ch/contact](http://www.sortirdunucleaire.ch/contact)
+Vous cherchez plutôt des __actualités toute récentes__?
 
-## Lettre de l’association romande Sortir du nucléaire
+[![Sortir du nucléaire sur Facebook](images/facebook_f.png)](https://www.facebook.com/pages/Sortir-du-Nucl%C3%A9aire-Suisse-Romande/161424603891516)  
+Consultez [notre site facebook](https://www.facebook.com/pages/Sortir-du-Nucl%C3%A9aire-Suisse-Romande/161424603891516)
 
-Envoi 1 x/mois par courrier électronique. Abonnement gratuit en envoyant un e-mail à:  
-[info@sortirdunucleaire.ch](mailto:info@sortirdunucleaire.ch)
+<hr>
 
-## Page Facebook de l'association romande Sortir du nucléaire
+Vous voulez être informé des activités de notre association, et lire des __articles rédactionnels__ du domaine de l'énergie?
 
-Mises à jour deux fois par semaine ou plus, possibilité de laisser des commentaires. Attention pour accéder à ces infos vous devez vous mêmes avoir un compte Facebook 
-<http://www.tinyurl.com/facebook-sdn>
+Abonnez-vous à __notre journal__:  
+abo à prix libre de 5.- à 500.- Fr / an  
+<info@sortirdunucleaire.ch>
 
-## « L’avenir est renouvelable »
+<hr>
 
-Journal trimestriel de l’alliance suisse Non au nucléaire, journal en format électronique. Lecture et abonnement gratuit ici:  
-<http://non-au-nucleaire.ch/?page_id=134>
+Vous aimeriez être informé de nos actions de ce moment?
+
+Abonnez-vous à notre __bulletin électronique__  
+<info@sortirdunucleaire.ch>
