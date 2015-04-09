@@ -7,4 +7,4 @@ Les buts de l’associations sont
 - l’interdiction de construction de toute nouvelle centrale nucléaire
 - la fermeture des installations nucléaires existante le plus tôt possible
 
-Pour consulter nos statuts, cliquer [ici](statuts)
+Pour consulter nos statuts, cliquer [ici](association/statuts)

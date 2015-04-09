@@ -26,7 +26,7 @@
 - Des sommes énormes seront nécessaires pour le démantèlement des réacteurs détruits. Ce démantèlement, va durer des dizaines d'années. Le gouvernement estime ces coûts à 100 milliards de dollars soit un multiple de ce qu'a coûté la construction des centrales. D'autres sources parlent même d'un montant beaucoup plus élevé.
 - Tepco, la compagnie exploitant entre autres les centrales de Fukushima, est pratiquement ruinée. C'est donc l'Etat, c'est à dire les citoyens, qui paient les sommes astronomiques causées par cet accident nucléaire.
 
-<div class="highlight">
+<div class="highlight" markdown="1">
 ## N'oublions pas Fukushima.
 
 Une catastrophe nucléaire serait possible chez nous aussi, comme dans n’importe quelle des 435 centrales nucléaires en activité dans le monde. Si les centrales suisses ne sont pas situées en bord de mer, elles sont exposées aux tremblements de terres. Mühleberg par exemple est situées en aval d'un barrage hydroélectrique vulnérable en cas de tremblements de terre dont la force potentielle, comme au Japon, a été mal prise en compte.

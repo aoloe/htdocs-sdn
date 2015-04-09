@@ -25,6 +25,11 @@ class Accueil extends Aoloe\Module_abstract {
         // debug('sidebar', $this->sidebar);
         foreach ($this->sidebar as $item) {
             // debug('item', $item);
+            $parameter = null;
+            if (strpos($item, ',') !== false) {
+                list($item, $parameter) = explode(',', $item);
+            }
+            // Aoloe\debug('parameter', $parameter);
             switch ($item) {
                 case 'facebook' :
                     if ($this->site->is_online()) {
@@ -54,7 +59,7 @@ class Accueil extends Aoloe\Module_abstract {
                     include_once('module/News.php');
                     $news = new News();
                     $news->set_site($this->site);
-                    $teaser = $news->get_teaser();
+                    $teaser = $news->get_teaser($parameter);
                     // debug('teaser', $teaser);
                     $template->clear();
                     $template->set('path', $this->site->get_path_relative());

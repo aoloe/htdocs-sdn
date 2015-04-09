@@ -402,6 +402,13 @@ table.sdn_table {
 table.sdn_table td {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+}
+
+div.highlight {
+    border:1px solid black;
+    padding-left:15px;
+    padding-right:15px;
+}
 
 </style>
 <div id="header">

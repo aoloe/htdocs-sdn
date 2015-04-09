@@ -7,9 +7,8 @@ accueil :
             opening : intro_20150306.md
             sidebar :
                 - facebook
-                - news
+                - news,0
                 - magazine
-                - last_changes
 nucleaire :
     navigation : Le nucléaire
     children :
