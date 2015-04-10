@@ -92,7 +92,7 @@ Des explosions d'hydrogène causées par la surchauffe des réacteurs détruisai
 80'000 personnes ont été évacuées.  
 Cet accident a été placé au niveau 7 sur l'échelle [l'echelle INES](http://fr.wikipedia.org/wiki/échelle_INES) (le niveau le plus élevé) comme seulement l'accident de Tchernobyl l'avait été jusqu'à présent.
 
-→ [La situation 3 ans après](actualite/fukushima-3-ans-apres)
+→ [La situation 4 ans après](actualite/nouvelles/20150304-11-mars-2011-fukushima)
 
 ### 18 mars 2011, Doel (Belgique)
 

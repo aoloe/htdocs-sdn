@@ -77,7 +77,7 @@ Comme si les catastrophes écologiques ne suffisaient pas, on peut ajouter les p
 
 Vous pensez que ça ne peut pas être pire? Navrée de vous annoncer que plus de 120 permis d'exploitation ont été délivrés, l'année dernière, par le gouvernement nigérien à des exploitants du monde entier dont des Chinois, des Canadiens, des Sud Africains, etc. Que restera-t-il du Niger dans 50 ans ?
 
-Heureusement, une association existe depuis 2001 et dénonce tous ces faits. Il s'agit d'Aghir in man. Vous pouvez en savoir plus en allant sur le site: [www.aghirinman.org](http://www.aghirinman.org/). Vous pouvez également leur faire un don. Aghir in Man participe, entre autres, à la sensibilisation, à l’information et à la formation des populations, éléments essentiels pour que les Hommes puissent dénoncer l'inacceptable.
+Heureusement, une association existe depuis 2001 et dénonce tous ces faits. Il s'agit d'Aghir in man. Aghir in Man participe, entre autres, à la sensibilisation, à l’information et à la formation des populations, éléments essentiels pour que les Hommes puissent dénoncer l'inacceptable.
 
 ### Conclusion.
 
