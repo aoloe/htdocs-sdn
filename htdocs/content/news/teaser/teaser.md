@@ -1,12 +1,3 @@
-### Assemblée Générale
-
-_Jeudi 16 avril 2015_  
-Hôtel Alpha Palmiers  
-34 rue du Petit-Chêne  
-Lausanne
-
-[Pour en savoir plus »](actualite/nouvelles/20150402-assemblee-generale)
-
 ### Pétition
 
 ![Pétition »](petition-muehleberg-beznau.png)  
