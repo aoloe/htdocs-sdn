@@ -7,7 +7,7 @@ if [ $# -eq 0 ]; then
 else
     base_filename="sdn_journal_"$1
     pdf_filename=$base_filename".pdf"
-    pdf_filename="content/magazine/pdf/"$pdf_filename
+    # pdf_filename="content/magazine/pdf/"$pdf_filename
     echo $pdf_filename
     if [ -f $pdf_filename ]; then
         convert $pdf_filename[0] -resize 100x $base_filename".png"
