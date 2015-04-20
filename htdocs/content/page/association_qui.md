@@ -39,7 +39,7 @@ Coordination énergie Vaud
 ## Alliance Suisse "Non au Nucleaire"
 
 "Sortir du Nucléaire" est une des 37 organisations membres de l’Alliance «Non au nucléaire», qui regroupe les plus importants éléments du mouvement anti-nucléaire en Suisse, composé d’organisations de protection de l’environnement, de différents partis et autres groupements d’intérêts.  
-[www.non-au-nucleaire.ch](http://www.non-au-nucléaire.ch)
+[www.non-au-nucleaire.ch](http://www.non-au-nucleaire.ch)
 
 ## Réseau Sortir du Nucléaire (France)
 
