@@ -1,4 +1,4 @@
-### Pétition
+### Inde: ils disent NON!
 
 [![Jaitapur live](jaitapur.jpg)](actualite/nouvelles/20150417-jaitapur-live)  
 
@@ -8,7 +8,7 @@ Mercredi 29 avril à Bulle
 Mercredi 06 mai à Genève   
 Mercredi 08 mai Martigny   
 Mercredi 13 mai à Morges   
-Mercredi 18 mai à Neuchâtel  
+Lundi 18 mai à Neuchâtel  
 
 En présence du réalisateur.
 

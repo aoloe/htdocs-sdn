@@ -43,7 +43,7 @@ _Morges_
 Foyer Beausobre  
 Ave de Vertou, 2
 
-Mercredi 18 mai 2015 à 20h  
+Lundi 18 mai 2015 à 20h  
 _Neuchâtel_  
 Muséum d’histoire naturelle  
 Rue des Terreaux 14
