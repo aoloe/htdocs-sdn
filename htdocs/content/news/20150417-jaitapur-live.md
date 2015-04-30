@@ -33,7 +33,7 @@ _Genève_
 Grütli, fonction:cinéma  
 Rue du Général Dufour 16
 
-Mercredi 08 mai 2015 à 19h30  
+Vendredi 08 mai 2015 à 19h30  
 _Martigny_   
 Salle du Vampire  
 Rue des Petits Epineys 7
