@@ -1,20 +1,18 @@
-### Assemblée Générale
+### Inde: ils disent NON!
 
-_Jeudi 16 avril 2015_  
-Hôtel Alpha Palmiers  
-34 rue du Petit-Chêne  
-Lausanne
+[![Jaitapur live](jaitapur.jpg)](actualite/nouvelles/20150417-jaitapur-live)  
 
-[Pour en savoir plus »](actualite/nouvelles/20150402-assemblee-generale)
+Reportage sur la résistance des riverains la plus grosse centrale nucléaire au monde prévue à Jaitapur.
 
-### Pétition
+Mercredi 29 avril à Bulle  
+Mercredi 06 mai à Genève   
+Mercredi 08 mai Martigny   
+Mercredi 13 mai à Morges   
+Lundi 18 mai à Neuchâtel  
 
-![Pétition »](petition-muehleberg-beznau.png)  
-Arrêter  
-Mühleberg et Beznau  
-de toute urgence
+En présence du réalisateur.
 
-[Signez la pétition »](content/download/news/petition-muehleberg-beznau.pdf)
+[Tous les détails »](actualite/nouvelles/20150417-jaitapur-live)
 
 ### Le 11 mars 2011 commençait la catastrophe nucléaire de Fukushima – que se passe t-il depuis ?
 

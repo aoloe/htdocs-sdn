@@ -11,7 +11,7 @@ __Frédéric Joliot-Curie__ met en évidence la réaction en chaîne
 1942
 :   Les __USA__ lancent le projet __Manhattan__ pour construire la bombe atomique
 
-1939
+1942
 :   __Enrico Fermi__ construit la première pile atomique, qui produit le plutonium pour les bombes atomiques
 
 1945

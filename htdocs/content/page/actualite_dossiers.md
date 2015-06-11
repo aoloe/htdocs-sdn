@@ -4,6 +4,9 @@ Nous etablissons des dossiers de presse pour des sujets d'actualite concernant
 l'energie. Ces dossiers contiennent une documentation elaboree concernant ce
 sujet, documentation librement disponible en indiquant la source.
 
+- **16 april 2015**  
+  [Jaitapur Live! Film & conférence de Pradeep Indulkar](content/page/pdf/dossiers/sdn_-_20150416_-_jaitapur.pdf)  
+  [Flyer: Jaitapur Live!](content/page/pdf/dossiers/sdn_-_20150416_-_jaitapur_flyer.pdf)
 - **21 decembre 2010**  
   [Vente de pommes pour les enfants de Tchernobyl](content/page/pdf/dossiers/sdn_20101221_vente_de_pommes_tchernobyl.pdf)
 - **14 novembre 2009**  

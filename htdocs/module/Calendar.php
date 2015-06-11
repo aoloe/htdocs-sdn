@@ -46,11 +46,18 @@ class Calendar extends Aoloe\Module_abstract {
                 $markdown->set_text($item['content']);
                 $calendar_content = $markdown->parse();
             }
+            $calendar_place = null;
+            if (array_key_exists('place', $item)) {
+                $markdown->clear();
+                $markdown->set_text($item['place']);
+                $calendar_place = $markdown->parse();
+            }
             $calendar_item = array (
                 'start' => date("d.m.Y", strtotime($item['start'])),
                 'end' => array_key_exists('end', $item) ? date("d.m.Y", strtotime($item['end'])) : '',
                 'date' => array_key_exists('date', $item) ? $item['date'] : '',
                 'title' => $item['title'],
+                'place' => $calendar_place,
                 'url' => array_key_exists('url', $item) ? $this->site->get_path_relative($item['url']) : null,
                 'content' => $calendar_content,
             );
@@ -72,7 +79,7 @@ class Calendar extends Aoloe\Module_abstract {
         $template->set('path', $this->site->get_path_relative());
         $template->set_template('template/calendar_item.php');
         $content_future = array();
-        foreach ($calendar_future as $item) {
+        foreach (array_reverse($calendar_future) as $item) {
             $template->set('item', $item);
             $content_future[] = $template->fetch();
         }
