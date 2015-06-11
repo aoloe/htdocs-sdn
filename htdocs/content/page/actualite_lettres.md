@@ -3,6 +3,9 @@
 Les lettres de lecteur sont un moyen efficace pour faire connaitre nos
 opinions au grand public. Laissez-vous inspirer par ces quelques exemples de nos membres:
 
+[La mémoire et la raison](actualite/lettres#laiberte20150527)  
+La Liberté du 27.5.2015
+
 [Vous voulez maintenir le nucléaire ?  Préparez les bougies !](actualite/lettres#letemps20141218)  
 Le Temps du 18.12.2014
 
@@ -23,6 +26,27 @@ Le Temps du 8 octobre 2010
 
 [Changer nos chauffages !](actualite/lettres#letemps20100208)  
 Le Temps 8.2.2010
+
+<a name="laiberte20150527"></a>
+## La mémoire et la raison
+
+La Liberté du 27.5.2015
+
+_ÉNERGIE NUCLÉAIRE • Cette lectrice n’oublie pas les drames de Tchernobyl et de Fukushima. Elle attend des actes concrets._
+
+Les zones contaminées par les catastrophes de Tchernobyl et Fukushima sont géographiquement éloignées de notre pays. A chaque date commémorative annuelles nous nous souvenons, nous y pensons. Et peu après, nous oublions…
+
+Nous espérons que les installations suisses sont plus fiables que les japonaises. Nous comptons vivre dans une zone où la fréquence des séismes est moindre. Enfin, comme nos politiciens ont décidé récemment que la Suisse ne construirait pas de nouvelles centrales nucléaires, nous nous sentons faussement rassurés.
+
+C’est là que le bon sens doit intervenir. La décision fédérale de ne pas se doter de nouvelles centrales à combustion nucléaire est une reconnaissance que ces centrales sont trop dangereuses. En effet, si les centrales qui pourraient être édifiées avec les technologies actuelles ne trouvent pas grâce aux yeux de nos dirigeants, que penser de celles qui ont été construites dans les années septante ?
+
+De l’extraction de l'uranium jusqu’au stockage des déchets, le nucléaire est coûteux et risqué. Alors pourquoi persévérer dans cette voie en maintenant actives les vieilles centrales ?
+
+Beaucoup parmi nous n'oublions pas, nous voulons éviter une nouvelle catastrophe, qu’elle se produise au Bugey (70 km de Genève), à Fessenheim (40 km de Bâle), ou à Mühleberg (15 km de Berne).
+
+Souvenons-nous ! Et devenons raisonnables. Sortons du nucléaire ! Le plus vite sera le mieux.
+
+Natalie Dessarzin, Bienne.
 
 <a name="letemps20141218"></a>
 ## Vous voulez maintenir le nucléaire ?  Préparez les bougies !
