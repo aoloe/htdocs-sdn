@@ -4,8 +4,9 @@ accueil :
     module :
         name : Accueil
         parameter :
-            opening : intro_20150306.md
+            opening : intro_20150529.md
             sidebar :
+                - twitter
                 - facebook
                 - news,0
                 - magazine
@@ -13,13 +14,15 @@ nucleaire :
     navigation : Le nucléaire
     children :
         suisse :
-            navigation : En Suisse
+            navigation : Le nucléaire en Suisse
             module :
                 filter : Csv
+        historique-suisse :
+            navigation : Historique en Suisse
         monde :
-            navigation : Dans le monde
-        historique :
-            navigation : Historique
+            navigation : Le nucléaire dans le monde
+        historique-monde :
+            navigation : Historique dans le monde
         fonctionnement :
             navigation : Fonctionnement d'une centrale
         liens :
