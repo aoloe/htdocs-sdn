@@ -37,10 +37,23 @@ class Accueil extends Aoloe\Module_abstract {
                         $this->site->add_js('js/jquery.anyslider.min.js');
                         include_once('library/Facebook.php');
                         $facebook = new Facebook();
-                        $facebook_feed = $facebook->get_page_feed(161424603891516);
+                        $facebook_feed = $facebook->get_page_feed('100001743249948', '100001743249948', 'AWgirdIQ7k7i7zPZ');
                         $template->clear();
                         $template->set('feed', $facebook_feed);
                         $content_sidebar[] = $template->fetch('template/accueil_sidebar_facebook.php');
+                    }
+                break;
+                case 'twitter' :
+                    if (true || $this->site->is_online()) {
+                        // TODO: if possible directly use simpkins/tweetledee
+                        $this->site->add_js('js/jquery.min.js', '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js');
+                        $this->site->add_js('js/jquery.anyslider.min.js');
+                        include_once('library/Twitter.php');
+                        $twitter = new Twitter();
+                        $twitter_feed = $twitter->get_page_feed('sdnch');
+                        $template->clear();
+                        $template->set('feed', $twitter_feed);
+                        $content_sidebar[] = $template->fetch('template/accueil_sidebar_twitter.php');
                     }
                 break;
                 case 'magazine' :

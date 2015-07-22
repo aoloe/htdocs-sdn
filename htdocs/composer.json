@@ -37,11 +37,13 @@
             "type": "vcs",
             "url":  "git@github.com:aoloe/php-contact-form.git"
         }
+
     ],
     "require" : {
         "michelf/php-markdown": "1.4.1",
         "mustangostang/spyc": "0.5.*@dev",
         "phpmailer/phpmailer": "5.2.8",
+        "j7mbo/twitter-api-php": "dev-master",
         "aoloe/php-cache" : "dev-master",
         "aoloe/php-cookie" : "dev-master",
         "aoloe/php-contact-form" : "dev-master",

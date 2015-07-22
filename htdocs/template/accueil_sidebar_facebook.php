@@ -1,7 +1,4 @@
 <div class="sidebar sidebar_facebook">
-<!--
-<h2><a href="https://www.facebook.com/pages/Sortir-du-Nucléaire-Suisse-Romande/161424603891516">Actuel sur Facebook</a></h2>
--->
 <h2><a href="https://www.facebook.com/pages/Sortir-du-Nucléaire-Suisse-Romande/161424603891516">Facebook<img src="images/facebook_f.png"></a></h2>
 <?php if (!empty($feed)) : ?>
 <div  id="facebook_feed">

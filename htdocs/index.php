@@ -83,6 +83,8 @@ $content_navigation = $navigation->get_rendered();
 if (isset($content_page)) {
     $template = new Aoloe\Template();
 
+    $site->add_css('css/sortirdunucleaire.css');
+
     $site->add_css('css/simplegrid/simplegrid.css');
 
     $site->add_font('css/font-robotocondensed.css', 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300');
@@ -100,7 +102,7 @@ if (isset($content_page)) {
     $template->clear();
     $template->set('language', 'fr');
     $template->set('title_site', 'Sortir du Nucléaire');
-    $template->set('favicon', 'images/favicon.png');
+    $template->set('favicon', $site->get_path_relative().'images/favicon.png');
     $template->set('path', $site->get_path_relative());
     $template->set('fonts', $site->get_font());
     $template->set('js', $site->get_js());

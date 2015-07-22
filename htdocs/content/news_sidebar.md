@@ -10,7 +10,10 @@ Merci de nous le signaler à
 Vous cherchez plutôt des __actualités toute récentes__?
 
 [![Sortir du nucléaire sur Facebook](images/facebook_f.png)](https://www.facebook.com/pages/Sortir-du-Nucl%C3%A9aire-Suisse-Romande/161424603891516)  
-Consultez [notre site facebook](https://www.facebook.com/pages/Sortir-du-Nucl%C3%A9aire-Suisse-Romande/161424603891516)
+Consultez [notre site Facebook](https://www.facebook.com/pages/Sortir-du-Nucl%C3%A9aire-Suisse-Romande/161424603891516)
+
+[![Sortir du nucléaire sur Twitter](images/twitter_t.png)](https://www.twitter.com/sdnch)  
+Suivez nous [sur Twitter](https://www.twitter.com/sdnch)
 
 <hr>
 

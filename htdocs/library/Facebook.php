@@ -7,6 +7,10 @@
  * - move the image to the beginning of the post
  *
  * inspired by https://gist.github.com/banago/3864515
+ *
+ * as of july 2015, https://www.facebook.com/help/212445198787494 provides an official way to get an
+ * rss feed from a facebook page. but the result is very poor (full of friends and linke updates).
+ * the facebook feed is now disabled.
  */
 
 // use function Aoloe\debug as debug;
@@ -82,11 +86,22 @@ class Facebook {
         curl_close($curl); // close the connection
         // debug('raw_xml', $raw_xml);
         
+        libxml_use_internal_errors(true);
+        libxml_clear_errors();
         $result = simplexml_load_string( $raw_xml );
+        $error = libxml_get_errors();
+        if (!empty($error)) {
+            // Aoloe\debug('error', $error);
+            $result = null;
+        }
         return $result;
     }
 
-    public function get_page_feed( $page_id, $no = 5 ) {
+    /**
+     * credentials as of https://www.facebook.com/help/212445198787494 :
+     * How do I create an RSS Feed for my Facebook notifications?
+     */
+    public function get_page_feed( $page_id, $viewer, $key, $no = 5 ) {
         $result = array();
 
         $cache = new Aoloe\Cache();
@@ -98,11 +113,15 @@ class Facebook {
         // debug('news_facebook', $news_facebook);
         if (is_null($result)) {
             // URL to the Facebook page's RSS feed.
-            // debug('page_id', $page_id);
-            $url = 'https://www.facebook.com/feeds/page.php?id=' . $page_id . '&format=rss20';
-            // debug('url', $url);
+            // Aoloe\debug('page_id', $page_id);
+            // https://www.facebook.com/feeds/notifications.php?id=100001743249948&viewer=100001743249948&key=AWgirdIQ7k7i7zPZ&format=rss20
+            // "https://www.facebook.com/feeds/notifications.php?id=100001743249948&viewer=100001743249948&key=AWgirdIQ7k7i7zPZ&format=rss20"
+            // $url = 'https://www.facebook.com/feeds/page.php?id=' . $page_id . '&format=rss20';
+            $url = 'https://www.facebook.com/feeds/notifications.php?id='.$page_id.'&viewer='.$viewer.'&key='.$key.'&format=rss20';
+            // Aoloe\debug('url', $url);
+            // Aoloe\debug('rss', 'https://www.facebook.com/feeds/notifications.php?id=100001743249948&viewer=100001743249948&key=AWgirdIQ7k7i7zPZ&format=rss20');
             $xml = $this->get_feed($url);
-            // debug('xml', $xml);
+            // Aoloe\debug('xml', $xml);
 
             $i = 1;
             if (isset($xml)) {
