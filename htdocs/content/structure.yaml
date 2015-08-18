@@ -4,8 +4,9 @@ accueil :
     module :
         name : Accueil
         parameter :
-            opening : intro_20150529.md
+            opening : intro_20150818.md
             sidebar :
+                - facebook
                 - twitter
                 - news,0
                 - magazine
