@@ -1,3 +1,7 @@
+/**
+ * bleu: 
+ * orange: #fbb93d;
+ */ 
 h1,
 h1 a,
 h1 a:visited
@@ -291,6 +295,26 @@ ul.navigation_header_right li {
     font-size:1em;
 }
 
+p.facebook_logo img {
+    vertical-align:middle;
+}
+p.facebook_logo a {
+    text-decoration:none;
+}
+
+div.facebook_feed_item {
+    overflow:hidden;
+    height:300px;
+    overflow-y:auto;
+    border-bottom:1px solid black;
+}
+
+div.facebook_feed_item h4 {
+    font-weight:bold;
+    color:#fbb93d;
+}
+
+
 /* anyslider */
 
 #twitter_feed {
@@ -367,13 +391,6 @@ a.as-active, .as-nav a:hover {
 
 /* /anyslider */
 
-div.facebook_feed_item {
-    overflow:hidden;
-    height:300px;
-    overflow-y:auto;
-    border-bottom:1px solid black;
-}
-
 /* news page */
 
 .news_sidebar h2 {
@@ -410,53 +427,62 @@ div.highlight {
 
 @media only screen and (max-width: 768px) {
 #header_title {
-    font-size:24pt;
-}
+        font-size:24pt;
+    }
 #header_line {
-    font: 1.2em sans-serif;
-    text-align: center;
-    border-bottom: solid 1px;
+        font: 1.2em sans-serif;
+        text-align: center;
+        border-bottom: solid 1px;
 
-    /* pull the border up*/
-    height: 14px;
+        /* pull the border up*/
+        height: 14px;
 
-    /* push the paragraph down */
-    margin-bottom: 12px;
+        /* push the paragraph down */
+        margin-bottom: 12px;
 
-    /*
-    height: .6em;
+        /*
+        height: .6em;
 
-    margin-bottom: 1.4em;
-    */
-    padding-top:0px;
-    margin-top:0px;
-}
+        margin-bottom: 1.4em;
+        */
+        padding-top:0px;
+        margin-top:0px;
+    }
 
-/* line cover */
+    /* line cover */
 #header_line:first-line{
-    background-color: white;
-}
+        background-color: white;
+    }
 
-/* additional padding */
+    /* additional padding */
 #header_line:before,
 #header_line:after{
-    content: '\0000a0 \0000a0';
+        content: '\0000a0 \0000a0';
 
-}
+    }
 
 #header_line img {
-    background: white;
-    padding-left:10px;
-    padding-right:10px;
-    max-width:100px;
-}
+        background: white;
+        padding-left:10px;
+        padding-right:10px;
+        max-width:100px;
+    }
 
 #navigation {
-    overflow:hidden;
-    padding-top:10px;
-    padding-bottom:20px;
+        overflow:hidden;
+        padding-top:10px;
+        padding-bottom:20px;
+    }
+    .content {
+        /* visibility:hidden; */
+    }
 }
-.content {
-    /* visibility:hidden; */
+.has-caption {
+    padding-bottom:0px;
+    margin-bottom:0px;
 }
+
+.caption {
+    padding-top:0px;
+    margin-top:0px;
 }
