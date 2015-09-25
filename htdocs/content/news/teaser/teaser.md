@@ -1,7 +1,7 @@
-### Le 11 mars 2011 commençait la catastrophe nucléaire de Fukushima – que se passe t-il depuis ?
+###[Energyday](http://www.energyday.ch/f/)
+ 
+### Samedi 31 octobre, sortie annuelle au Mont Terri
 
-![Fukushima trois ans après](fukushima.jpg)
+Visite du laboratoire de recherche sur l’entreposage de déchets radioactifsi et de la coopérative maraîchère La Clef des champs.
 
-En une phrase: la catastrophe est loin d'être maîtrisée !
-
-[Pour en savoir plus »](actualite/nouvelles/20150304-11-mars-2011-fukushima)
+[Pour en savoir plus »](actualite/nouvelles/20150925-sortie-annuelle)
