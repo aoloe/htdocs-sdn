@@ -1,4 +1,4 @@
-###[Energyday](http://www.energyday.ch/f/)
+###[Energyday](http://www.energyday.ch/fr/)
  
 ### Samedi 31 octobre, sortie annuelle au Mont Terri
 
