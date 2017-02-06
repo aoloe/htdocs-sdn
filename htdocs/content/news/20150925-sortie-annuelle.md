@@ -11,7 +11,7 @@ Prévoir des vêtements chauds (13°C dans les galeries) et s’attendre à marc
 ## Délai d’inscription :
 
 jeudi 15 octobre  
-[anouk.zosso@sortirdunucleaire.ch](anouk.zosso@sortirdunucleaire.ch)  
+[anouk.zosso@sortirdunucleaire.ch](mailto:anouk.zosso@sortirdunucleaire.ch)  
 ou 079 778 70 33
 
 ## Programme :

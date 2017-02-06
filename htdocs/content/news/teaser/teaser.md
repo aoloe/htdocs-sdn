@@ -1,7 +1,4 @@
-###[Energyday](http://www.energyday.ch/fr/)
- 
-### Samedi 31 octobre, sortie annuelle au Mont Terri
+Nous organisons, en collaboration avec le [Festival du Film Vert](http://www.festivaldufilmvert.ch/), des projections de films en Suisse romande, dont de nombreuses avant-premières du film Power to change, le _«&nbsp;Demain&nbsp;»_ de l'énergie.
 
-Visite du laboratoire de recherche sur l’entreposage de déchets radioactifsi et de la coopérative maraîchère La Clef des champs.
+[Pour en savoir plus »](actualite/nouvelles/20160928-films)
 
-[Pour en savoir plus »](actualite/nouvelles/20150925-sortie-annuelle)

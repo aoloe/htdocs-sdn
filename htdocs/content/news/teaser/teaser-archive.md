@@ -30,3 +30,13 @@ En présence du réalisateur.
 En une phrase: la catastrophe est loin d'être maîtrisée !
 
 [Pour en savoir plus »](actualite/nouvelles/20150304-11-mars-2011-fukushima)
+
+### Agenda
+
+24 octobre 2015  
+__Energyday__  
+[Pour en savoir plus »](http://www.energyday.ch/fr/)
+
+31 octobre 2015  
+__Sortie annuelle au Mont Terri__  
+[Pour en savoir plus »](actualite/nouvelles/20150925-sortie-annuelle)
