@@ -1,4 +1,10 @@
-- start: 20150925
+- start: 20151024
+  date: Samedi 24 octobre 2015
+  title: Energyday
+  url: http://energyday.ch/fr/
+  content: |
+    Energy Day 2015
+- start: 20151031
   date: Samedi 31 octobre 2015
   title: Sortie annuelle au Mont Terri
   url: actualite/nouvelles/20150925-sortie-annuelle
@@ -91,3 +97,249 @@
     sur le projet de construction à Jaitapur,
     en bord de mer entre Bombay et Goa,
     de la plus grosse centrale nucléaire au monde.
+- start: 20160619
+  date: Dimanche 19 juin 2016 à 9h
+  title: "Arrêter Beznau, immédiatement !"
+  place: |
+    Amphithéâtre de Windisch/Brugg
+  url: actualite/nouvelles/20160619-arreter-beznau.md
+  content: |
+    4e manifestation nationale « Sortons du nucléaire »
+    près de la centrale nucléaire de Beznau
+    (des randonnées, des discours, de la musique,
+    ainsi qu'à boire et à manger)
+- start: 20161006 1815
+  date: Jeudi 6 octobre 2016 à 18h15
+  title: Power to change
+  url: https://www.facebook.com/events/1126457287447439/
+  place: |
+    Fribourg  
+    Cinémas Rex (Bd Pérolles 5a)
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161006 1830
+  date: Jeudi 6 octobre 2016 à 18h30
+  title: Demi-vie à Fukushima
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Chexbres  
+    Cinéma de la Grande Salle
+  content: |
+    Cinq ans après le tsunami et l’accident nucléaire, un homme vit encore à Fukushima : Naoto Matsumura. 
+- start: 20161006 1900 vevey
+  date: Jeudi 6 octobre 2016 à 19h
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Vevey  
+    Théâtre de l'Oriental  
+    Rue d'Italie 22
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161006 1900 martigny
+  date: Jeudi 6 octobre 2016 à 19h00
+  title: La bataille de Tchernobyl
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Martigny  
+    Librairie le Baobab  
+    Av. De la gare 42
+  content: |
+    Probablement le meilleur documentaire jamais réalisé sur la catastrophe de Tchernobyl. Il retrace notamment l'histoire des liquidateurs envoyés pour intervenir sur place.
+- start: 20161006 2000
+  date: Jeudi 6 octobre 2016 à 20h00
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Chexbres  
+    Cinéma de la Grande Salle
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161109
+  date: Mercredi 9 Novembre 2016 à 19h30
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Echallens  
+    Salle du conseil communal  
+    Place du Château 4
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161114
+  date: Lundi 14 Novembre 2016 à 19h30
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Echallens  
+    Salle du conseil communal  
+    Place du Château 4
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161008 1700
+  date: Samedi 8 octobre 2016 à 17h
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Le Noirmont  
+    Cinélucarne  
+    Rue de la Rauracie 13a
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161008 1800
+  date: Samedi 8 octobre 2016 à 18h
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Martigny  
+    Espace Nouvelle Terre  
+    Rue du Verger 30
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161008 1900
+  date: Samedi 8 octobre 2016 à 19h00
+  title: Power to change
+  url: https://www.facebook.com/events/191527121276361/
+  place: |
+    Romont  
+    La Maison Verte  
+    Place de la Gare
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161008 1915
+  date: Samedi 8 octobre 2016 à 19h15
+  title: Power to change
+  url: https://www.facebook.com/events/669889769826231/
+  place: |
+    Genève  
+    Le Grütli  
+    Rue Général Dufour 16
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161008 2030
+  date: Samedi 8 octobre 2016 à 20h30
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Lausanne  
+    Zinéma
+    rue du Maupas 4
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161007 1900 monthey
+  date: Vendredi 7 octobre 2016 à 19h00
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Monthey  
+    Maison des Jeunes  
+    Rue de l'Eglise 3
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161007 1900 clarens
+  date: Vendredi 7 octobre 2016 à 19h00
+  title: Demi-vie à Fukushima
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Clarens-Montreux  
+    Maison de Quartier  
+    Rue de Jaman 8
+  content: |
+    Cinq ans après le tsunami et l’accident nucléaire, un homme vit encore à Fukushima : Naoto Matsumura. 
+- start: 20161007 1815
+  date: Vendredi 7 octobre 2016 à 18h15
+  title: Demi-vie à Fukushima
+  url: https://www.facebook.com/events/189429198157383/
+  place: |
+    Bulle  
+    Prado  
+    Rue de la Lécheretta 8
+  content: |
+    Cinq ans après le tsunami et l’accident nucléaire, un homme vit encore à Fukushima : Naoto Matsumura. 
+- start: 20161007 1930
+  date: Vendredi 7 octobre 2016 à 19h30
+  title: Demi-vie à Fukushima
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Chemin-Dessus  
+    Hôtel Beau-Site  
+    Ch. Du Mont 13
+  content: |
+    Cinq ans après le tsunami et l’accident nucléaire, un homme vit encore à Fukushima : Naoto Matsumura. 
+- start: 20161009
+  date: Dimanche 9 octobre 2016 à 11h
+  title: Power to change
+  url: https://www.facebook.com/events/1802517843338363/
+  place: |
+    Pully  
+    City Club (Av. de Lavaux 36)  
+    Brunch offert  
+    (Réservation recommandée : 078/677 89 56)
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161109 1930b
+  date: Mercredi 9 Novembre 2016 à 19h30
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Couvet  
+    Cinéma le Colisée  
+    Rue Pierre-Dubied, Val-de-Travers
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161103 1830
+  date: Jeudi 3 Novembre 2016 à 18h30
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Genève  
+    Maison des Arts du Grütli, salle fonction cinéma  
+    Rue du Général Dufour 16
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161114 1830
+  date: Jeudi 13 Novembre 2016 à 19h30
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Le Mont-sur-Lausanne  
+    Foyer de la Grande salle
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161104
+  date: Vendredi 4 Novembre 2016 à 20h00
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Le Locle  
+    Ancienne Poste
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161102
+  date: Vendredi 2 Novembre 2016 à 20h00
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Neuchâtel  
+    Hôtel des associations  
+    Salle verte
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161103 1900
+  date: Jeudi 3 Novembre 2016 à 19h00
+  title: Power to change
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    Sion  
+    Espace création  
+    Rue de la Dixence 10  
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.
+- start: 20161101 2000
+  date: Mardi 1er Novembre 2016 à 19h00
+  title: Into Eternity
+  url: https://www.sortie-programmee-nucleaire.ch/fr/films.html
+  place: |
+    La Chaux-de-Fonds  
+    Centre de culture abc
+  content: |
+    La Rébellion Énergétique nous présente la vision d'un futur où l'énergie est à 100% renouvelable. Un plaidoyer pour une mise en oeuvre ambitieuse de cette révolution.

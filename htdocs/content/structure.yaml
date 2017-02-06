@@ -3,12 +3,14 @@ accueil :
         url :
     module :
         name : Accueil
+        filter : Counter
         parameter :
-            opening : intro_20150818.md
+            opening : intro_20160819.md
             sidebar :
-                - facebook
+                # - facebook
                 - twitter
                 - news,0
+                - calendar,1
                 - magazine
 nucleaire :
     navigation : Le nucléaire
@@ -131,3 +133,10 @@ association :
             navigation : Contact
             module : Contact
 page_404 :
+edit :
+    query : url
+    module :
+        name : Edit
+        parameter :
+            module :
+                - Accueil
