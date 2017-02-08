@@ -4,11 +4,24 @@
 <div  id="facebook_feed">
 <?php foreach ($feed as $item) : ?>
     <div class="facebook_feed_item">
-        <?php if (!empty($item['title'])) : ?>
-        <h3><a href="<?= $item['url'] ?>"><?= $item['title'] ?></a></h3>
+        <p class="facebook_logo"><a href="https://facebook.com/sortirdunucleaire"><img src="<?= $item['icon'] ?>"></a> <a href="https://facebook.com/sortirdunucleaire/posts/<?= $item['id'] ?>"><?= $item['date'] ?></a></p>
+        <?php if (!empty($item['message'])) : ?>
+        <p><?= $item['message'] ?></p>
         <?php endif; ?>
-        <p><?= $item['content'] ?></p>
-        <p><a href="<?= $item['url'] ?>">Lire sur Facebook &raquo;</a></p>
+        <?php if (isset($item['story'])) : ?>
+        <div class="story">
+            <?php if (isset($item['story']['title'])) : ?>
+            <h4><?= $item['story']['title'] ?></h4>
+            <?php endif; ?>
+            <?php if (isset($item['story']['description'])) : ?>
+            <p><?= $item['story']['description'] ?></p>
+            <?php endif; ?>
+            <?php if (isset($item['story']['picture'])) : ?>
+            <p><img src="<?= $item['story']['picture'] ?>"></p>
+            <?php endif; ?>
+        </div>
+        <?php endif; ?>
+        <p><a href="https://www.facebook.com/sortirdunucleaire/posts/<?= $item['id'] ?>">Lire sur Facebook &raquo;</a></p>
     </div>
 <?php endforeach; ?>
 </div>
@@ -20,7 +33,8 @@
 <script>
 $("#facebook_feed").AnySlider({
     bullets: true,
-    showControls: false
+    showControls: false,
+    interval: 6000,
 });
 </script>
 <style>

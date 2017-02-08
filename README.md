@@ -140,3 +140,48 @@ or even
 
 - add the way to get the magazine on the magazine's page sidebar.
 - when getting into a section always show the first subsection (i could create a module showing a sidebar with the list of subsections, too)
+
+
+## Séance août 2016
+
+- Quelle est l'objectif et
+- quel est le public cible
+
+
+publiques cibles:
+
+- simpatisants
+- journalistes
+- élus
+- faiseurs d'opinions / citoyen grand gueules de quartier
+- associations
+  - verts
+- monde anti-nucléaire francophone
+- entreprises energies renouvelables
+
+nos différents moyens de communication suivants
+
+- Le site web SdN
+- les résaux sociaux
+  - twitter
+  - facebook
+- Le journal SdN
+- infoSdN  (bulletin électronique)
+- lettres de lecteur
+- "stand/conférences"
+
+todo:
+- proposition serveur: (y compromis côté écologique)
+  - cyon.ch
+  - dreamhost (ecology)
+  - green.ch
+  - metanet.ch
+
+- enlever facebook ou plus en bas
+- tweets qui défilent de haut en bas sans effacer le précédent
+- bandeau au fond comme sur greenpeace.ch
+- ajouté la date dans les actualités
+- faire de façon à ce que l'article d'accueil soient éditable + image
+- texte un peu trop petit et pas assez de place entre les menus de la navigation
+- https://github.com/UberGallery ?
+- download all the .md + .csv in a zip

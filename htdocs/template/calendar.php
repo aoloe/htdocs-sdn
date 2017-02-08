@@ -21,7 +21,6 @@
     <?php if (($i % 3) == 0) : $open = false; ?></div><?php endif; ?>
 <?php endforeach; ?>
 <?php if ($open) : ?></div><?php endif; ?>
-</div>
 <?php else : ?>
     <p>Pas d'événements prévus.</p>
 <?php endif ?>

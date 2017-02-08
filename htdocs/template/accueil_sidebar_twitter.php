@@ -16,10 +16,25 @@
 <?php endif; ?>
 </div>
 <?php if (!empty($feed)) : ?>
+<script type="text/javascript" src="js/jquery.totemticker.min.js"></script>
+<script type="text/javascript" src="js/jquery.slidingticker.js"></script>
+<script type="text/javascript" src="js/jquery.simplyscroll.min.js"></script>
 <script>
+/*
 $("#twitter_feed").AnySlider({
     bullets: false,
     showControls: false
+});
+*/
+/*
+$('#twitter_feed').slidingticker({
+    // max_items: 2
+});
+*/
+$(document).ready(function() {
+    $('#twitter_feed').simplyScroll({
+        orientation: 'vertical',
+    });
 });
 </script>
 <style>

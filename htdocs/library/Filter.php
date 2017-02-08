@@ -31,7 +31,7 @@ class Filter {
             $filter->set_language($this->language);
             $matches = array();
             preg_match_all('/{{[`]?%'.strtolower($this->filter_name).'%(.*?)[%]?[`]?}}/', $content, $matches);
-            // debug('matches', $matches);
+            // Aoloe\debug('matches', $matches);
             if (!empty($matches)) {
                 foreach ($matches[0] as $key => $value) {
                     // debug('key', $key);
