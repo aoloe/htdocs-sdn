@@ -42,6 +42,10 @@ endif;
 <?= $header_navigation ?>
 <p id="header_title"><a href="/">Sortir du Nucléaire</a></p>
 <p id="header_line"><a href="/"><img src="<?= $path ?>/images/sortir_du_nucleaire.png"></a></p>
+<?php /* remove also the css rules */ ?>
+<div id="banner-sortie-votations">
+<a href="https://www.sortie-programmee-nucleaire.ch/"><img src="images/sortie-programmee.png"></a>
+</div>
 </div>
 
 <div id ="navigation">
