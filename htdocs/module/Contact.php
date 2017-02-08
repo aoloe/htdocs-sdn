@@ -23,6 +23,7 @@ class Contact extends Aoloe\Module_abstract {
         $contact_form->add_field_request('aider', 'Non');
         $contact_form->add_field_request('participer_stand', 'Non');
         $contact_form->add_field_request('inscrire_liste_de_courriers_informations', 'Non');
+        $contact_form->add_field_request('comite', 'Non');
 
 
         $contact_form->add_field_request('email');
@@ -39,8 +40,8 @@ class Contact extends Aoloe\Module_abstract {
         $contact_form->add_field_request('tel');
 
         $contact_form->set_force_smtp();
-        $contact_form->set_mail_from('a.l.e@sortirdunucleaire.ch');
-        $contact_form->set_mail_to('test@sortirdunucleaire.ch');
+        $contact_form->set_mail_from('info@sortirdunucleaire.ch');
+        $contact_form->set_mail_to('info@sortirdunucleaire.ch');
         $contact_form->set_subject_prefix('[SDN] ');
         $contact_form->set_subject('Formulaire de contact');
         if ($contact_form->is_submitted()) {

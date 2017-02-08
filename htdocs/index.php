@@ -1,4 +1,5 @@
 <?php
+session_start(); // for facebook api
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
@@ -9,6 +10,14 @@ new Aoloe\Debug();
 
 // debug('_SERVER', $_SERVER);
 // debug('_REQUEST', $_REQUEST);
+
+// reference for the user fields (list of feed, posts): https://developers.facebook.com/docs/graph-api/reference/user
+// reference for the page fields (list of feeds, posts): https://developers.facebook.com/docs/graph-api/reference/page
+// reference for the fields in the single post: https://developers.facebook.com/docs/graph-api/reference/v2.1/post
+
+// https://graph.facebook.com/v2.4/me?fields=post
+// https://graph.facebook.com/v2.4/sortirdunucleaire?fields=post
+// https://graph.facebook.com/v2.4/161424603891516_1024016550965646?fields=message,id,object_id,picture,source,name,link,child_attachments,description
 
 $structure_test = true;
 $cookie = new Aoloe\Cookie();
@@ -61,12 +70,18 @@ $page_query = $route->get_page_query();
 // debug('url aliased', $route->get_page_aliased_url());
 // debug('page_query', $page_query);
 
+$configuration = new Aoloe\Configuration();
+$configuration->set_file('sdn.yaml');
+$configuration->read();
+
 $module = new Aoloe\Module();
 $module->set_page($page);
 $module->set_url_query($route->get_page_query());
 $module->set_site($site);
 $module->set_url_structure($route->get_page_url());
 $module->set_url_request($route->is_page_aliased_url() ? $route->get_page_aliased_url() : $route->get_page_url());
+$module->set_configuration($configuration);
+$module->initialize();
 $content_page = $module->get_rendered();
 
 include('library/Navigation.php');
