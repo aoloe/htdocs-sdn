@@ -48,7 +48,6 @@
         "mustangostang/spyc": "0.5.*@dev",
         "phpmailer/phpmailer": "5.2.8",
         "j7mbo/twitter-api-php": "dev-master",
-        "facebook/php-sdk-v4" : "~5.0",
         "aoloe/php-cache" : "dev-master",
         "aoloe/php-configuration" : "dev-master",
         "aoloe/php-cookie" : "dev-master",
