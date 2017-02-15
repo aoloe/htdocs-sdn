@@ -1,7 +1,18 @@
+<style>
+  .verticalScroll {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+  }
+
+  .verticalScroll > div {
+    position:absolute;
+  }
+</style>
 <div class="sidebar sidebar_twitter">
 <h2><a href="https://www.twitter.com/sdnch">Twitter<img src="images/twitter_t.png"></a></h2>
 <?php if (!empty($feed)) : ?>
-<div  id="twitter_feed">
+<div  id="twitter_feed" class="verticalScroll">
 <?php foreach ($feed as $item) : ?>
     <div class="twitter_feed_item">
         <?php if (!empty($item['user_icon'])) : ?>
@@ -16,9 +27,11 @@
 <?php endif; ?>
 </div>
 <?php if (!empty($feed)) : ?>
+<?php /*
 <script type="text/javascript" src="js/jquery.totemticker.min.js"></script>
 <script type="text/javascript" src="js/jquery.slidingticker.js"></script>
 <script type="text/javascript" src="js/jquery.simplyscroll.min.js"></script>
+*/ ?>
 <script>
 /*
 $("#twitter_feed").AnySlider({
@@ -31,11 +44,14 @@ $('#twitter_feed').slidingticker({
     // max_items: 2
 });
 */
+/*
 $(document).ready(function() {
     $('#twitter_feed').simplyScroll({
         orientation: 'vertical',
     });
 });
+*/
+$(".verticalScroll").verticalScroll();
 </script>
 <style>
 </style>
