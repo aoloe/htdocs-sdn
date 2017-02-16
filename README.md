@@ -95,6 +95,10 @@ or even
     - https://github.com/facebook/facebook-php-sdk
 - line below the page title: http://www.impressivewebs.com/centered-heading-horizontal-line/
 
+Markdown editing:
+
+- https://github.com/NextStepWebs/simplemde-markdown-editor
+
 # Reference
 
 - rename the lightSlider's image and modify `lightSlider.css` according to it.
