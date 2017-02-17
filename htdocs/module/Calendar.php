@@ -23,13 +23,16 @@ class Calendar extends Aoloe\Module_abstract {
     private $calendar_file = 'content/calendar.yaml';
     private $calendar = null;
     private $unpublish_age = 63072000; // 60*60*24*365*2 = 2 years
-    public function __construct() {
+
+    private function get_calendar_list() {
+        $result = array();
         if (file_exists($this->calendar_file)) {
-            $this->calendar = file_get_contents($this->calendar_file);
-            $this->calendar = Spyc::YAMLLoadString($this->calendar);
+            $result = file_get_contents($this->calendar_file);
+            $result = Spyc::YAMLLoadString($result);
         }
-        // debug('calendar', $this->calendar);
+        return $result;
     }
+
     public function get_content() {
         $markdown = new Aoloe\Markdown();
 
@@ -39,7 +42,7 @@ class Calendar extends Aoloe\Module_abstract {
         $calendar_past = array();
         $now = date('Ymd');
         // debug('now', $now);
-        foreach ($this->calendar as $item) {
+        foreach ($this->get_calendar_list() as $item) {
             $calendar_content = null;
             if (array_key_exists('content', $item)) {
                 $markdown->clear();
@@ -53,14 +56,18 @@ class Calendar extends Aoloe\Module_abstract {
                 $calendar_place = $markdown->parse();
             }
             $calendar_item = array (
+                'sort' => $item['start'],
                 'start' => date("d.m.Y", strtotime($item['start'])),
                 'end' => array_key_exists('end', $item) ? date("d.m.Y", strtotime($item['end'])) : '',
                 'date' => array_key_exists('date', $item) ? $item['date'] : '',
                 'title' => $item['title'],
                 'place' => $calendar_place,
-                'url' => array_key_exists('url', $item) ? $this->site->get_path_relative($item['url']) : null,
+                'url' => array_key_exists('url', $item) ? $item['url'] : null,
                 'content' => $calendar_content,
             );
+            if (substr($calendar_item['url'], 0, 4) != 'http') {
+                $calendar_item['url'] = $this->site->get_path_relative($calendar_item['url']);
+            }
             $unpublish = time() - strtotime(array_key_exists('end', $item) ? $item['end'] : $item['start']);
             // debug('strtotime', date("Y M d", strtotime(array_key_exists('end', $item) ? $item['end'] : $item['start'])));
             // debug('unpublish', $unpublish);
@@ -70,10 +77,10 @@ class Calendar extends Aoloe\Module_abstract {
                 $calendar_past[] = $calendar_item;
             }
         }
-        usort($calendar_future, function($a, $b) {$a['start'] >= $b['start'];});
-        usort($calendar_past, function($a, $b) {$a['start'] >= $b['start'];});
+        usort($calendar_future, function($a, $b) {return $a['sort'] <= $b['sort'];});
+        usort($calendar_past, function($a, $b) {return $a['sort'] >= $b['sort'];});
         // debug('calendar_future', $calendar_future);
-        // debug('calendar_past', $calendar_past);
+        // Aoloe\debug('calendar_past', $calendar_past);
         
         $template->clear();
         $template->set('path', $this->site->get_path_relative());
@@ -96,8 +103,42 @@ class Calendar extends Aoloe\Module_abstract {
         $result = $template->fetch('template/calendar.php');
         return $result;
     }
-    public function get_teaser() {
-        $result =  array();
+
+    /**
+     * render the n first items in the calendar if they are not in the past
+     */
+    public function get_teaser($number = null ) {
+        $result =  "";
+        $markdown = new Aoloe\Markdown();
+        $template = new Aoloe\Template();
+
+        $i = 0;
+        $now = date('Ymd');
+        $calendar = array();
+        foreach ($this->get_calendar_list() as $item) {
+            // Aoloe\debug('item', $item);
+            // Aoloe\debug('now', $now);
+            if (isset($number) && ($i > count($calendar))) {
+                break;
+            }
+            if (($item['start'] < $now) && (!array_key_exists('end', $item) || ($item['end'] < $now))) {
+                continue;
+            }
+            $calendar[] = array (
+                'date' => array_key_exists('date', $item) ? $item['date'] : '',
+                'title' => $item['title'],
+                'place' => $item['place'] ? explode("\n", $item['place'])[0] : "",
+                'url' => array_key_exists('url', $item) ? $item['url'] : null,
+            );
+        }
+        $template->clear();
+        $template->set('path', $this->site->get_path_relative());
+        $template->set('calendar', $calendar);
+        $result = $template->fetch('template/calendar_teaser.php');
+
+        if (empty($result)) {
+            $result = "<p>Pas d'événements prévus.</p>\n";
+        }
         return $result;
     }
 }
