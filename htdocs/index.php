@@ -102,7 +102,9 @@ if (isset($content_page)) {
 
     $site->add_css('css/simplegrid/simplegrid.css');
 
-    $site->add_font('css/font-robotocondensed.css', 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300');
+    if ($site->is_online()) {
+        $site->add_font('css/font-robotocondensed.css', 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300');
+    }
 
     $header_navigation = '';
 
