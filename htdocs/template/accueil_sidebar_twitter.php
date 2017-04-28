@@ -56,4 +56,3 @@ $(".verticalScroll").verticalScroll();
 <style>
 </style>
 <?php endif; ?>
-
