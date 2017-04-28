@@ -1,13 +1,17 @@
 # Contact
 
 **Par la poste**:  
-Sortir du nucléaire, Case postale 9, 1211 Genève 7
+Association Sortir du nucléaire  
+Administration  
+Rue du Crêt 22  
+2300 La Chaux-de-Fonds
 
 **Par courriel:**  
 [info@sortirdunucleaire.ch](mailto:info@sortirdunucleaire.ch)
 
 **Par telephone**:  
-079 922 63 31 (heures de bureau)
+078 619 02 50 (heures de bureau)
+
 
 **Ou par les réseaux sociaux**:  
 [![Sortir du nucléaire sur Facebook](../../images/facebook_f.png)](https://www.facebook.com/pages/Sortir-du-Nucl%C3%A9aire-Suisse-Romande/161424603891516) [![Sortir du nucléaire sur Twitter](../../images/twitter_t.png)](https://www.twitter.com/sdnch)

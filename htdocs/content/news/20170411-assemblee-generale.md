@@ -4,7 +4,7 @@ Invitation à
 __L'assemblée générale__  
 de Sortir du Nucléaire
 
-__Mardi 11 avril 2015__  
+__Mardi 11 avril 2017__  
 Hôtel Alpha Palmiers  
 34 rue du Petit-Chêne  
 Lausanne
