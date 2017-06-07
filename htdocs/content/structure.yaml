@@ -5,7 +5,7 @@ accueil :
         name : Accueil
         filter : Counter
         parameter :
-            opening : intro_20170428.md
+            opening : intro_20170607.md
             sidebar :
                 # - facebook
                 - twitter
